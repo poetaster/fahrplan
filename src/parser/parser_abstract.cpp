@@ -56,7 +56,7 @@ ParserAbstract::ParserAbstract(QObject *parent) :
 
     currentRequestState = FahrplanNS::noneRequest;
 
-    requestTimeout = new QTimer();
+    requestTimeout = new QTimer(this);
 
     connect(requestTimeout, SIGNAL(timeout()), this, SLOT(networkReplyTimedOut()));
 
@@ -67,10 +67,15 @@ ParserAbstract::ParserAbstract(QObject *parent) :
 
 ParserAbstract::~ParserAbstract()
 {
+    //clearJourney();
     delete requestTimeout;
     delete NetworkManager;
 }
 
+void ParserAbstract::clearJourney()
+{
+
+}
 void ParserAbstract::networkReplyFinished(QNetworkReply *networkReply)
 {
     FahrplanNS::curReqStates internalRequestState = currentRequestState;
