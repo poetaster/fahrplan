@@ -58,7 +58,7 @@ protected:
 
     void sendHttpRequestWithBearer(const QUrl &uri);
 
-    JourneyResultList *journeyResultList;
+    JourneyResultList *lastJourneyResultList;
 
 private:
     static const qlonglong TRIP_RTDATA_NONE;
