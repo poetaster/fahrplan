@@ -62,9 +62,18 @@ ParserXmlVasttrafikSe::ParserXmlVasttrafikSe(QObject *parent)
 }
 
 ParserXmlVasttrafikSe::~ParserXmlVasttrafikSe() {
+    clearJourney();
     delete m_nam;
 }
 
+void ParserXmlVasttrafikSe::clearJourney()
+{
+    // This seems a bit overkill or misdirected
+    if (journeyResultList) {
+        delete journeyResultList;
+        journeyResultList = NULL;
+    }
+}
 void ParserXmlVasttrafikSe::getTimeTableForStation(const Station &currentStation, const Station &directionStation, const QDateTime &dateTime, Mode mode, int trainrestrictions)
 {
     if (currentRequestState != FahrplanNS::noneRequest)
@@ -358,7 +367,8 @@ void ParserXmlVasttrafikSe::parseTimeTable(QNetworkReply *networkReply)
 
 void ParserXmlVasttrafikSe::parseSearchJourney(QNetworkReply *networkReply)
 {
-    JourneyResultList *journeyResultList = new JourneyResultList();
+    clearJourney();
+    journeyResultList = new JourneyResultList();
 
     for (QHash<QString, JourneyDetailResultList *>::Iterator it = cachedJourneyDetails.begin(); it != cachedJourneyDetails.end();) {
         JourneyDetailResultList *jdrl = it.value();
@@ -522,7 +532,8 @@ void ParserXmlVasttrafikSe::searchJourneyLater()
     if (m_latestResultDeparture.isValid())
         searchJourney(m_searchJourneyParameters.departureStation, m_searchJourneyParameters.arrivalStation, m_searchJourneyParameters.viaStation, m_latestResultDeparture, Departure, 0);
     else {
-        JourneyResultList *journeyResultList = new JourneyResultList();
+        clearJourney();
+        journeyResultList = new JourneyResultList();
         journeyResultList->setDepartureStation(m_searchJourneyParameters.departureStation.name);
         journeyResultList->setViaStation(m_searchJourneyParameters.viaStation.name);
         journeyResultList->setArrivalStation(m_searchJourneyParameters.arrivalStation.name);
@@ -537,7 +548,8 @@ void ParserXmlVasttrafikSe::searchJourneyEarlier()
     if (m_earliestArrival.isValid())
         searchJourney(m_searchJourneyParameters.departureStation, m_searchJourneyParameters.arrivalStation, m_searchJourneyParameters.viaStation, m_earliestArrival, Arrival, 0);
     else {
-        JourneyResultList *journeyResultList = new JourneyResultList();
+        clearJourney();
+        journeyResultList = new JourneyResultList();
         journeyResultList->setDepartureStation(m_searchJourneyParameters.departureStation.name);
         journeyResultList->setViaStation(m_searchJourneyParameters.viaStation.name);
         journeyResultList->setArrivalStation(m_searchJourneyParameters.arrivalStation.name);
