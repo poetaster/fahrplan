@@ -67,7 +67,7 @@ ParserAbstract::ParserAbstract(QObject *parent) :
 
 ParserAbstract::~ParserAbstract()
 {
-    //clearJourney();
+   clearJourney();
     delete requestTimeout;
     delete NetworkManager;
 }
