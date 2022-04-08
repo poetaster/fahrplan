@@ -62,7 +62,7 @@ ParserXmlVasttrafikSe::ParserXmlVasttrafikSe(QObject *parent)
 }
 
 ParserXmlVasttrafikSe::~ParserXmlVasttrafikSe() {
-    //clearJourney();
+    clearJourney();
     delete m_nam;
 }
 
@@ -529,6 +529,7 @@ void ParserXmlVasttrafikSe::parseSearchJourney(QNetworkReply *networkReply)
 
 void ParserXmlVasttrafikSe::searchJourneyLater()
 {
+    qDebug() << "latestResultDeparture" << m_latestResultDeparture << ")";
     if (m_latestResultDeparture.isValid())
         searchJourney(m_searchJourneyParameters.departureStation, m_searchJourneyParameters.arrivalStation, m_searchJourneyParameters.viaStation, m_latestResultDeparture, Departure, 0);
     else {
@@ -545,6 +546,7 @@ void ParserXmlVasttrafikSe::searchJourneyLater()
 
 void ParserXmlVasttrafikSe::searchJourneyEarlier()
 {
+    qDebug() << "earliestArrival" << m_earliestArrival << ")";
     if (m_earliestArrival.isValid())
         searchJourney(m_searchJourneyParameters.departureStation, m_searchJourneyParameters.arrivalStation, m_searchJourneyParameters.viaStation, m_earliestArrival, Arrival, 0);
     else {
