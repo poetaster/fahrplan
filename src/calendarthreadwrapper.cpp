@@ -197,6 +197,7 @@ void CalendarThreadWrapper::addToCalendar()
         qDebug() << "Opening" << tmpFile->fileName();
         if (!QDesktopServices::openUrl(QUrl("file://" + tmpFile->fileName(), QUrl::TolerantMode))) {
             qWarning() << "QDesktopServices::openUrl fails!";
+            emit addCalendarEntryComplete(false);
         } else {
             emit addCalendarEntryComplete(true);
         }
