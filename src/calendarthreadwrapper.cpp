@@ -33,10 +33,9 @@ using namespace bb::pim::calendar;
 #   include <QOrganizerEvent>
 QTM_USE_NAMESPACE
 #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
-#   include <extendedcalendar.h>
-#   include <extendedstorage.h>
-#   include <kdatetime.h>
-#   include <ksystemtimezone.h>
+#   include <mkcal-qt5/extendedcalendar.h>
+#   include <mkcal-qt5/extendedstorage.h>
+#   include <QTimeZone>
 #endif
 
 QString formatStation(const QDateTime dateTime, const QString &stationName, const QString &info = QString())
@@ -166,7 +165,30 @@ void CalendarThreadWrapper::addToCalendar()
     emit addCalendarEntryComplete(defaultManager.saveItem(&event));
   #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
 
-    mKCal::ExtendedCalendar::Ptr calendar = mKCal::ExtendedCalendar::Ptr ( new mKCal::ExtendedCalendar( QLatin1String( "UTC" ) ) );
+    //mKCal::ExtendedCalendar::Ptr calendar = mKCal::ExtendedCalendar::Ptr ( new mKCal::ExtendedCalendar( QLatin1String( "UTC" ) ) );
+    mKCal::ExtendedCalendar::Ptr calendar( new mKCal::ExtendedCalendar( QTimeZone::utc() ) );
+    mKCal::ExtendedStorage::Ptr storage = mKCal::ExtendedCalendar::defaultStorage( calendar );
+    if (storage->open()) {
+        QString uid = settings.value("Calendar/notebookUID").toString();
+        mKCal::Notebook::Ptr notebook = storage->notebook(uid);
+
+        if (!notebook) {
+            notebook = storage->defaultNotebook();
+        }
+
+        if (notebook) {
+            KCalendarCore::Event:Ptr event( new KCalendarCore::Event() );
+            event->setSummary(calendarEntryTitle);
+            event->setDescription(calendarEntryDesc);
+            event->setDtStart( m_result->departureDateTime() );
+            event->setDtEnd( m_result->arrivalDateTime() );
+            calendar->addEvent( event, notebook->uid() );
+            storage->save();
+            emit addCalendarEntryComplete(true);
+        } else {
+            emit addCalendarEntryComplete(false);
+        }
+    /*
     mKCal::ExtendedStorage::Ptr storage = mKCal::ExtendedCalendar::defaultStorage( calendar );
     if (storage->open()) {
         QString uid = settings.value("Calendar/notebookUID").toString();
@@ -188,6 +210,7 @@ void CalendarThreadWrapper::addToCalendar()
         } else {
             emit addCalendarEntryComplete(false);
         }
+        */
     } else {
         emit addCalendarEntryComplete(false);
     }

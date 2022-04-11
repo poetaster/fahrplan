@@ -35,10 +35,8 @@
 #   include <bb/pim/account/AccountService>
 #   include <bb/pim/account/Account>
 #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
-#   include <extendedcalendar.h>
-#   include <extendedstorage.h>
-#   include <kdatetime.h>
-#   include <ksystemtimezone.h>
+#   include <mkcal-qt5/extendedcalendar.h>
+#   include <mkcal-qt5/extendedstorage.h>
 #elif !defined(BUILD_FOR_DESKTOP) && !defined(BUILD_FOR_UBUNTU) && !defined(BUILD_FOR_SAILFISHOS)
 #   include <QOrganizerManager>
 #endif

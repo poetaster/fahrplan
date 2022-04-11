@@ -2,10 +2,13 @@
 APP_NAME = Fahrplan
 
 # Define Version
-VERSION = 2.0.36-1
+VERSION = 2.0.38-1
+
+CONFIG+= openrepos
 
 # Switch for jolla to separate harbour and openrepo version
 openrepos {
+    DEFINES += BUILD_FOR_SAILFISHOS
     DEFINES += BUILD_FOR_OPENREPOS
 }
 
@@ -26,7 +29,6 @@ ubuntu {
     DEFINES += FAHRPLAN_VERSION=\\\"$$VERSION\\\"
     DEFINES += FAHRPLAN_SETTINGS_NAMESPACE=\\\"$$APP_ID\\\"
 }
-#exists("/usr/include/sailfishapp/sailfishapp.h"): {
 exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
     DEFINES += FAHRPLAN_VERSION=\\\"$$VERSION\\\"
     DEFINES += FAHRPLAN_SETTINGS_NAMESPACE=\\\"harbour-fahrplan2\\\"
@@ -99,6 +101,7 @@ INCLUDEPATH += src
 unix:!symbian: LIBS += -lz
 
 HEADERS += \
+    src/calendar_export.h \
     src/parser/parser_hafasxml.h \
     src/parser/parser_abstract.h \
     src/parser/parser_definitions.h \
@@ -133,6 +136,7 @@ HEADERS += \
     src/models/backends.h
 
 SOURCES += src/main.cpp \
+    src/calendar_export.cpp \
     src/parser/parser_hafasxml.cpp \
     src/parser/parser_abstract.cpp \
     src/parser/parser_definitions.cpp \
@@ -324,7 +328,6 @@ blackberry {
     QML_IMPORT_PATH = 3rdparty/bb10-qt-components/imports
 }
 
-#exists("/usr/include/sailfishapp/sailfishapp.h"): {
 exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
     TARGET = harbour-fahrplan2
 
@@ -334,11 +337,14 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
     PKGCONFIG += sailfishapp
     INCLUDEPATH += /usr/include/sailfishapp
 
-    # we need additional stuff for calendar support
+    # we need additional stuff for calendar supportfahrplanBackend
     openrepos {
-        #PKGCONFIG += mkcal-qt5-devel kcalcore-qt5-devel
-        PKGCONFIG += libmkcal-qt5 libkcalcoren-qt5
-        INCLUDEPATH += /usr/include/mkcal-qt5 /usr/include/kcalcoren-qt5
+        PKGCONFIG += KF5CalendarCore libmkcal-qt5 accounts-qt5
+        #PKGCONFIG += libmkcal-qt5 libkcalcoren-qt5
+        #INCLUDEPATH += /usr/include/mkcal-qt5 /usr/include/kcalcoren-qt5
+        #PKGCONFIG += mkcal-qt5 kcalcore-qt5-devel
+        #PKGCONFIG += KF5CalendarCore libmkcal-qt5 accounts-qt5
+        #PKGCONFIG += libmkcal-qt5 libkcalcoren-qt5
     }
 
     RESOURCES += sailfishos_res.qrc
@@ -490,4 +496,3 @@ freebsd-* {
 translations.CONFIG = no_link
 QMAKE_EXTRA_COMPILERS += translations
 PRE_TARGETDEPS += compiler_translations_make_all
-
