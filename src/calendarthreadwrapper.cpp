@@ -35,8 +35,7 @@ QTM_USE_NAMESPACE
 #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
 #   include <extendedcalendar.h>
 #   include <extendedstorage.h>
-#   include <kdatetime.h>
-#   include <ksystemtimezone.h>
+#   include <KCalendarCore/Event>
 #endif
 
 QString formatStation(const QDateTime dateTime, const QString &stationName, const QString &info = QString())
@@ -166,7 +165,7 @@ void CalendarThreadWrapper::addToCalendar()
     emit addCalendarEntryComplete(defaultManager.saveItem(&event));
   #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
 
-    mKCal::ExtendedCalendar::Ptr calendar = mKCal::ExtendedCalendar::Ptr ( new mKCal::ExtendedCalendar( QLatin1String( "UTC" ) ) );
+    mKCal::ExtendedCalendar::Ptr calendar( new mKCal::ExtendedCalendar( QByteArray( "UTC" ) ) );
     mKCal::ExtendedStorage::Ptr storage = mKCal::ExtendedCalendar::defaultStorage( calendar );
     if (storage->open()) {
         QString uid = settings.value("Calendar/notebookUID").toString();
@@ -177,11 +176,11 @@ void CalendarThreadWrapper::addToCalendar()
         }
 
         if (notebook) {
-            KCalCore::Event::Ptr event = KCalCore::Event::Ptr( new KCalCore::Event() );
+            KCalendarCore::Event::Ptr event( new KCalendarCore::Event() );
             event->setSummary(calendarEntryTitle);
             event->setDescription(calendarEntryDesc);
-            event->setDtStart( KDateTime(m_result->departureDateTime()) );
-            event->setDtEnd( KDateTime(m_result->arrivalDateTime()) );
+            event->setDtStart( m_result->departureDateTime() );
+            event->setDtEnd( m_result->arrivalDateTime() );
             calendar->addEvent( event, notebook->uid() );
             storage->save();
             emit addCalendarEntryComplete(true);

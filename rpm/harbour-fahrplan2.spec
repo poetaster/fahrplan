@@ -31,8 +31,8 @@ BuildRequires:  qt5-qtdeclarative-import-positioning
 BuildRequires:  qt5-qtpositioning-devel
 BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
-BuildRequires:  mkcal-qt5-devel
-BuildRequires:  kcalcore-qt5-devel
+BuildRequires:  pkgconfig(libmkcal-qt5)
+BuildRequires:  pkgconfig(KF5CalendarCore)
 
 %description
 A Journey planner/Railway Time table for many train lines in europe and australia.
