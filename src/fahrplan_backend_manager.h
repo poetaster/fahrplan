@@ -29,7 +29,6 @@ class FahrplanBackendManager : public QObject
 
     public:
         explicit FahrplanBackendManager(int defaultParser, QObject *parent = 0);
-        virtual ~FahrplanBackendManager();
         QStringList getParserList();
         void setParser(int index);
         FahrplanParserThread *getParser();

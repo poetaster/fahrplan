@@ -101,7 +101,6 @@ INCLUDEPATH += src
 unix:!symbian: LIBS += -lz
 
 HEADERS += \
-    src/calendar_export.h \
     src/parser/parser_hafasxml.h \
     src/parser/parser_abstract.h \
     src/parser/parser_definitions.h \
@@ -136,7 +135,6 @@ HEADERS += \
     src/models/backends.h
 
 SOURCES += src/main.cpp \
-    src/calendar_export.cpp \
     src/parser/parser_hafasxml.cpp \
     src/parser/parser_abstract.cpp \
     src/parser/parser_definitions.cpp \
@@ -340,11 +338,6 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
     # we need additional stuff for calendar supportfahrplanBackend
     openrepos {
         PKGCONFIG += KF5CalendarCore libmkcal-qt5 accounts-qt5
-        #PKGCONFIG += libmkcal-qt5 libkcalcoren-qt5
-        #INCLUDEPATH += /usr/include/mkcal-qt5 /usr/include/kcalcoren-qt5
-        #PKGCONFIG += mkcal-qt5 kcalcore-qt5-devel
-        #PKGCONFIG += KF5CalendarCore libmkcal-qt5 accounts-qt5
-        #PKGCONFIG += libmkcal-qt5 libkcalcoren-qt5
     }
 
     RESOURCES += sailfishos_res.qrc

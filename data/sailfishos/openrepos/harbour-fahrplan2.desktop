@@ -3,5 +3,10 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Name=Fahrplan
 Icon=harbour-fahrplan2
-Exec=invoker --type=silica-qt5 -n -d 5 -s /usr/bin/harbour-fahrplan2
+Exec=harbour-fahrplan2
+
+[X-Sailjail]
+OrganizationName=de.smurfy
+ApplicationName=harbour-fahrplan2
+Permissions=Internet;Location
 

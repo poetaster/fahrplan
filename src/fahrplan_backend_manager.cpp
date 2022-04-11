@@ -26,14 +26,6 @@ FahrplanBackendManager::FahrplanBackendManager(int defaultParser, QObject *paren
     currentParserIndex = defaultParser;
 }
 
-FahrplanBackendManager::~FahrplanBackendManager()
-{
-    if (m_parser) {
-        // Parser object will be autodeleted after the thread quits.
-        m_parser->quit();
-    }
-}
-
 QStringList FahrplanBackendManager::getParserList()
 {
     QStringList result;
@@ -81,7 +73,7 @@ void FahrplanBackendManager::setParser(int index)
         m_parser->quit();
     }
 
-    m_parser = new FahrplanParserThread(this);
+    m_parser = new FahrplanParserThread();
     m_parser->init(index);
 
     // Init can fallback to another index if its invalid.

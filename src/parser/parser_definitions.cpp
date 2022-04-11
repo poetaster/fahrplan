@@ -70,15 +70,7 @@ TimetableEntry::TimetableEntry()
 
 
 //------------- JourneyResultList
-JourneyResultList::JourneyResultList(QObject * parent) : QObject(parent)
-{
 
-}
-
-JourneyResultList::~JourneyResultList()
-{
-    qDeleteAll(m_items);
-}
 qreal JourneyResultList::itemcount()
 {
     return m_items.count();
@@ -135,11 +127,6 @@ void JourneyResultList::setTimeInfo(const QString &timeInfo)
 }
 
 //------------- JourneyResultItem
-
-JourneyResultItem::JourneyResultItem(QObject *parent) : QObject(parent)
-{
-
-}
 
 QString JourneyResultItem::id() const
 {
@@ -243,15 +230,6 @@ void JourneyResultItem::setInternalData2(const QString &internalData2)
 
 //------------- JourneyDetailResultList
 
-JourneyDetailResultList::JourneyDetailResultList(QObject * parent) : QObject(parent)
-{
-
-}
-
-/*JourneyDetailResultList::~JourneyDetailResultList()
-{
-    qDeleteAll(m_items);
-}*/
 QString JourneyDetailResultList::id() const
 {
     return m_id;
@@ -348,11 +326,6 @@ void JourneyDetailResultList::setDuration(const QString &duration)
 }
 
 //------------- JourneyDetailResultItem
-
-JourneyDetailResultItem::JourneyDetailResultItem(QObject *parent) : QObject(parent)
-{
-
-}
 
 QString JourneyDetailResultItem::departureStation() const
 {

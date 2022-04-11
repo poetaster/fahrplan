@@ -27,8 +27,7 @@
 ParserSalzburgEFA::ParserSalzburgEFA(QObject *parent) :
     ParserEFA(parent)
 {
-    // Defunct. how at hafas!
-    //baseRestUrl = "https://efa.svv-info.at/svv/";
+    baseRestUrl = "https://efa.svv-info.at/svv/";
     acceptEncoding = "gzip";
 }
 

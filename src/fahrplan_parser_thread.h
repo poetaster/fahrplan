@@ -91,7 +91,7 @@ protected:
   void run();
 
 private:
-  volatile bool m_ready;
+  bool m_ready;
   int  i_parser;
 
   QStringList m_trainrestrictions;

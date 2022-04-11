@@ -27,12 +27,12 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Xml)
 BuildRequires:  pkgconfig(sailfishapp)
-BuildRequires:  pkgconfig(libmkcal-qt5)
-BuildRequires:  pkgconfig(KF5CalendarCore)
 BuildRequires:  qt5-qtdeclarative-import-positioning
 BuildRequires:  qt5-qtpositioning-devel
 BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
+BuildRequires:  pkgconfig(libmkcal-qt5)
+BuildRequires:  pkgconfig(KF5CalendarCore)
 
 
 %description

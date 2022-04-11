@@ -200,7 +200,8 @@ void FahrplanCalendarManager::getCalendarsList()
 #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
   QString uid = settings->value("notebookUID").toString();
 
-  mKCal::ExtendedCalendar::Ptr calendar = mKCal::ExtendedCalendar::Ptr ( new mKCal::ExtendedCalendar( QLatin1String( "UTC" ) ) );
+  //mKCal::ExtendedCalendar::Ptr calendar = mKCal::ExtendedCalendar::Ptr ( new mKCal::ExtendedCalendar( QLatin1String( "UTC" ) ) );
+  mKCal::ExtendedCalendar::Ptr calendar( new mKCal::ExtendedCalendar( QByteArray( "UTC" ) ) );
   mKCal::ExtendedStorage::Ptr storage = mKCal::ExtendedCalendar::defaultStorage( calendar );
   if (storage->open()) {
       mKCal::Notebook::List notebooks = storage->notebooks();
