@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
         //To support calendar access
         #if defined(BUILD_FOR_OPENREPOS)
             qDebug()<<"openrepos.net build";
-            setuid(getpwnam("nemo")->pw_uid);
+            setuid(getpwnam("defaultuser")->pw_uid);
             setgid(getgrnam("privileged")->gr_gid);
         #endif
 

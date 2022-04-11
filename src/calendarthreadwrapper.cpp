@@ -36,7 +36,18 @@ QTM_USE_NAMESPACE
 #   include <extendedcalendar.h>
 #   include <extendedstorage.h>
 #   include <KCalendarCore/Event>
+#   include <KCalendarCore/ICalFormat>
 #   include <QTimeZone>
+#   include <QDesktopServices>
+#   include <QDirIterator>
+#   include <QFile>
+#   include <QTemporaryFile>
+#   include <QTextStream>
+#   include <QSettings>
+#   include <QDir>
+#   include <QUrl>
+
+
 #endif
 
 QString formatStation(const QDateTime dateTime, const QString &stationName, const QString &info = QString())
@@ -165,37 +176,36 @@ void CalendarThreadWrapper::addToCalendar()
 
     emit addCalendarEntryComplete(defaultManager.saveItem(&event));
   #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
+    KCalendarCore::Event::Ptr event( new KCalendarCore::Event() );
+    event->setSummary(calendarEntryTitle);
+    event->setDescription(calendarEntryDesc);
+    event->setDtStart( m_result->departureDateTime() );
+    event->setDtEnd( m_result->arrivalDateTime() );
+    KCalendarCore::ICalFormat format;
+    QString icsData = format.toICalString(event);
+    QTemporaryFile *tmpFile = new QTemporaryFile(
+                QStandardPaths::writableLocation(QStandardPaths::CacheLocation) +
+                QDir::separator() + "event-XXXXXX.ics",
+                this);
+                // destructed and file deleted with this object
 
-    mKCal::ExtendedCalendar::Ptr calendar( new mKCal::ExtendedCalendar( QByteArray( "UTC" ) ) );
-    mKCal::ExtendedStorage::Ptr storage = mKCal::ExtendedCalendar::defaultStorage( calendar );
-    if (storage->open()) {
-        QString uid = settings.value("Calendar/notebookUID").toString();
-        mKCal::Notebook::Ptr notebook = storage->notebook(uid);
-
-        if (!notebook) {
-            notebook = storage->defaultNotebook();
-        }
-
-        if (notebook) {
-            KCalendarCore::Event::Ptr event( new KCalendarCore::Event() );
-            event->setSummary(calendarEntryTitle);
-            event->setDescription(calendarEntryDesc);
-            event->setDtStart( m_result->departureDateTime() );
-            event->setDtEnd( m_result->arrivalDateTime() );
-            calendar->addEvent( event, notebook->uid() );
-            storage->save();
-            emit addCalendarEntryComplete(true);
+    qDebug() << "IcalData: " << icsData;
+    if (tmpFile->open()) {
+        QTextStream stream( tmpFile );
+        stream << icsData;
+        tmpFile->close();
+        qDebug() << "Opening" << tmpFile->fileName();
+        if (!QDesktopServices::openUrl(QUrl("file://" + tmpFile->fileName(), QUrl::TolerantMode))) {
+            qWarning() << "QDesktopServices::openUrl fails!";
         } else {
-            emit addCalendarEntryComplete(false);
+            emit addCalendarEntryComplete(true);
         }
-    } else {
-        emit addCalendarEntryComplete(false);
     }
 #else
     emit addCalendarEntryComplete(false);
 #endif
 
-    QThread::currentThread()->exit(0);
+    //QThread::currentThread()->exit(0);
 
     // Move back to GUI thread so the deleteLater() callback works (it requires
     // an event loop which is still alive)
