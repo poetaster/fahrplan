@@ -166,7 +166,6 @@ void CalendarThreadWrapper::addToCalendar()
     emit addCalendarEntryComplete(defaultManager.saveItem(&event));
   #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
 
-    //mKCal::ExtendedCalendar::Ptr calendar = mKCal::ExtendedCalendar::Ptr ( new mKCal::ExtendedCalendar( QLatin1String( "UTC" ) ) );
     mKCal::ExtendedCalendar::Ptr calendar( new mKCal::ExtendedCalendar( QByteArray( "UTC" ) ) );
     mKCal::ExtendedStorage::Ptr storage = mKCal::ExtendedCalendar::defaultStorage( calendar );
     if (storage->open()) {
@@ -189,29 +188,6 @@ void CalendarThreadWrapper::addToCalendar()
         } else {
             emit addCalendarEntryComplete(false);
         }
-    /*
-    mKCal::ExtendedStorage::Ptr storage = mKCal::ExtendedCalendar::defaultStorage( calendar );
-    if (storage->open()) {
-        QString uid = settings.value("Calendar/notebookUID").toString();
-        mKCal::Notebook::Ptr notebook = storage->notebook(uid);
-
-        if (!notebook) {
-            notebook = storage->defaultNotebook();
-        }
-
-        if (notebook) {
-            KCalCore::Event::Ptr event = KCalCore::Event::Ptr( new KCalCore::Event() );
-            event->setSummary(calendarEntryTitle);
-            event->setDescription(calendarEntryDesc);
-            event->setDtStart( KDateTime(m_result->departureDateTime()) );
-            event->setDtEnd( KDateTime(m_result->arrivalDateTime()) );
-            calendar->addEvent( event, notebook->uid() );
-            storage->save();
-            emit addCalendarEntryComplete(true);
-        } else {
-            emit addCalendarEntryComplete(false);
-        }
-        */
     } else {
         emit addCalendarEntryComplete(false);
     }
