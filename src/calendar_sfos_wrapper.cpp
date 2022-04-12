@@ -17,22 +17,11 @@
 **
 ****************************************************************************/
 
-#include "calendarthreadwrapper.h"
+#include "calendar_sfos_wrapper.h"
 
 #include <QCoreApplication>
 #include <QThread>
 #include <QSettings>
-
-#ifdef BUILD_FOR_BLACKBERRY
-#   include <bb/pim/calendar/CalendarService>
-#   include <bb/pim/calendar/CalendarEvent>
-using namespace bb::pim::calendar;
-#elif defined(BUILD_FOR_HARMATTAN) || defined(BUILD_FOR_MAEMO_5) || defined(BUILD_FOR_SYMBIAN)
-#   include <qmobilityglobal.h>
-#   include <QOrganizerManager>
-#   include <QOrganizerEvent>
-QTM_USE_NAMESPACE
-#elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
 #   include <extendedcalendar.h>
 #   include <extendedstorage.h>
 #   include <KCalendarCore/Event>
@@ -43,21 +32,18 @@ QTM_USE_NAMESPACE
 #   include <QDir>
 #   include <QUrl>
 
-
-#endif
-
-QString formatStation(const QDateTime dateTime, const QString &stationName, const QString &info = QString())
+QString formatStations(const QDateTime dateTime, const QString &stationName, const QString &info = QString())
 {
     QString station;
     if (info.isEmpty()) {
         station = stationName;
     } else {
         //: STATION / PLATFORM
-        station = CalendarThreadWrapper::tr("%1 / %2", "STATION / PLATFORM").arg(stationName, info);
+        station = CalendarSfosWrapper::tr("%1 / %2", "STATION / PLATFORM").arg(stationName, info);
     }
 
     //: DATE TIME   STATION
-    return CalendarThreadWrapper::tr("%1 %2   %3", "DATE TIME   STATION").arg(
+    return CalendarSfosWrapper::tr("%1 %2   %3", "DATE TIME   STATION").arg(
                // TODO: Don't force QLocale::ShortFormat for date, but make it configurable.
                dateTime.toString(QLocale().dateFormat(QLocale::ShortFormat)),
                // Always use short format for time, else you get something like "12:35:00 t".
@@ -65,17 +51,17 @@ QString formatStation(const QDateTime dateTime, const QString &stationName, cons
                station);
 }
 
-CalendarThreadWrapper::CalendarThreadWrapper(JourneyDetailResultList *result, QObject *parent) :
+CalendarSfosWrapper::CalendarSfosWrapper(JourneyDetailResultList *result, QObject *parent) :
     QObject(parent), m_result(result)
 {
 }
 
-CalendarThreadWrapper::~CalendarThreadWrapper()
+CalendarSfosWrapper::~CalendarSfosWrapper()
 {
 
 }
 
-void CalendarThreadWrapper::addToCalendar()
+void CalendarSfosWrapper::addToCalendar()
 {
 
     const QString viaStation = m_result->viaStation();
@@ -105,7 +91,7 @@ void CalendarThreadWrapper::addToCalendar()
         if (!compactFormat && !train.isEmpty())
             calendarEntryDesc.append("--- ").append(train).append(" ---\n");
 
-        calendarEntryDesc.append(formatStation(item->departureDateTime(),
+        calendarEntryDesc.append(formatStations(item->departureDateTime(),
                                                item->departureStation(),
                                                item->departureInfo()));
         calendarEntryDesc.append("\n");
@@ -113,7 +99,7 @@ void CalendarThreadWrapper::addToCalendar()
         if (compactFormat && !train.isEmpty())
             calendarEntryDesc.append("--- ").append(train).append(" ---\n");
 
-        calendarEntryDesc.append(formatStation(item->arrivalDateTime(),
+        calendarEntryDesc.append(formatStations(item->arrivalDateTime(),
                                                item->arrivalStation(),
                                                item->arrivalInfo()));
         calendarEntryDesc.append("\n");
@@ -129,49 +115,6 @@ void CalendarThreadWrapper::addToCalendar()
         calendarEntryDesc.append(
             tr("-- \nAdded by Fahrplan. Please, re-check the information before your journey."));
 
-#ifdef BUILD_FOR_BLACKBERRY
-
-    CalendarService service;
-
-    QPair<AccountId, FolderId> folder;
-
-    settings.beginGroup("Calendar");
-    folder.first = settings.value("AccountId", -1).toInt();
-    if (folder.first >= 0)
-        folder.second = settings.value("FolderId", -1).toInt();
-
-    if ((folder.first < 0) || (folder.second < 0))
-        folder = service.defaultCalendarFolder();
-
-    CalendarEvent event;
-    event.setAccountId(folder.first);
-    event.setFolderId(folder.second);
-    event.setSubject(calendarEntryTitle);
-    event.setStartTime(m_result->departureDateTime());
-    event.setEndTime(m_result->arrivalDateTime());
-    event.setBody(calendarEntryDesc);
-    event.setReminder(-1);
-
-    emit addCalendarEntryComplete(service.createEvent(event) == Result::Success);
-
-#elif defined(BUILD_FOR_HARMATTAN) || defined(BUILD_FOR_MAEMO_5) || defined(BUILD_FOR_SYMBIAN)
-
-    QOrganizerManager defaultManager;
-    QOrganizerEvent event;
-    event.setDisplayLabel(calendarEntryTitle);
-    event.setStartDateTime(m_result->departureDateTime());
-    event.setEndDateTime(m_result->arrivalDateTime());
-    event.setDescription(calendarEntryDesc);
-
-    QString id = settings.value("Calendar/CollectionId").toString();
-    if (!id.isEmpty()) {
-        QOrganizerCollectionId collectionId = QOrganizerCollectionId::fromString(id);
-        if (!collectionId.isNull())
-            event.setCollectionId(collectionId);
-    }
-
-    emit addCalendarEntryComplete(defaultManager.saveItem(&event));
-  #elif defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
     KCalendarCore::Event::Ptr event( new KCalendarCore::Event() );
     event->setSummary(calendarEntryTitle);
     event->setDescription(calendarEntryDesc);
@@ -193,20 +136,11 @@ void CalendarThreadWrapper::addToCalendar()
         tmpFile->close();
         qDebug() << "Opening" << tmpFile->fileName();
         if ( !QDesktopServices::openUrl(QUrl::fromLocalFile(tmpFile->fileName())) ) 
-        {
+	{
             qWarning() << "QDesktopServices::openUrl fails!";
             emit addCalendarEntryComplete(false);
         } else {
             emit addCalendarEntryComplete(true);
         }
     }
-#else
-    emit addCalendarEntryComplete(false);
-#endif
-    // We have to move this for now
-    //		QThread::currentThread()->exit(0);
-
-    // Move back to GUI thread so the deleteLater() callback works (it requires
-    // an event loop which is still alive)
-    moveToThread(QCoreApplication::instance()->thread());
 }

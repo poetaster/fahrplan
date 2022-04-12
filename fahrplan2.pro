@@ -101,6 +101,7 @@ INCLUDEPATH += src
 unix:!symbian: LIBS += -lz
 
 HEADERS += \
+    src/calendar_sfos_wrapper.h \
     src/parser/parser_hafasxml.h \
     src/parser/parser_abstract.h \
     src/parser/parser_definitions.h \
@@ -135,6 +136,7 @@ HEADERS += \
     src/models/backends.h
 
 SOURCES += src/main.cpp \
+    src/calendar_sfos_wrapper.cpp \
     src/parser/parser_hafasxml.cpp \
     src/parser/parser_abstract.cpp \
     src/parser/parser_definitions.cpp \

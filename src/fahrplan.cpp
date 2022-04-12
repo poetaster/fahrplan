@@ -26,8 +26,11 @@
 #include "models/timetable.h"
 #include "models/trainrestrictions.h"
 #include "models/backends.h"
-
 #include <QThread>
+
+#ifdef defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
+#include "calendar_sfos_wrapper.h"
+#endif
 
 FahrplanBackendManager *Fahrplan::m_parser_manager = NULL;
 StationSearchResults *Fahrplan::m_stationSearchResults= NULL;
@@ -387,6 +390,12 @@ void Fahrplan::setParser(int index)
 
 void Fahrplan::addJourneyDetailResultToCalendar(JourneyDetailResultList *result)
 {
+#ifdef defined(BUILD_FOR_SAILFISHOS) && defined(BUILD_FOR_OPENREPOS)
+
+    CalendarSfosWrapper *wrapper = new CalendarSFosWrapper(result);
+    connect(wrapper, SLOT( addToCalendar() ) );
+    connect(wrapper,SIGNAL(addCalendarEntryComplete(bool)), SIGNAL(addCalendarEntryComplete(bool)));
+#else
     QThread *workerThread = new QThread(this);
     CalendarThreadWrapper *wrapper = new CalendarThreadWrapper(result);
 
@@ -398,6 +407,7 @@ void Fahrplan::addJourneyDetailResultToCalendar(JourneyDetailResultList *result)
 
     wrapper->moveToThread(workerThread);
     workerThread->start();
+#endif
 }
 
 Station Fahrplan::getStation(StationType type) const
