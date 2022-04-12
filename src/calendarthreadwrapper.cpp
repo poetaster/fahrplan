@@ -37,13 +37,9 @@ QTM_USE_NAMESPACE
 #   include <extendedstorage.h>
 #   include <KCalendarCore/Event>
 #   include <KCalendarCore/ICalFormat>
-#   include <QTimeZone>
 #   include <QDesktopServices>
-#   include <QDirIterator>
-#   include <QFile>
 #   include <QTemporaryFile>
 #   include <QTextStream>
-#   include <QSettings>
 #   include <QDir>
 #   include <QUrl>
 
@@ -184,18 +180,20 @@ void CalendarThreadWrapper::addToCalendar()
     KCalendarCore::ICalFormat format;
     QString icsData = format.toICalString(event);
     QTemporaryFile *tmpFile = new QTemporaryFile(
-                QStandardPaths::writableLocation(QStandardPaths::CacheLocation) +
-                QDir::separator() + "event-XXXXXX.ics",
+                QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) +
+	       	QDir::separator() + "event-XXXXXX.ics",
                 this);
                 // destructed and file deleted with this object
 
-    qDebug() << "IcalData: " << icsData;
-    if (tmpFile->open()) {
+    //qDebug() << "IcalData: " << icsData;
+    if (tmpFile->open()) 
+    {
         QTextStream stream( tmpFile );
         stream << icsData;
         tmpFile->close();
         qDebug() << "Opening" << tmpFile->fileName();
-        if (!QDesktopServices::openUrl(QUrl("file://" + tmpFile->fileName(), QUrl::TolerantMode))) {
+        if ( !QDesktopServices::openUrl(QUrl::fromLocalFile(tmpFile->fileName())) ) 
+	{
             qWarning() << "QDesktopServices::openUrl fails!";
             emit addCalendarEntryComplete(false);
         } else {
@@ -205,8 +203,8 @@ void CalendarThreadWrapper::addToCalendar()
 #else
     emit addCalendarEntryComplete(false);
 #endif
-
-    //QThread::currentThread()->exit(0);
+    // We have to move this for now
+    //		QThread::currentThread()->exit(0);
 
     // Move back to GUI thread so the deleteLater() callback works (it requires
     // an event loop which is still alive)
