@@ -676,8 +676,6 @@ void ParserEFA::parseTimeTable(QNetworkReply *networkReply)
             item.platform = departure.attribute("platformName");
             QDomElement servingLineElement = departure.firstChildElement("itdServingLine");
 
-            qDebug() << "Entry color: " << servingLineElement.;
-
             item.destinationStation = servingLineElement.attribute("direction");
             item.trainType = servingLineElement.attribute("motType");
             QDomElement dateTimeElement = departure.firstChildElement("itdDateTime");
