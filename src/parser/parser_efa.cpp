@@ -65,6 +65,7 @@
  *  http://mobil.efa.de/mobile3/    GVH
  *  Donau-Iller-Nahverkehrsverbund-GmbH;    http://www.ding.eu/fahrplaene/fahrplanauskunft.html
  *  http://195.30.98.162:8081/vvv2/     Verkehrsverbund Vogtland (VVV), In West-Sachsen
+ * http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
 
  *
  *  Ireland
@@ -165,7 +166,7 @@ void ParserEFA::findStationsByName(const QString &stationName)
     query.addQueryItem("language", "en");
     query.addQueryItem("locationServerActive", "1");
     query.addQueryItem("outputFormat", "XML");
-    query.addQueryItem("type_sf", "stop");  // could be any, poi or stop
+    query.addQueryItem("type_sf", "any");  // could be any, poi or stop
     query.addQueryItem("coordOutputFormat","WGS84");
     //<input name="locality_origin" id="locality_origin" value="Cork" type="hidden">
     query.addQueryItem("name_sf", stationName);
@@ -322,6 +323,8 @@ void ParserEFA::parseStationsByName(QNetworkReply *networkReply)
 
     StationsList result;
     QDomDocument doc("result");
+
+    // http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
 
     QByteArray data = readNetworkReply(networkReply);
     if (doc.setContent(data, false)) {

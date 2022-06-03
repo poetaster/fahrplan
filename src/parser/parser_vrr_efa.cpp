@@ -22,11 +22,18 @@
 #include <QBuffer>
 #include <QDomDocument>
 #include <QFile>
-#include <QNetworkReply>
+#include <QtCore/QUrl>
+#if defined(BUILD_FOR_QT5)
+    #include <QUrlQuery>
+#endif
+
+//http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
 
 ParserVRREFA::ParserVRREFA(QObject *parent) :
     ParserEFA(parent)
 {
+    // new    https://www.vrr.de/vrr-efa
+    //baseRestUrl = "https://www.vrr.de/vrr-efa/";
     baseRestUrl = "http://efa.vrr.de/standard/";
     acceptEncoding = "gzip";
 }
@@ -40,4 +47,43 @@ QStringList ParserVRREFA::getTrainRestrictions()
     result.append(tr("Tram"));
     result.append(tr("Bus"));
     return result;
+}
+
+/*
+ * efa in VRR requires some extra params which are ok for münich, but break sydney
+*/
+void ParserVRREFA::findStationsByName(const QString &stationName)
+{
+    // http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
+
+    qDebug() << "ParserEFA::findStationsByName(" <<  stationName << ")";
+    if (currentRequestState != FahrplanNS::noneRequest) {
+        return;
+    }
+    currentRequestState = FahrplanNS::stationsByNameRequest;
+    QUrl uri(baseRestUrl + "XML_STOPFINDER_REQUEST");
+
+#if defined(BUILD_FOR_QT5)
+    QUrlQuery query;
+#else
+    QUrl query;
+#endif
+    query.addQueryItem("language", "en");
+    query.addQueryItem("locationServerActive", "1");
+    query.addQueryItem("outputFormat", "XML");
+    query.addQueryItem("type_sf", "any");  // could be any, poi or stop
+    query.addQueryItem("coordOutputFormat","WGS84");
+    //doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1
+    // these break sydney
+    query.addQueryItem("doNotSearchForStops_sf","1");
+    query.addQueryItem("locationInfoActive","1");
+    query.addQueryItem("locationServerActive","1");
+    query.addQueryItem("name_sf", stationName);
+#if defined(BUILD_FOR_QT5)
+    uri.setQuery(query);
+#else
+    uri.setQueryItems(query.queryItems());
+#endif
+    sendHttpRequest(uri);
+    //qDebug() << "search station url:" << uri;
 }

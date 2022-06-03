@@ -32,6 +32,8 @@ public:
     virtual QString name() { return getName(); }
     virtual QString shortName() { return "vrr.de"; }
 
+    virtual void findStationsByName(const QString &stationName);
+
 protected:
     QStringList getTrainRestrictions();
 
