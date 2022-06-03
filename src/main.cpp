@@ -91,10 +91,12 @@ void migrateConf()
 
     qDebug() <<"configfile: "<< oldConfigFileStr ;
     qDebug() <<"newfile: "<< newConfigFileStr ;
-    if (!config.exists("de.smurfy/harbour-fahrplan2"))
+    if (!config.exists("de.smurfy/harbour-fahrplan2/fahrplan2.conf"))
+    {
         config.mkpath("de.smurfy/harbour-fahrplan2");
-    QFile cCnf(oldConfigFileStr);
-    cCnf.copy(newConfigFileStr);
+        QFile cCnf(oldConfigFileStr);
+        cCnf.copy(newConfigFileStr);
+     }
 }
 #endif
 

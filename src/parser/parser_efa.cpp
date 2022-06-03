@@ -675,11 +675,15 @@ void ParserEFA::parseTimeTable(QNetworkReply *networkReply)
             TimetableEntry item;
             item.platform = departure.attribute("platformName");
             QDomElement servingLineElement = departure.firstChildElement("itdServingLine");
+
+            qDebug() << "Entry color: " << servingLineElement.;
+
             item.destinationStation = servingLineElement.attribute("direction");
             item.trainType = servingLineElement.attribute("motType");
             QDomElement dateTimeElement = departure.firstChildElement("itdDateTime");
             const QDateTime scheduledDateTime = parseItdDateTime(dateTimeElement);
             item.time = scheduledDateTime.time();
+
             const QString realTimeStr = departure.attribute("countdown");    // In minutes from search time
             if (!realTimeStr.isEmpty()) {
                 const int realCountdown = realTimeStr.toInt();
