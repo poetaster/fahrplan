@@ -166,7 +166,7 @@ void ParserEFA::findStationsByName(const QString &stationName)
     query.addQueryItem("language", "en");
     query.addQueryItem("locationServerActive", "1");
     query.addQueryItem("outputFormat", "XML");
-    query.addQueryItem("type_sf", "any");  // could be any, poi or stop
+    query.addQueryItem("type_sf", "stop");  // could be any, poi or stop
     query.addQueryItem("coordOutputFormat","WGS84");
     //<input name="locality_origin" id="locality_origin" value="Cork" type="hidden">
     query.addQueryItem("name_sf", stationName);

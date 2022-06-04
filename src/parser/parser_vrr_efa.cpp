@@ -79,6 +79,25 @@ void ParserVRREFA::findStationsByName(const QString &stationName)
     query.addQueryItem("locationInfoActive","1");
     query.addQueryItem("locationServerActive","1");
     query.addQueryItem("name_sf", stationName);
+
+    /*
+     * convertAddressesITKernel2LocationServer 1
+    convertCoord2LocationServer 1
+    convertCrossingsITKernel2LocationServer 1
+    convertPOIsITKernel2LocationServer 1
+    convertStopsPTKernel2LocationServer 1
+    coordOutputFormat WGS84[dd.ddddd]
+    doNotSearchForStops_sf 1
+    language en
+    locationInfoActive 1
+    locationServerActive 1
+    name_sf Solingen
+    outputFormat rapidJSON
+    serverInfo 1
+    type_sf any
+    vrrStopFinderMacro 1
+    */
+
 #if defined(BUILD_FOR_QT5)
     uri.setQuery(query);
 #else
