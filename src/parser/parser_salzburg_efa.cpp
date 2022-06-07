@@ -27,7 +27,9 @@
 ParserSalzburgEFA::ParserSalzburgEFA(QObject *parent) :
     ParserEFA(parent)
 {
-    baseRestUrl = "https://efa.svv-info.at/svv/";
+    // MIGRATE to hafas
+    //baseRestUrl = "https://efa.svv-info.at/svv/";
+    baseRestUrl = "https://fahrplan.salzburg-verkehr.at/bin/mgate.exe";
     acceptEncoding = "gzip";
 }
 

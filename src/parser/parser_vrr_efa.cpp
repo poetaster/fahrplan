@@ -28,13 +28,30 @@
 #endif
 
 //http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
-
+/*
+https://www.vrr.de/vrr-efa/XML_STOPFINDER_REQUEST?
+convertAddressesITKernel2LocationServer=1
+&convertCoord2LocationServer=1
+&convertCrossingsITKernel2LocationServer=1
+&convertPOIsITKernel2LocationServer=1
+&convertStopsPTKernel2LocationServer=1
+&coordOutputFormat=WGS84%5Bdd.ddddd%5D
+&doNotSearchForStops_sf=1
+&language=en
+&locationInfoActive=1
+&locationServerActive=1
+&name_sf=E
+&outputFormat=rapidJSON
+&serverInfo=1
+&type_sf=any
+&vrrStopFinderMacro=1
+*/
 ParserVRREFA::ParserVRREFA(QObject *parent) :
     ParserEFA(parent)
 {
     // new    https://www.vrr.de/vrr-efa
-    //baseRestUrl = "https://www.vrr.de/vrr-efa/";
-    baseRestUrl = "http://efa.vrr.de/standard/";
+    baseRestUrl = "https://www.vrr.de/vrr-efa/";
+    //baseRestUrl = "http://efa.vrr.de/standard/";
     acceptEncoding = "gzip";
 }
 
@@ -68,35 +85,26 @@ void ParserVRREFA::findStationsByName(const QString &stationName)
 #else
     QUrl query;
 #endif
+    /*
+&coordOutputFormat=WGS84%5Bdd.ddddd%5D
+&outputFormat=rapidJSON
+&type_sf=any */
     query.addQueryItem("language", "en");
-    query.addQueryItem("locationServerActive", "1");
+    //query.addQueryItem("convertAddressesITKernel2LocationServer", "1");
+    //query.addQueryItem("convertCoord2LocationServer", "1");
+    //query.addQueryItem("convertCrossingsITKernel2LocationServe", "1");
+    //query.addQueryItem("convertPOIsITKernel2LocationServer", "1");
+    //query.addQueryItem("convertStopsPTKernel2LocationServer", "1");
+    //query.addQueryItem("convertStopsPTKernel2LocationServer", "1");
+    //query.addQueryItem("serverInfo", "1");
     query.addQueryItem("outputFormat", "XML");
     query.addQueryItem("type_sf", "any");  // could be any, poi or stop
     query.addQueryItem("coordOutputFormat","WGS84");
-    //doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1
-    // these break sydney
     query.addQueryItem("doNotSearchForStops_sf","1");
     query.addQueryItem("locationInfoActive","1");
-    query.addQueryItem("locationServerActive","1");
+    query.addQueryItem("locationServerActive", "1");
+    query.addQueryItem("anyObjFilter_sf", "2");
     query.addQueryItem("name_sf", stationName);
-
-    /*
-     * convertAddressesITKernel2LocationServer 1
-    convertCoord2LocationServer 1
-    convertCrossingsITKernel2LocationServer 1
-    convertPOIsITKernel2LocationServer 1
-    convertStopsPTKernel2LocationServer 1
-    coordOutputFormat WGS84[dd.ddddd]
-    doNotSearchForStops_sf 1
-    language en
-    locationInfoActive 1
-    locationServerActive 1
-    name_sf Solingen
-    outputFormat rapidJSON
-    serverInfo 1
-    type_sf any
-    vrrStopFinderMacro 1
-    */
 
 #if defined(BUILD_FOR_QT5)
     uri.setQuery(query);
