@@ -377,8 +377,9 @@ void ParserEFA::parseStationsByName(QNetworkReply *networkReply)
                 Station item;
                 item.name = nameElement.text();
                 // sidney
-                if(item.name.isNull())
+                if(item.name.isNull() || item.name == "")
                     item.name = nameElement.attribute("objectName");
+                qDebug() << "objectName: " << nameElement.attribute("objectName") ;
                 item.id = nameElement.attribute("stopID");
                 if(item.id.isNull())
                     item.id = nameElement.attribute("id");
@@ -386,7 +387,8 @@ void ParserEFA::parseStationsByName(QNetworkReply *networkReply)
                 item.longitude = nameElement.attribute("y").toDouble();
 
                 result << item;
-                //qDebug() << "Namelist: " << item.name ;
+                qDebug() << "Namelist: " << item.name ;
+                qDebug() << "id: " << item.id ;
             }
         }
         checkForError(&doc);
