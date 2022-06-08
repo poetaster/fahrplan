@@ -32,7 +32,6 @@ QStringList FahrplanBackendManager::getParserList()
     result.append(ParserMobileBahnDe::getName());
     result.append(ParserXmlOebbAt::getName());
     result.append(ParserXmlRejseplanenDk::getName());
-    result.append(ParserXmlSbbCh::getName());
     result.append(ParserXmlNri::getName());
     result.append(ParserXmlVasttrafikSe::getName());
     result.append(ParserPTVVicGovAu::getName());
