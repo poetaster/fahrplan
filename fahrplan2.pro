@@ -127,7 +127,6 @@ HEADERS += \
     src/parser/parser_efa.h \
     src/parser/parser_ireland_efa.h \
     src/parser/parser_sydney_efa.h \
-    src/parser/parser_sf_bay_efa.h \
     src/parser/parser_dubai_efa.h \
     src/parser/parser_ninetwo.h \
     src/parser/parser_munich_efa.h \
@@ -163,7 +162,6 @@ SOURCES += src/main.cpp \
     src/parser/parser_efa.cpp \
     src/parser/parser_ireland_efa.cpp \
     src/parser/parser_sydney_efa.cpp \
-    src/parser/parser_sf_bay_efa.cpp \
     src/parser/parser_dubai_efa.cpp \
     src/parser/parser_ninetwo.cpp \
     src/parser/parser_munich_efa.cpp \
