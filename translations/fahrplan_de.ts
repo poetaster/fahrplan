@@ -2555,6 +2555,10 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <translation>Schiff</translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_search_ch.cpp" line="75"/>
+        <source>Walk</source>
+        <translation>Fussweg</translation>
+    </message>
 </context>
 <context>
     <name>ParserSydneyEFA</name>

@@ -2,7 +2,7 @@
 APP_NAME = Fahrplan
 
 # Define Version
-VERSION = 2.0.40-1
+VERSION = 2.0.41-1
 
 #CONFIG+= openrepos
 
@@ -142,7 +142,7 @@ SOURCES += src/main.cpp \
     src/calendar_sfos_wrapper.cpp \
     src/fahrplan_parser_thread.cpp \
     src/fahrplan_calendar_manager.cpp \
-    src/models/backends.cpp
+    src/models/backends.cpp \
     src/models/stationslistmodel.cpp \
     src/models/favorites.cpp \
     src/models/stationsearchresults.cpp \
@@ -167,7 +167,8 @@ SOURCES += src/main.cpp \
     src/parser/parser_xmlrejseplanendk.cpp \
     src/parser/parser_xmloebbat.cpp \
     src/parser/parser_xmlvasttrafikse.cpp \
-    src/parser/parser_search_ch.cpp \
+    src/parser/parser_search_ch.cpp
+
 
 LIBS += $$PWD/3rdparty/gauss-kruger-cpp/gausskruger.cpp
 
