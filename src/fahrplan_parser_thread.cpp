@@ -164,6 +164,9 @@ void FahrplanParserThread::run()
         case 13:
             m_parser = new ParserVRREFA();
             break;
+        case 14:
+            m_parser = new ParserSearchCH();
+            break;
     }
 
     m_name = m_parser->name();

@@ -102,26 +102,21 @@ INCLUDEPATH += src
 unix:!symbian: LIBS += -lz
 
 HEADERS += \
-    src/parser/parser_hafasxml.h \
-    src/parser/parser_abstract.h \
-    src/parser/parser_definitions.h \
-    src/parser/parser_xmlrejseplanendk.h \
-    src/parser/parser_xmloebbat.h \
-    src/parser/parser_xmlvasttrafikse.h \
     src/fahrplan.h \
     src/fahrplan_backend_manager.h \
-    src/parser/parser_mobilebahnde.h \
     src/calendarthreadwrapper.h \
     src/calendar_sfos_wrapper.h \
-    src/parser/parser_xmlnri.h \
-    src/parser/parser_hafasbinary.h \
     src/fahrplan_parser_thread.h \
     src/fahrplan_calendar_manager.h \
+    src/models/backends.h \
     src/models/stationslistmodel.h \
     src/models/favorites.h \
     src/models/stationsearchresults.h \
     src/models/timetable.h \
     src/models/trainrestrictions.h \
+    src/parser/parser_xmlnri.h \
+    src/parser/parser_hafasbinary.h \
+    src/parser/parser_mobilebahnde.h \
     src/parser/parser_ptvvicgovau.h \
     src/parser/parser_efa.h \
     src/parser/parser_ireland_efa.h \
@@ -132,29 +127,30 @@ HEADERS += \
     src/parser/parser_resrobot.h \
     src/parser/parser_finland_matka.h \
     src/parser/parser_vrr_efa.h \
-    src/models/backends.h
+    src/parser/parser_hafasxml.h \
+    src/parser/parser_abstract.h \
+    src/parser/parser_definitions.h \
+    src/parser/parser_xmlrejseplanendk.h \
+    src/parser/parser_xmloebbat.h \
+    src/parser/parser_xmlvasttrafikse.h \
+    src/parser/parser_search_ch.h 
 
 SOURCES += src/main.cpp \
-    src/parser/parser_hafasxml.cpp \
-    src/parser/parser_abstract.cpp \
-    src/parser/parser_definitions.cpp \
-    src/parser/parser_xmlrejseplanendk.cpp \
-    src/parser/parser_xmloebbat.cpp \
-    src/parser/parser_xmlvasttrafikse.cpp \
     src/fahrplan.cpp \
     src/fahrplan_backend_manager.cpp \
-    src/parser/parser_mobilebahnde.cpp \
     src/calendarthreadwrapper.cpp \
     src/calendar_sfos_wrapper.cpp \
-    src/parser/parser_xmlnri.cpp \
-    src/parser/parser_hafasbinary.cpp \
     src/fahrplan_parser_thread.cpp \
     src/fahrplan_calendar_manager.cpp \
+    src/models/backends.cpp
     src/models/stationslistmodel.cpp \
     src/models/favorites.cpp \
     src/models/stationsearchresults.cpp \
     src/models/timetable.cpp \
     src/models/trainrestrictions.cpp \
+    src/parser/parser_mobilebahnde.cpp \
+    src/parser/parser_xmlnri.cpp \
+    src/parser/parser_hafasbinary.cpp \
     src/parser/parser_ptvvicgovau.cpp \
     src/parser/parser_efa.cpp \
     src/parser/parser_ireland_efa.cpp \
@@ -165,7 +161,13 @@ SOURCES += src/main.cpp \
     src/parser/parser_resrobot.cpp \
     src/parser/parser_finland_matka.cpp \
     src/parser/parser_vrr_efa.cpp \
-    src/models/backends.cpp
+    src/parser/parser_hafasxml.cpp \
+    src/parser/parser_abstract.cpp \
+    src/parser/parser_definitions.cpp \
+    src/parser/parser_xmlrejseplanendk.cpp \
+    src/parser/parser_xmloebbat.cpp \
+    src/parser/parser_xmlvasttrafikse.cpp \
+    src/parser/parser_search_ch.cpp \
 
 LIBS += $$PWD/3rdparty/gauss-kruger-cpp/gausskruger.cpp
 
