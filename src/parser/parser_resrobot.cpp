@@ -26,7 +26,7 @@ ParserResRobot::ParserResRobot(QObject *parent) :
         ParserAbstract(parent),
         timetableAPIKey(QLatin1String("75d0c2b5-c179-489c-90c2-eb6d2bc8970c")),
         journeyAPIKey(QLatin1String("c8436ea6-3c7e-489f-93b1-5b636fc55f2e")),
-        baseURL(QLatin1String("https://api.resrobot.se/v2"))
+        baseURL(QLatin1String("https://api.resrobot.se/v2.1"))
 {
 #ifdef Q_OS_SYMBIAN
     // Symbian doesn't support SNI - ignore hostname mismatch
@@ -182,7 +182,7 @@ void ParserResRobot::findStationsByName(const QString &stationName)
 #else
     QUrl query;
 #endif
-    query.addQueryItem("key", journeyAPIKey);
+    query.addQueryItem("accessId", journeyAPIKey);
     query.addQueryItem("input", stationName);
     query.addQueryItem("maxNo", "30"); // Max number of results
     if (QLocale().language() == QLocale::Swedish)
@@ -212,7 +212,7 @@ void ParserResRobot::findStationsByCoordinates(qreal longitude, qreal latitude)
 #else
     QUrl query;
 #endif
-    query.addQueryItem("key", journeyAPIKey);
+    query.addQueryItem("accessId", journeyAPIKey);
     query.addQueryItem("originCoordLat", QString::number(latitude));
     query.addQueryItem("originCoordLong", QString::number(longitude));
     query.addQueryItem("r", "1000"); // Radius in meters
@@ -254,13 +254,12 @@ void ParserResRobot::getTimeTableForStation(const Station &currentStation,
 #else
     QUrl query;
 #endif
-    query.addQueryItem("key", timetableAPIKey);
+    query.addQueryItem("accessId", timetableAPIKey);
     query.addQueryItem("id", stationIDv2(currentStation.id.toString()));
     if (directionStation.valid)
         query.addQueryItem("direction", stationIDv2(directionStation.id.toString()));
     query.addQueryItem("date", dateTime.toString("yyyy-MM-dd"));
     query.addQueryItem("time", dateTime.toString("hh:mm"));
-    query.addQueryItem("maxJourneys", "30"); // Max number of results
     query.addQueryItem("passlist", "0"); // We don't need any intermediate stops in the result
     QString formattedRestrictions(formatRestrictions(trainrestrictions));
     if (!formattedRestrictions.isEmpty())
@@ -345,7 +344,7 @@ void ParserResRobot::doSearchJourney(QUrl query)
     QUrl url = baseURL + QLatin1String("/trip");
     if (lastJourneySearch.mode == Arrival)
         query.addQueryItem("searchForArrival", "1");
-    query.addQueryItem("key", journeyAPIKey);
+    query.addQueryItem("accessId", journeyAPIKey);
     query.addQueryItem("originId", lastJourneySearch.from.id.toString());
     if (lastJourneySearch.via.valid)
         query.addQueryItem("viaId", lastJourneySearch.via.id.toString());
@@ -449,7 +448,7 @@ void ParserResRobot::parseStationsByName(QNetworkReply *networkReply)
     foreach (QVariant stationData, stations) {
         const QVariantMap& station = stationData.toMap();
         Station s;
-        s.id = station.value("id").toString();
+        s.id = station.value("extId").toString();
         s.name = station.value("name").toString();
         s.latitude = station.value("lat").toDouble();
         s.longitude = station.value("lon").toDouble();
@@ -475,7 +474,7 @@ void ParserResRobot::parseStationsByCoordinates(QNetworkReply *networkReply)
     foreach (QVariant stationData, stations) {
         const QVariantMap& station = stationData.toMap();
         Station s;
-        s.id = station.value("id").toString();
+        s.id = station.value("extId").toString();
         s.name = station.value("name").toString();
         s.latitude = station.value("lat").toDouble();
         s.longitude = station.value("lon").toDouble();
