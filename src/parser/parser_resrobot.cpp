@@ -24,8 +24,8 @@
 
 ParserResRobot::ParserResRobot(QObject *parent) :
         ParserAbstract(parent),
-        timetableAPIKey(QLatin1String("75d0c2b5-c179-489c-90c2-eb6d2bc8970c")),
-        journeyAPIKey(QLatin1String("c8436ea6-3c7e-489f-93b1-5b636fc55f2e")),
+        timetableAPIKey(QLatin1String("d60211b4-50f6-4edd-acfa-d3654fec2fa3")),
+        journeyAPIKey(QLatin1String("d60211b4-50f6-4edd-acfa-d3654fec2fa3")),
         baseURL(QLatin1String("https://api.resrobot.se/v2.1"))
 {
 #ifdef Q_OS_SYMBIAN
@@ -196,7 +196,9 @@ void ParserResRobot::findStationsByName(const QString &stationName)
     url.setQuery(query);
 #else
     url.setQueryItems(query.queryItems());
+
 #endif
+    qDebug() << "Searching for stations:" << url.toString();
     sendHttpRequest(url);
 }
 
@@ -443,15 +445,20 @@ void ParserResRobot::parseStationsByName(QNetworkReply *networkReply)
         emit errorOccured(tr("Cannot parse reply from the server"));
         return;
     }
-    QVariantList stations = doc.value("StopLocation").toList();
+
+    QVariantList stations = doc.value("stopLocationOrCoordLocation").toList();
     StationsList result;
     foreach (QVariant stationData, stations) {
-        const QVariantMap& station = stationData.toMap();
+
+        const QVariantMap& ss = stationData.toMap();
         Station s;
+
+        QVariantMap station = ss["StopLocation"].toMap() ;
         s.id = station.value("extId").toString();
         s.name = station.value("name").toString();
         s.latitude = station.value("lat").toDouble();
         s.longitude = station.value("lon").toDouble();
+
         result.append(s);
     }
 
