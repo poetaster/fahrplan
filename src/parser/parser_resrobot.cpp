@@ -452,8 +452,9 @@ void ParserResRobot::parseStationsByName(QNetworkReply *networkReply)
 
         const QVariantMap& ss = stationData.toMap();
         Station s;
-
+        // could inline
         QVariantMap station = ss["StopLocation"].toMap() ;
+
         s.id = station.value("extId").toString();
         s.name = station.value("name").toString();
         s.latitude = station.value("lat").toDouble();
@@ -504,7 +505,15 @@ void ParserResRobot::parseSearchJourney(QNetworkReply *networkReply)
 
     searchEarlierReference = doc.value("scrB").toString();
     searchLaterReference = doc.value("scrF").toString();
+
     QVariantList journeyListData = doc.value("Trip").toList();
+
+/*  The meta Origina and dest are now here as of 2.1 vers.
+    QVariantMap dest =journeyListData[0].toMap() ;
+    QVariantList segments = journeyData.value("LegList").toMap().value("Leg").toList();
+    qDebug() << "Trip 0 Orig:\n" << dest.value("Origin").toMap().value("name").toString() ;
+    qDebug() << "Trip 0 Dest:\n" << dest.value("Destination").toMap().value("name").toString() ;
+*/
 
     cachedResults.clear();
 
@@ -637,14 +646,16 @@ QList<JourneyDetailResultItem*> ParserResRobot::parseJourneySegments(const QVari
         QString distance;
         QString operatorInfo;
         QString transportMainType = segment.value("type").toString();
+
         if (transportMainType == "WALK" || transportMainType == "TRSF") {
             distance = segment.value("dist").toString();
             resultItem->setInternalData1("WALK");
             resultItem->setTrain(tr("Walk"));
         } else if (transportMainType == "JNY") {
-            QVariantMap product = segment.value("Product").toMap();
+            QVariantMap product = segment.value("Product").toList()[0].toMap();
             QString transportType = transportMode(product.value("catOutS").toString(),
                                                            product.value("catOutL").toString());
+
             QString lineNumber = product.value("num").toString();
             if (!lineNumber.isEmpty())
                 transportType += " " + lineNumber;
