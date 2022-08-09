@@ -449,17 +449,13 @@ void ParserResRobot::parseStationsByName(QNetworkReply *networkReply)
     QVariantList stations = doc.value("stopLocationOrCoordLocation").toList();
     StationsList result;
     foreach (QVariant stationData, stations) {
-
         const QVariantMap& ss = stationData.toMap();
-        Station s;
-        // could inline
         QVariantMap station = ss["StopLocation"].toMap() ;
-
+        Station s;
         s.id = station.value("extId").toString();
         s.name = station.value("name").toString();
         s.latitude = station.value("lat").toDouble();
         s.longitude = station.value("lon").toDouble();
-
         result.append(s);
     }
 
@@ -477,10 +473,12 @@ void ParserResRobot::parseStationsByCoordinates(QNetworkReply *networkReply)
         return;
     }
 
-    QVariantList stations = doc.value("StopLocation").toList();
+    QVariantList stations = doc.value("stopLocationOrCoordLocation").toList();
+    //QVariantList stations = doc.value("StopLocation").toList();
     StationsList result;
     foreach (QVariant stationData, stations) {
-        const QVariantMap& station = stationData.toMap();
+        const QVariantMap& ss = stationData.toMap();
+        QVariantMap station = ss["StopLocation"].toMap() ;
         Station s;
         s.id = station.value("extId").toString();
         s.name = station.value("name").toString();
