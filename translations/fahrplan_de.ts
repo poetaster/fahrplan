@@ -2039,13 +2039,13 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="90"/>
         <source>Airport transfer (bus)</source>
-        <translation type="unfinished"></translation>
+        <translation>Flughafen Transfer (Bus)</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="91"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="92"/>
         <source>replacement bus</source>
-        <translation type="unfinished"></translation>
+        <translation>Ersatzbus</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="96"/>
@@ -2053,54 +2053,54 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/parser/parser_resrobot.cpp" line="98"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="99"/>
         <source>Express ferry</source>
-        <translation type="unfinished"></translation>
+        <translation>Express Fähre</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="96"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="99"/>
         <source>yellow dep</source>
-        <translation type="unfinished"></translation>
+        <translation>Gelbes Depot</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="97"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="98"/>
         <source>white dep</source>
-        <translation type="unfinished"></translation>
+        <translation>Weißes Depot</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="101"/>
         <source>Airport transfer (train)</source>
-        <translation type="unfinished"></translation>
+        <translation>Flughafen transfer (Bahn)</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="107"/>
         <source>Express train</source>
-        <translation type="unfinished"></translation>
+        <translation>Schnellzug</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="124"/>
         <source>Airport transfer (taxi)</source>
-        <translation type="unfinished"></translation>
+        <translation>Flughafen transfer (Taxi)</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="126"/>
         <source>Flight</source>
-        <translation type="unfinished"></translation>
+        <translation>Flug</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="129"/>
         <source>Helicopter</source>
-        <translation type="unfinished"></translation>
+        <translation>Hubschrauber</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="132"/>
         <source>Taxi</source>
-        <translation type="unfinished">Taxi</translation>
+        <translation>Taxi</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="133"/>
         <source>Rapid transit</source>
-        <translation type="unfinished"></translation>
+        <translation>die Schnellbahn</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="160"/>
@@ -2191,7 +2191,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_sf_bay_efa.cpp" line="53"/>
         <source>Blue &amp; Gold Fleet</source>
-        <translation>Blue &amp; Gold-Flotte</translation>
+        <translation>Blau &amp; Gold-Flotte</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sf_bay_efa.cpp" line="54"/>
@@ -2690,13 +2690,13 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="341"/>
         <source>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min late&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
+        <translation>&lt;span style=&quot;Farbe:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="343"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="489"/>
         <source>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
+        <translation>&lt;span style=&quot;Farbe:#093; Schriftstärke: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="368"/>
@@ -2723,13 +2723,13 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="450"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="465"/>
         <source>&lt;br/&gt;&lt;span style=&quot;color:#b30;&quot;&gt;%1 min late&lt;/span&gt;</source>
-        <translation>&lt;br/&gt;&lt;span style=&quot;color:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
+        <translation>&lt;br/&gt;&lt;span style=&quot;Farbe:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="456"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="467"/>
         <source>&lt;br/&gt;&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;br/&gt;&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
+        <translation>&lt;br/&gt;&lt;span style=&quot;Farbe:#093; Schriftstärke: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="482"/>
@@ -2739,7 +2739,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="487"/>
         <source>&lt;span style=&quot;color:#b30;&quot;&gt;traffic warning&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#b30;&quot;&gt;Verkehrswarnung&lt;/span&gt;</translation>
+        <translation>&lt;span style=&quot;Farbe:#b30;&quot;&gt;Verkehrswarnung&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="547"/>
@@ -3000,7 +3000,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/gui/ubuntu/TimeTableResultsPage.qml" line="118"/>
         <source>Pl. %1</source>
-        <translation>Gl. %1</translation>
+        <translation>Gleis %1</translation>
     </message>
 </context>
 <context>
@@ -3024,7 +3024,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/gui/sailfishos/delegates/TimetableEntryDelegate.qml" line="69"/>
         <location filename="../src/gui/symbian/delegates/TimetableEntryDelegate.qml" line="85"/>
         <source>Pl. %1</source>
-        <translation>Gl. %1</translation>
+        <translation>Gleis %1</translation>
     </message>
 </context>
 <context>
@@ -3046,12 +3046,12 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="81"/>
         <source>Searching...</source>
-        <translation type="unfinished">Suche...</translation>
+        <translation>Suche...</translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="113"/>
         <source>Error</source>
-        <translation type="unfinished">Fehler</translation>
+        <translation>Fehler</translation>
     </message>
 </context>
 <context>
