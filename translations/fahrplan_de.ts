@@ -635,13 +635,13 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="46"/>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="57"/>
         <source>Journey</source>
-        <translation>Fahrt</translation>
+        <translation>Ausgewählte Fahrt</translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="46"/>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="65"/>
         <source>Time Table</source>
-        <translation>Fahrplan</translation>
+        <translation>Gesammter Fahrplan</translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="51"/>
@@ -1693,32 +1693,32 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="33"/>
         <source>Business class Plus available</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschäftsklasse plus verfügbar</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="34"/>
         <source>No pets allowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Haustiere erlaubt</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="35"/>
         <source>Standard class only</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nur Standartklasse</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="36"/>
         <source>Seat reservation not possible in second class</source>
-        <translation type="unfinished"></translation>
+        <translation>Platzreservierung ist in der 2. Klasse nicht möglich</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="37"/>
         <source>Trolley service</source>
-        <translation type="unfinished"></translation>
+        <translation>Gepäckwagen Service</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="38"/>
         <source>Restaurant</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurant</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="40"/>
@@ -1728,183 +1728,183 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="42"/>
         <source>Access to sleeper before dep.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zugang zum Schlafwagen vor der Abfahrt</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="43"/>
         <source>Access to sleeper after arr.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zugang zum Schlafwagen nach der Ankunft</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="44"/>
         <source>Telephone reservation</source>
-        <translation type="unfinished"></translation>
+        <translation>Telefonische Reservierung</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="45"/>
         <source>Family coach</source>
-        <translation type="unfinished"></translation>
+        <translation>Familienbus</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="46"/>
         <source>Coach with cinema and bistro</source>
-        <translation type="unfinished"></translation>
+        <translation>Reisebus mit Kino und Bistro</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="47"/>
         <source>Supplement</source>
-        <translation type="unfinished"></translation>
+        <translation>Anhang</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="48"/>
         <source>Wheelchair lift</source>
-        <translation>Rollstuhllift </translation>
+        <translation>Rollstuhllift</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="58"/>
         <source>Preordered breakfast</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorbestelltes Frühstück</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="59"/>
         <source>No reservation in first class</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Reservierung in der 1. Klasse</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="60"/>
         <source>Luggage</source>
-        <translation type="unfinished"></translation>
+        <translation>Gepäck</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="61"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="62"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="63"/>
         <source>Animals allowed, see rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiere erlaubt, siehe Vorschriften</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="64"/>
         <source>Electricity for reservation</source>
-        <translation type="unfinished"></translation>
+        <translation>Strom für die Reservierung</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="65"/>
         <source>No day coach</source>
-        <translation type="unfinished"></translation>
+        <translation>Kein Tagesbus</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="66"/>
         <source>Carriage of bicycle</source>
-        <translation type="unfinished"></translation>
+        <translation>Beförderung von Fahrrädern</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="67"/>
         <source>First class without food has no reservation</source>
-        <translation type="unfinished"></translation>
+        <translation>Die 1. Klasse ohne Essen hat keine Reservierung</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="68"/>
         <source>Skis</source>
-        <translation type="unfinished"></translation>
+        <translation>Skier</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="69"/>
         <source>Office coach</source>
-        <translation type="unfinished"></translation>
+        <translation>Bürotrainer</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="70"/>
         <source>Culture coach</source>
-        <translation type="unfinished"></translation>
+        <translation>Kulturtrainer</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="71"/>
         <source>Couchette</source>
-        <translation type="unfinished"></translation>
+        <translation>Liegeplatz</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="72"/>
         <source>Newspapers in first class</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeitungen in der 1. Klasse</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="73"/>
         <source>Society coach</source>
-        <translation type="unfinished"></translation>
+        <translation>Gesellschaftstrainer</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="74"/>
         <source>Four-bed compartment in sleeper</source>
-        <translation type="unfinished"></translation>
+        <translation>Vier-Bett-Abteile im Schlafwagen</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="75"/>
         <source>Alcohol service</source>
-        <translation type="unfinished"></translation>
+        <translation>Alkoholausschank</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="77"/>
         <source>Tavern</source>
-        <translation type="unfinished"></translation>
+        <translation>Wirtshaus</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="78"/>
         <source>Reduced speed, may be delayed</source>
-        <translation type="unfinished"></translation>
+        <translation>Reduzierte Geschwindigkeit, kann verzögert werden</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="79"/>
         <source>No foodservice</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Verpflegung</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="80"/>
         <source>Café</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaffee</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="81"/>
         <source>Sleeper and couchette</source>
-        <translation type="unfinished"></translation>
+        <translation>Schlaf- und Liegeplatz</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="82"/>
         <source>Foodservice</source>
-        <translation type="unfinished"></translation>
+        <translation>Verpflegung</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="83"/>
         <source>Foodservice plus</source>
-        <translation type="unfinished"></translation>
+        <translation>Verpflegung plus</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="84"/>
         <source>Food served at seat in first class</source>
-        <translation type="unfinished"></translation>
+        <translation>Essen wird in der 1. Klasse am Platz serviert</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="85"/>
         <source>Hot food may be preordered</source>
-        <translation type="unfinished"></translation>
+        <translation>Warme Speisen können vorbestellt werden</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="86"/>
         <source>Sleeper</source>
-        <translation type="unfinished"></translation>
+        <translation>Schlafwagen</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="87"/>
         <source>Faster service (overtakes slower services)</source>
-        <translation type="unfinished"></translation>
+        <translation>Schnellerer service (überholt langsameren service)</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="88"/>
         <source>No price information available</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Preisinformationen verfügbar</translation>
     </message>
     <message>
         <source>Car</source>
-        <translation type="vanished">Auto</translation>
+        <translation>Auto</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="127"/>
@@ -1913,11 +1913,11 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>Replacement bus</source>
-        <translation type="vanished">Bahnersatzbus</translation>
+        <translation type="vanished">Ersatzbus</translation>
     </message>
     <message>
         <source>Replacement taxi</source>
-        <translation type="vanished">Bahnersatztaxi</translation>
+        <translation>Ersatztaxi</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="93"/>
@@ -1930,11 +1930,11 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>Airport bus/airport taxi</source>
-        <translation type="vanished">Flughafen-Bus/Flughafen-Taxi</translation>
+        <translation>Flughafen-Bus/Flughafen-Taxi</translation>
     </message>
     <message>
         <source>Airport taxi</source>
-        <translation type="vanished">Flughafen-Taxi</translation>
+        <translation>Flughafen-Taxi</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="128"/>
@@ -1948,15 +1948,15 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>Walk (long range)</source>
-        <translation type="vanished">Fussweg (grössere Entfernung)</translation>
+        <translation>Fussweg (grössere Entfernung)</translation>
     </message>
     <message>
         <source>Berthage</source>
-        <translation type="vanished">Quaigebühren</translation>
+        <translation>Schiffsliegeplatz</translation>
     </message>
     <message>
         <source>County taxi</source>
-        <translation type="vanished">Regionales Taxi</translation>
+        <translation>Regionales Taxi</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="103"/>
@@ -1971,11 +1971,11 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>Commuter train</source>
-        <translation type="vanished">S-Bahn</translation>
+        <translation>Nahverkehrszug</translation>
     </message>
     <message>
         <source>Day coach in night train</source>
-        <translation type="vanished">Sitzwagen im Nachtzug</translation>
+        <translation>Sitzwagen im Nachtzug</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="122"/>
@@ -1984,16 +1984,16 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>High-speed train (taxi connection)</source>
-        <translation type="vanished">Hochgeschwindigkeitszug (Anschlusstaxi)</translation>
+        <translation>Hochgeschwindigkeitszug (Anschlusstaxi)</translation>
     </message>
     <message>
         <source>Special bus</source>
-        <translation type="vanished">Spezial-Bus</translation>
+        <translation>Sonderbus</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="121"/>
         <source>Special train</source>
-        <translation>Spezialzug</translation>
+        <translation>Sonderzug</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="131"/>
@@ -2002,11 +2002,11 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>City traffic</source>
-        <translation type="vanished">Stadtverkehr</translation>
+        <translation>Stadtverkehr</translation>
     </message>
     <message>
         <source>Metro</source>
-        <translation type="vanished">Metro</translation>
+        <translation>Metro</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="130"/>
@@ -2015,7 +2015,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>Train taxi</source>
-        <translation type="vanished">Bahntaxi</translation>
+        <translation>Bahntaxi</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="95"/>
@@ -2024,12 +2024,12 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     </message>
     <message>
         <source>International train</source>
-        <translation type="vanished">Internationaler Zug</translation>
+        <translation>Internationaler Zug</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="398"/>
         <source>Realtime info</source>
-        <translation type="unfinished"></translation>
+        <translation>Echtzeitinformationen</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="159"/>
@@ -2039,13 +2039,13 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="90"/>
         <source>Airport transfer (bus)</source>
-        <translation type="unfinished"></translation>
+        <translation>Flughafen Transfer (Bus)</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="91"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="92"/>
         <source>replacement bus</source>
-        <translation type="unfinished"></translation>
+        <translation>Ersatzbus</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="96"/>
@@ -2053,54 +2053,54 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/parser/parser_resrobot.cpp" line="98"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="99"/>
         <source>Express ferry</source>
-        <translation type="unfinished"></translation>
+        <translation>Express Fähre</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="96"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="99"/>
         <source>yellow dep</source>
-        <translation type="unfinished"></translation>
+        <translation>Gelbes Depot</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="97"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="98"/>
         <source>white dep</source>
-        <translation type="unfinished"></translation>
+        <translation>Weißes Depot</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="101"/>
         <source>Airport transfer (train)</source>
-        <translation type="unfinished"></translation>
+        <translation>Flughafen transfer (Bahn)</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="107"/>
         <source>Express train</source>
-        <translation type="unfinished"></translation>
+        <translation>Schnellzug</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="124"/>
         <source>Airport transfer (taxi)</source>
-        <translation type="unfinished"></translation>
+        <translation>Flughafen transfer (Taxi)</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="126"/>
         <source>Flight</source>
-        <translation type="unfinished"></translation>
+        <translation>Flug</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="129"/>
         <source>Helicopter</source>
-        <translation type="unfinished"></translation>
+        <translation>Hubschrauber</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="132"/>
         <source>Taxi</source>
-        <translation type="unfinished">Taxi</translation>
+        <translation>Taxi</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="133"/>
         <source>Rapid transit</source>
-        <translation type="unfinished"></translation>
+        <translation>die Schnellbahn</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="160"/>
@@ -2181,7 +2181,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_sf_bay_efa.cpp" line="51"/>
         <source>Angel Island - Tiburon Ferry</source>
-        <translation>Angel Island - Tiburon Ferry</translation>
+        <translation>Angel Island - Tiburon Fähre</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sf_bay_efa.cpp" line="52"/>
@@ -2191,7 +2191,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_sf_bay_efa.cpp" line="53"/>
         <source>Blue &amp; Gold Fleet</source>
-        <translation>Blue &amp; Gold-Flotte</translation>
+        <translation>Blau &amp; Gold-Flotte</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sf_bay_efa.cpp" line="54"/>
@@ -2690,13 +2690,13 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="341"/>
         <source>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min late&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
+        <translation>&lt;span style=&quot;Farbe:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="343"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="489"/>
         <source>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
+        <translation>&lt;span style=&quot;Farbe:#093; font-weight: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="368"/>
@@ -2729,7 +2729,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="456"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="467"/>
         <source>&lt;br/&gt;&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;br/&gt;&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
+        <translation>&lt;br/&gt;&lt;span style=&quot;Farbe:#093; font-weight: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="482"/>
@@ -2739,7 +2739,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="487"/>
         <source>&lt;span style=&quot;color:#b30;&quot;&gt;traffic warning&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#b30;&quot;&gt;Verkehrswarnung&lt;/span&gt;</translation>
+        <translation>&lt;span style=&quot;Farbe:#b30;&quot;&gt;Verkehrswarnung&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="547"/>
@@ -3000,7 +3000,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/gui/ubuntu/TimeTableResultsPage.qml" line="118"/>
         <source>Pl. %1</source>
-        <translation>Gl. %1</translation>
+        <translation>Gleis %1</translation>
     </message>
 </context>
 <context>
@@ -3046,12 +3046,12 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="81"/>
         <source>Searching...</source>
-        <translation type="unfinished">Suche...</translation>
+        <translation>Suche...</translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="113"/>
         <source>Error</source>
-        <translation type="unfinished">Fehler</translation>
+        <translation>Fehler</translation>
     </message>
 </context>
 <context>
