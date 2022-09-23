@@ -146,7 +146,7 @@ void ParserNinetwo::searchJourney(const Station &departureStation,
     #endif
 
     /*
-	// this is for /journeyadvice-page
+    // this is for /journeyadvice-page
     query.addQueryItem("from", departureStation.id.toString());
     query.addQueryItem("to", arrivalStation.id.toString());
     query.addQueryItem("searchType", mode == Mode::Arrival ? "arrival" : "departure");
@@ -190,7 +190,7 @@ void ParserNinetwo::searchJourney(const Station &departureStation,
 
     #if defined(BUILD_FOR_QT5) || defined(BUILD_FOR_QT6)
     QByteArray data = postData.query().toUtf8().replace(' ', '+') ;
-	#else
+    #else
     QByteArray data = postData.encodedQuery().toUtf8().replace(' ', '+') ;
     #endif
 
@@ -490,7 +490,9 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
             walkCount++;
 
         QVariantList calls = leg["Calls"].toList();
-
+        for (int i = 0; i < calls.count(); ++i) {
+                qWarning() << "Ctype: "  <<  calls[i].toMap()["CallType"].toString();
+        }
         int const lastCall = calls.count()-1;
 
         //QString departureStation = calls[0].toMap()["Location"].toMap()["Cluster-Type"].toString() + " "
@@ -502,9 +504,12 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
 
         QDateTime departureTime = QDateTime::fromString(calls[0].toMap()["Departure"].toString(), Qt::ISODate);
 
+        qWarning() << "dtype: "  <<  calls[0].toMap()["CallType"].toString();
+        qWarning() << "atype: "  <<  calls[lastCall-1].toMap()["CallType"].toString();
+
         // only set Arrival if we have it. not set for walk
         if (calls[lastCall-1].toMap()["Arrival"].toString() != "")
-            arrivalTime = QDateTime::fromString(calls[lastCall-1].toMap()["Arrival"].toString(), Qt::ISODate);
+            arrivalTime = QDateTime::fromString(calls[lastCall].toMap()["Arrival"].toString(), Qt::ISODate);
 
         JourneyDetailResultItem* item = new JourneyDetailResultItem;
 
