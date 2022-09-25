@@ -641,7 +641,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="46"/>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="65"/>
         <source>Time Table</source>
-        <translation>Gesammter Fahrplan</translation>
+        <translation>Gesamter Fahrplan</translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="51"/>
