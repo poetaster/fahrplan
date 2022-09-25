@@ -883,7 +883,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="688"/>
         <source>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;Farbe:#093; Schriftstärke: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
+        <translation>&lt;span style=&quot;Farbe:#093; font-weight: normal;&quot;&gt;pünktlich&lt;/span&gt;</translation>
     </message>
 </context>
 <context>
@@ -2723,7 +2723,7 @@ Von der Fahrplan-App hinzugefügt. Bitte überprüfen Sie diese Informationen vo
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="450"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="465"/>
         <source>&lt;br/&gt;&lt;span style=&quot;color:#b30;&quot;&gt;%1 min late&lt;/span&gt;</source>
-        <translation>&lt;br/&gt;&lt;span style=&quot;color:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
+        <translation>&lt;br/&gt;&lt;span style=&quot;Farbe:#b30;&quot;&gt;%1 min Verspätung&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="456"/>
