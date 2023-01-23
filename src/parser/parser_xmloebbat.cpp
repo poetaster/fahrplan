@@ -20,12 +20,13 @@
 #include "parser_xmloebbat.h"
 
 ParserXmlOebbAt::ParserXmlOebbAt(QObject *parent)
-    : ParserHafasXml(parent)
+    : ParserHafasBinary(parent)
 {
 
     baseXmlUrl = "https://fahrplan.oebb.at/bin/query.exe";
     baseSTTableUrl = "https://fahrplan.oebb.at/bin/stboard.exe/en";
     baseUrl = "https://fahrplan.oebb.at/bin/query.exe";
+    baseBinaryUrl = "https://fahrplan.oebb.at/bin/query.exe/en";
     STTableMode = 1;
 }
 
