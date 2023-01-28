@@ -373,9 +373,9 @@ void ParserNinetwo::parseSearchJourney(QNetworkReply *networkReply)
 
     std::unique_ptr<JourneyResultList> resultList{ new JourneyResultList};
 
-    qDebug() << __LINE__ << "PARSING JOURNEYS" ;
+    //qDebug() << __LINE__ << "PARSING JOURNEYS" ;
     //qDebug() << "REPLY:>>>>>>>>>>>>\n" << allData;
-//    QVariantMap data = parseJson(allData);
+    //QVariantMap data = parseJson(allData);
 
     //QDomDocument slider { data.value("JourneySliderBlock").toString() };
     //qDebug() << "DETAIL" << data.value("JourneyDetailBlock");
@@ -446,7 +446,8 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
 
     // wrap it in an object, bcause it is a naked list
     auto json = parseJson("{\"legs\":" + jsonData.toUtf8() + "}");
-    // qWarning() << "leg" << "\n" <<  json;
+    //qWarning() << "leg" << "\n" <<  json;
+
     if(json["legs"].type() != QVariant::List)
         return nullptr;
     QVariantList legs = json["legs"].toList();
@@ -465,7 +466,9 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
 
     // evil chaning scope to keep 'last value'
     QDateTime arrivalTime;
+    QDateTime departureTime;
 
+    // inner loop
     for(auto const & legv: legs)
     {
         if(legv.type() != QVariant::Map)
@@ -474,15 +477,11 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
             continue;
         }
         QVariantMap leg = legv.toMap();
-
         QString mode = leg["Mode"].toMap()["ModeType"].toString();
         transportTypes.insert(mode);
-
         QString modeName = leg["Mode"].toMap()["Name"].toString();
         tTypes += modeName.split(" ").at(0) + " ";
-
         QString direction = leg["Destination"].toString();
-
         // eg. B for metro line b
         QString service = leg["Service"].toString();
         QString company = leg["Operator"].toMap()["Name"].toString();
@@ -505,12 +504,9 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
         QString arrivalStation = calls[lastCall].toMap()["Location"].toMap()["Name"].toString();
         QString arrivalPlatform = calls[lastCall].toMap()["Platform"].toString();
 
-        QDateTime departureTime = QDateTime::fromString(calls[0].toMap()["Departure"].toString(), Qt::ISODate);
-
-       qWarning() << "arrivalStation: " <<  arrivalStation;
-       qWarning() << "departureStation: " <<  departureStation;
-
-
+        // walks have not times
+        if (calls[0].toMap()["Departure"].toString() != "")
+            departureTime = QDateTime::fromString(calls[0].toMap()["Departure"].toString(), Qt::ISODate);
 
         // only set Arrival if we have it. not set for walk
         if (calls[lastCall-1].toMap()["Arrival"].toString() != "")
@@ -519,15 +515,19 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
         JourneyDetailResultItem* item = new JourneyDetailResultItem;
 
         item->setDirection(direction);
+        item->setArrivalStation(arrivalStation);
+        item->setDepartureStation(departureStation);
+        if(!arrivalPlatform.isEmpty())
+            item->setArrivalInfo(QString(tr("Pl. %1")).arg(arrivalPlatform));
+        if(!departurePlatform.isEmpty())
+            item->setDepartureInfo(QString(tr("Pl. %1")).arg(departurePlatform));
 
         // walk Mode has Duration set
         durationC = leg["Duration"].toString();
         durationC.replace(QString("00:"), QString(""));
-
         if(mode == "walk") {
             QString walkDuration;
             walkDuration = mode + " " + durationC ;
-            // item->setTrain(tr("Walk"));
             item->setTrain(walkDuration);
         } else {
             item->setTrain(modeName + ": " + service);
@@ -541,42 +541,46 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
 
         // we're walking, haven't reset Arrival from last leg
         // so add walkingTime to Arrivaltime of last leg
+        // if it's the first leg, subtract walking from the second leg for depart
 
         if(mode == "walk" && walkingTime > 0) {
             qint64 addT = walkingTime * 60;
             QDateTime arrivalTimeWalk = arrivalTime.addSecs(addT);
-            qWarning() << "arrivalmap2: " <<  arrivalTimeWalk.toString("hh:mm");
+            if (detailCount == 0) {
+               //departureTime = QDateTime::fromString(calls[1].toMap()["Departure"].toString(), Qt::ISODate);
+               //departureTime = departureTime.addSecs( - walkingTime * 60) ;
+               //qDebug() << "walkdepart: " << departureTime;
+               //item->setDepartureDateTime(departureTime);
+            }
             item->setArrivalDateTime(arrivalTimeWalk);
         } else {
-                item->setArrivalDateTime(arrivalTime);
+            item->setArrivalDateTime(arrivalTime);
+            item->setDepartureDateTime(departureTime);
+            qDebug() << "normaldepart: " << departureTime;
         }
-
-        item->setArrivalStation(arrivalStation);
-
-        if(!arrivalPlatform.isEmpty())
-            item->setArrivalInfo(QString(tr("Pl. %1")).arg(arrivalPlatform));
-
-        item->setDepartureDateTime(departureTime);
-        item->setDepartureStation(departureStation);
-
-        if(!departurePlatform.isEmpty())
-            item->setDepartureInfo(QString(tr("Pl. %1")).arg(departurePlatform));
 
         if (detailCount == 0) {
             detail->setDepartureStation(item->departureStation());
             detail->setDepartureDateTime(item->departureDateTime());
             // we need to record first walking to set it later and use if for departure.
             firstWalkingTime = walkingTime;
-        } else if (detailCount == legs.count()-1){
+         } else if (detailCount == legs.count()-1){
             detail->setArrivalDateTime(item->arrivalDateTime());
             detail->setArrivalStation(item->arrivalStation());
         }
-        // no ALWAYS set arrival :)
+        // accounting for walks we adjust here
+        if (detailCount == 1 && walkCount > 0) {
+               departureTime = departureTime.addSecs( - walkingTime * 60) ;
+               detail->getItem(0)->setDepartureDateTime(departureTime);
+        }
+
+
+        // no ALWAYS set arrival :) errr. why?
         detail->setArrivalDateTime(item->arrivalDateTime());
         detail->setArrivalStation(item->arrivalStation());
         detail->appendItem(item);
         detailCount ++;
-    }
+    } // inner loop
 
     if(detail->itemcount() == 0)
         return nullptr;
@@ -588,7 +592,6 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
     detail->setId(id);
     response->setId(id);
 
-    response->setDate(detail->getItem(0)->departureDateTime().date());
     response->setTransfers(QString::number(detail->itemcount()-1 -walkCount) + " +" + QString::number(walkCount) );
     {
         QString tt;
@@ -602,23 +605,27 @@ JourneyResultItem * ParserNinetwo::parseJourneyJson(const QString& jsonData)
     }
     QDateTime minutesBegin;
     QDateTime minutesEnd;
-
     minutesEnd =  detail->getItem(detail->itemcount()-1)->arrivalDateTime();
+
+    // deal with first item is walking
 
     if (detail->getItem(0)->train().startsWith("walk") ) {
         // this gets us around not having a start time for walk legs.
         // anolog to how we set arrival date time above
+        //qDebug() << "fWalk: " << firstWalkingTime;
         QDateTime walkDepart = detail->getItem(1)->departureDateTime().addSecs( - firstWalkingTime * 60) ;
         detail->getItem(0)->setDepartureDateTime(walkDepart);
-
         response->setDepartureTime(walkDepart.toString("hh:mm"));
+        response->setDate(detail->getItem(0)->departureDateTime().date());
         minutesBegin =  detail->getItem(0)->departureDateTime();
-        response->setDate(detail->getItem(1)->departureDateTime().date());
-
     } else {
         minutesBegin =  detail->getItem(0)->departureDateTime();
+        response->setDate(detail->getItem(0)->departureDateTime().date());
         response->setDepartureTime(detail->getItem(0)->departureDateTime().toString("hh:mm"));
     }
+
+    //  we've adjusted above on count 1 of details, so set here for the result list
+    detail->setDepartureDateTime(detail->getItem(0)->departureDateTime());
 
     response->setArrivalTime(detail->getItem(detail->itemcount()-1)->arrivalDateTime().toString("hh:mm"));
 

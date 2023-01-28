@@ -82,7 +82,7 @@ class JourneyResultItem : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QString id READ id WRITE setId)
-    //Q_PROPERTY(QDate date READ date WRITE setDate)
+    Q_PROPERTY(QDate date READ date WRITE setDate)
     Q_PROPERTY(QString departureTime READ departureTime WRITE setDepartureTime)
     Q_PROPERTY(QString arrivalTime READ arrivalTime WRITE setArrivalTime)
     Q_PROPERTY(QString trainType READ trainType WRITE setTrainType)

@@ -23,7 +23,7 @@ import Fahrplan 1.0
 import "../delegates"
 
 Page {
-    property bool debug: true
+    property bool debug: false
     id: journeyDetailsResultsPage
 
     property JourneyDetailResultList currentResult;
