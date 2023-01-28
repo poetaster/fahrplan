@@ -2,7 +2,7 @@
 APP_NAME = Fahrplan
 
 # Define Version
-VERSION = 2.0.45-1
+VERSION = 2.0.46-1
 
 #CONFIG+= openrepos
 
