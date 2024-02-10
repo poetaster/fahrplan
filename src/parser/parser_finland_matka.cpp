@@ -31,6 +31,9 @@
 
 #define MULTILINE(...) #__VA_ARGS__
 
+#define APIBASE_URL_GEOCODING "https://api.digitransit.fi/geocoding/v1"
+#define APIBASE_URL_ROUTING "https://api.digitransit.fi/routing/v2"
+
 ParserFinlandMatka::ParserFinlandMatka(QObject *parent) :
         ParserAbstract(parent)
 {
@@ -93,7 +96,7 @@ void ParserFinlandMatka::findStationsByName(const QString &stationName)
         return;
     currentRequestState = FahrplanNS::stationsByNameRequest;
 
-    QUrl url("https://api.digitransit.fi/geocoding/v1/search");
+    QUrl url(APIBASE_URL_GEOCODING "/search");
 #if defined(BUILD_FOR_QT5)
     QUrlQuery query;
 #else
@@ -103,7 +106,7 @@ void ParserFinlandMatka::findStationsByName(const QString &stationName)
     query.addQueryItem("lang", languageCode());
     query.addQueryItem("size", "50"); // Number of wanted results
     // Don't include "venue", since that will give a lot of noise when searching
-    query.addQueryItem("layers", "stop,station,neighbourhood,locality,localadmin,county,region");
+    query.addQueryItem("layers", "stop,station,neighbourhood,locality,localadmin,county,region,venue,address");
 #if defined(BUILD_FOR_QT5)
     url.setQuery(query);
 #else
@@ -119,7 +122,7 @@ void ParserFinlandMatka::findStationsByCoordinates(qreal longitude, qreal latitu
         return;
     currentRequestState = FahrplanNS::stationsByCoordinatesRequest;
 
-    QUrl url("https://api.digitransit.fi/geocoding/v1/reverse");
+    QUrl url(APIBASE_URL_GEOCODING "/reverse");
 #if defined(BUILD_FOR_QT5)
     QUrlQuery query;
 #else
@@ -145,7 +148,7 @@ void ParserFinlandMatka::parseStationsByName(QNetworkReply *networkReply)
     if (networkReply->rawHeader("Content-Encoding") == "gzip") {
         allData = gzipDecompress(allData);
     }
-//    qDebug() << "Reply:\n" << allData;
+   qDebug() << "Reply:\n" << allData;
 
     QVariantMap doc = parseJson(allData);
     if (doc.isEmpty()) {
@@ -176,11 +179,11 @@ void ParserFinlandMatka::parseStationsByName(QNetworkReply *networkReply)
         s.name = properties.value("label").toString();
         s.type = properties.value("layer").toString();
 
-        // Ignore stations and stops from any other provider than GTFS
-        // They just mess up when searching for timetables
-        if ((s.type == "stop" || s.type == "station") &&
-                properties.value("source").toString() != "gtfs")
-            continue;
+        // // Ignore stations and stops from any other provider than GTFS
+        // // They just mess up when searching for timetables
+        // if ((s.type == "stop" || s.type == "station") &&
+        //         properties.value("source").toString() != "gtfs")
+        //     continue;
 
         s.longitude = coordinates.at(0).toDouble();
         s.latitude = coordinates.at(1).toDouble();
@@ -287,7 +290,8 @@ void ParserFinlandMatka::getTimeTableForStation(const Station &currentStation,
     variables["timeRange"] = 86400; // Search for arrivals/departures the next 24 hours
     variables["numberOfDepartures"] = 50;
     request["variables"] = variables;
-    sendRequest(QUrl("https://api.digitransit.fi/routing/v1/routers/finland/index/graphql"), request);
+    // FIXME: Make regional configureable
+    sendRequest(QUrl(APIBASE_URL_ROUTING "/finland/gtfs/v1"), request);
 }
 
 void ParserFinlandMatka::parseTimeTable(QNetworkReply *networkReply)
@@ -297,7 +301,7 @@ void ParserFinlandMatka::parseTimeTable(QNetworkReply *networkReply)
     if (networkReply->rawHeader("Content-Encoding") == "gzip") {
         allData = gzipDecompress(allData);
     }
-//    qDebug() << "Reply:\n" << allData;
+qDebug() << "Reply:\n" << allData;
 
     QVariantMap doc = parseJson(allData);
     if (doc.isEmpty()) {
@@ -323,7 +327,7 @@ void ParserFinlandMatka::parseTimeTable(QNetworkReply *networkReply)
         const QString& patternID(pattern.value("id").toString());
         const QVariantMap& route(pattern.value("route").toMap());
         const QString& stopName(stop.value("name").toString());
-        QString transportMode(route.value("mode").toString());
+        QString transportMode(route.value("transportMode").toString());
         TimetableEntry entry;
         QStringList info;
 
@@ -531,6 +535,8 @@ void ParserFinlandMatka::sendRequest(QUrl url, QVariantMap request)
     QList<QPair<QByteArray,QByteArray> > additionalHeaders;
     additionalHeaders.append(QPair<QByteArray,QByteArray>("Content-Type", "application/json"));
     additionalHeaders.append(QPair<QByteArray,QByteArray>("Accept-Encoding", "gzip"));
+    additionalHeaders.append(QPair<QByteArray,QByteArray>("digitransit-subscription-key", "<insert-key>"));
+
     qDebug() << "Sending request to " << url.toString();
     if (request.isEmpty()) {
         sendHttpRequest(url, NULL, additionalHeaders);
@@ -553,6 +559,7 @@ void ParserFinlandMatka::internalSearchJourney(const Station &departureStation, 
     lastJourneySearch.resultCount = 0;
     lastJourneySearch.restrictionStrings = selectedTransportModes(trainRestrictions);
 
+    // FIXME: plan is deprecated replace with planConnection
     // The routing optimization values below were copied from beta.matka.fi
     QString query(MULTILINE(
         query ($date: String, $time: String, $fromPlace: String, $toPlace: String, $locale: String,
@@ -649,10 +656,11 @@ void ParserFinlandMatka::internalSearchJourney(const Station &departureStation, 
 
     variables["locale"] = languageCode();
     variables["arriveBy"] = (mode == Arrival);
-    variables["modes"] = lastJourneySearch.restrictionStrings.join(",");
+    variables["transportModes"] = lastJourneySearch.restrictionStrings.join(",").prepend("[").append("]");
     variables["intermediatePlaces"] = viaList;
     request["variables"] = variables;
-    sendRequest(QUrl("https://api.digitransit.fi/routing/v1/routers/finland/index/graphql"), request);
+    // FIXME: add regions here
+    sendRequest(QUrl(APIBASE_URL_ROUTING "/finland/gtfs/v1"), request);
 }
 
 void ParserFinlandMatka::parseSearchJourney(QNetworkReply *networkReply)
@@ -662,7 +670,7 @@ void ParserFinlandMatka::parseSearchJourney(QNetworkReply *networkReply)
     if (networkReply->rawHeader("Content-Encoding") == "gzip") {
         allData = gzipDecompress(allData);
     }
-//    qDebug() << "Reply:\n" << allData;
+   qDebug() << "Reply:\n" << allData;
 
     QVariantMap doc = parseJson(allData);
     if (doc.isEmpty()) {
