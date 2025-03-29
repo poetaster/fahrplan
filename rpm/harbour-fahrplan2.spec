@@ -5,7 +5,9 @@
 
 Name:       harbour-fahrplan2
 
+
 # >> macros
+%define _binary_payload w2.xzdio
 # << macros
 
 %{!?qtc_qmake:%define qtc_qmake %qmake}

@@ -583,6 +583,8 @@ void ParserHafasXml::searchJourney(const Station &departureStation, const Statio
     postData.append("</ReqC>");
 
     sendHttpRequest(QUrl(baseXmlUrl), postData);
+
+    //qDebug() << "stuff" << postData;
 }
 
 QByteArray ParserHafasXml::getStationsExternalIds(const QString &departureStation, const QString &arrivalStation, const QString &viaStation)

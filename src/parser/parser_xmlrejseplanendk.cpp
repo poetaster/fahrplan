@@ -22,12 +22,12 @@
 ParserXmlRejseplanenDk::ParserXmlRejseplanenDk(QObject *parent) :
     ParserHafasXml(parent)
 {
-     //baseUrl = "https://rejseplanen.dk/bin/iphone.exe";
-     baseXmlUrl = "https://www.rejseplanen.dk/bin/query.exe";
-     baseSTTableUrl = "https://mobil.rejseplanen.dk/bin/iphone.exe/en";
-     baseUrl = "https://www.rejseplanen.dk/bin/query.exe";
+     baseUrl = "https://mobilapps.rejseplanen.dk/bin/iphone.exe";
+     baseXmlUrl = "https://mobilapps.rejseplanen.dk/bin/query.exe";
+     baseSTTableUrl = "https://mobilapps.rejseplanen.dk/bin/query.exe";
 
      STTableMode = 1;
+     hafasHeader.accessid = "irkmpm9mdznstenr-android";
 }
 
 QString ParserXmlRejseplanenDk::getTrainRestrictionsCodes(int trainrestrictions)
@@ -58,4 +58,3 @@ QStringList ParserXmlRejseplanenDk::getTrainRestrictions()
     result.append(tr("Local transport without S-Bahn"));
     return result;
 }
-

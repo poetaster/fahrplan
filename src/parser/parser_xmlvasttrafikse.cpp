@@ -41,7 +41,7 @@ QHash<QString, JourneyDetailResultList *> cachedJourneyDetails;
 
 #define getAttribute(node, key) (node.attributes().namedItem(key).toAttr().value())
 
-const QString ParserXmlVasttrafikSe::baseRestUrl = QLatin1String("https://api.vasttrafik.se/bin/rest.exe/v2/");
+const QString ParserXmlVasttrafikSe::baseRestUrl = QLatin1String("https://ext-api.vasttrafik.se/pr/v4/");
 const char *ParserXmlVasttrafikSe::consumerCredentials = "ZHhONXJGdUpOZ1NfQjltc29zZlRuYTBwelpjYTpPMDVsNEhTNGdieU5KdGY4a29MRmdCZ1g0WUFh";
 
 ParserXmlVasttrafikSe::ParserXmlVasttrafikSe(QObject *parent)
