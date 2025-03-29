@@ -142,10 +142,10 @@ void ParserMovasBahnDe::parseTimeTable(QNetworkReply *networkReply)
 
         // Note: id field contents sadly do not match. have to strip both down to
         // location to compare
-        if(!isSameLocation(entry.value("abfrageOrt").toMap().value("locationId").toString(),lastTimetableSearch.currentStation.id.toString()))
+        /*if(!isSameLocation(entry.value("abfrageOrt").toMap().value("locationId").toString(),lastTimetableSearch.currentStation.id.toString()))
         {
             continue;
-        }
+        }*/
 
         QString train(entry.value("mitteltext").toString());
         QString station(entry.value("abfrageOrt").toMap().value("name").toString());
