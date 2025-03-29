@@ -2,7 +2,7 @@
 APP_NAME = Fahrplan
 
 # Define Version
-VERSION = 2.0.46-1
+VERSION = 2.0.47-1
 
 #CONFIG+= openrepos
 
@@ -116,7 +116,7 @@ HEADERS += \
     src/models/trainrestrictions.h \
     src/parser/parser_xmlnri.h \
     src/parser/parser_hafasbinary.h \
-    src/parser/parser_mobilebahnde.h \
+    src/parser/parser_movas_bahnde.h \
     src/parser/parser_ptvvicgovau.h \
     src/parser/parser_efa.h \
     src/parser/parser_ireland_efa.h \
@@ -148,7 +148,7 @@ SOURCES += src/main.cpp \
     src/models/stationsearchresults.cpp \
     src/models/timetable.cpp \
     src/models/trainrestrictions.cpp \
-    src/parser/parser_mobilebahnde.cpp \
+    src/parser/parser_movas_bahnde.cpp \
     src/parser/parser_xmlnri.cpp \
     src/parser/parser_hafasbinary.cpp \
     src/parser/parser_ptvvicgovau.cpp \

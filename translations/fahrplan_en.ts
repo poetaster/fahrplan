@@ -1429,6 +1429,299 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
     </message>
 </context>
 <context>
+    <name>ParserMovasBahnDe</name>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="106"/>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="135"/>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="400"/>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="532"/>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="113"/>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="392"/>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="539"/>
+        <source>Backend returns an error: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="221"/>
+        <source>Canceled!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="225"/>
+        <source>On-Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="233"/>
+        <source>Departure delayed: %n min</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="237"/>
+        <source>Arrival delayed: %n min</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="623"/>
+        <source>Walk %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="645"/>
+        <source>Arrivals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="647"/>
+        <source>Departures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="648"/>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="722"/>
+        <source>Track changed to %1</source>
+        <comment>Departure</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="723"/>
+        <source>(From %1)</source>
+        <comment>Departure</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="727"/>
+        <source>Track %1</source>
+        <comment>Departure</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="734"/>
+        <source>Track changed to %1</source>
+        <comment>Arrival</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="735"/>
+        <source>(From %1)</source>
+        <comment>Arrival</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="739"/>
+        <source>Track %1</source>
+        <comment>Arrival</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="753"/>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="772"/>
+        <source>%n min late</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="760"/>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="779"/>
+        <source>on time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="838"/>
+        <source>Train canceled!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="841"/>
+        <source>Departure stop canceled!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="844"/>
+        <source>Arrival stop canceled!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="886"/>
+        <source>Low demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="891"/>
+        <source>Medium demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="896"/>
+        <source>High demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="901"/>
+        <source>Exceptionally high demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="908"/>
+        <source>%1: %2</source>
+        <comment>travel class: expected demand</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="928"/>
+        <source>Transfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="929"/>
+        <source>%1 (%n min)</source>
+        <comment>Transfer</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="934"/>
+        <source>Distance %n meter(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="985"/>
+        <source>Bike take along limited</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="996"/>
+        <source>Wheelchair parking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1007"/>
+        <source>Vehicle bound boarding aid available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1018"/>
+        <source>Handicapped accessible facilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1029"/>
+        <source>Laptop power sockets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1040"/>
+        <source>Air conditioning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1051"/>
+        <source>Wifi available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1072"/>
+        <source>No journey details found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1161"/>
+        <source>First class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1166"/>
+        <source>Second class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1176"/>
+        <source>Walk</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1184"/>
+        <source>Ship</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1188"/>
+        <source>Bus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1192"/>
+        <source>Train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1196"/>
+        <source>S-Bahn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1200"/>
+        <source>Metro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1204"/>
+        <source>Tram</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1207"/>
+        <source>Unknown transport type: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1214"/>
+        <source>All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1215"/>
+        <source>All without ICE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1216"/>
+        <source>Only local transport</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.cpp" line="1217"/>
+        <source>Local transport without S-Bahn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_movas_bahnde.h" line="35"/>
+        <source>Germany</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserMunichEFA</name>
     <message>
         <location filename="../src/parser/parser_munich_efa.cpp" line="38"/>

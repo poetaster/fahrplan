@@ -29,7 +29,7 @@ FahrplanBackendManager::FahrplanBackendManager(int defaultParser, QObject *paren
 QStringList FahrplanBackendManager::getParserList()
 {
     QStringList result;
-    result.append(ParserMobileBahnDe::getName());
+    result.append(ParserMovasBahnDe::getName());
     result.append(ParserXmlOebbAt::getName());
     result.append(ParserXmlRejseplanenDk::getName());
     result.append(ParserXmlNri::getName());
