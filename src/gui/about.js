@@ -37,7 +37,7 @@ var support = qsTr("<p>If fahrplan is not translated in your language, help us <
         "<p>If you encounter bugs or have feature requests visit the <a href=\"https://github.com/smurfy/fahrplan/issues\">Fahrplan issue tracker on GitHub</a>.</p>");
 
 var maintainers = ["Mark Washeim (poetaster)", "Philipp Andreas (smurfy)", "Michael Stevens (stevensmi)", "Oleksii Serdiuk (leppa)"];
-var codeContributors = ["attah", "smatkovi", "Thaodan", "gri", "lorenzph", "CaCO3", "hcm", "thp", "qwerty12", "qbast", "Thomas Fischer", "Oleksii Serdiuk (leppa)", "Nekhelesh Ramananthan (nik90)", "NightShift79", "pirast", "Michael Zanetti (mzanetti)", "Chris Clime (balcy)", "dayrover", "shentok", "evansebire", "unsanded", "Morpog", "benni0815", "Erik Lundin"].sort();
+var codeContributors = ["kfg", "attah", "smatkovi", "Thaodan", "gri", "lorenzph", "CaCO3", "hcm", "thp", "qwerty12", "qbast", "Thomas Fischer", "Oleksii Serdiuk (leppa)", "Nekhelesh Ramananthan (nik90)", "NightShift79", "pirast", "Michael Zanetti (mzanetti)", "Chris Clime (balcy)", "dayrover", "shentok", "evansebire", "unsanded", "Morpog", "benni0815", "Erik Lundin"].sort();
 
 var translators = [
             "Arabic - Sary AWAD (sary.1991)",
