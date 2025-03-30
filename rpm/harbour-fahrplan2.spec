@@ -16,7 +16,7 @@ Name:       harbour-fahrplan2
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Public transportation application
 Version:    2.0.47
-Release:    1
+Release:    2
 Group:      Location/Location Adaptation
 License:    GPLv2
 URL:        http://fahrplan.smurfy.de
