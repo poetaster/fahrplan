@@ -33,6 +33,7 @@ ParserMovasBahnDe::ParserMovasBahnDe(QObject *parent) :
      #ifdef BUILD_FOR_UBUNTU
      sendHttpRequestViaCurl = true;
      #endif
+     acceptEncoding = "gzip";
 }
 
 bool ParserMovasBahnDe::supportsGps()
