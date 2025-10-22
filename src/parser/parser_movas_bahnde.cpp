@@ -514,7 +514,7 @@ void ParserMovasBahnDe::internalSearchJourney(const Station &departureStation, c
 
     QList<QPair<QByteArray,QByteArray> > additionalHeaders;
 
-    sendHttpRequestMovas(QUrl(baseUrl+"/angebote/fahrplan"), serializeToJson(request), QLatin1String("application/x.db.vendo.mob.verbindungssuche.v8+json"), additionalHeaders);
+    sendHttpRequestMovas(QUrl(baseUrl+"/angebote/fahrplan"), serializeToJson(request), QLatin1String("application/x.db.vendo.mob.verbindungssuche.v9+json"), additionalHeaders);
 }
 
 void ParserMovasBahnDe::parseSearchJourney(QNetworkReply *networkReply)
