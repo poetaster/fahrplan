@@ -29,11 +29,11 @@
 ParserMovasBahnDe::ParserMovasBahnDe(QObject *parent) :
         ParserAbstract(parent)
 {
-     baseUrl = "https://app.vendo.noncd.db.de/mob";
+     baseUrl = "https://app.services-bahn.de/mob";
      #ifdef BUILD_FOR_UBUNTU
      sendHttpRequestViaCurl = true;
      #endif
-     acceptEncoding = "gzip";
+     acceptEncoding = "gzip, br, deflate";
 }
 
 bool ParserMovasBahnDe::supportsGps()
