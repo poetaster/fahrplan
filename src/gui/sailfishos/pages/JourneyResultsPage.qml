@@ -65,13 +65,12 @@ Page {
                 Label {
                     id: journeyDate
                     width: parent.width
-                    horizontalAlignment: Text.AlignRight
-                    color: Theme.secondaryColor
+                    horizontalAlignment: Text.AlignHCenter
+                    color: Theme.highlightColor
                     anchors {
                         top: parent.top
-                        topMargin: Theme.paddingLarge * 3
-                        right: parent.right
-                        rightMargin: Theme.paddingMedium
+                        topMargin: Theme.paddingLarge * 6
+                        left: parent.left
                     }
                 }
             }
@@ -91,23 +90,27 @@ Page {
                 Label {
                     text: qsTr("Dep.")
                     width: (parent.width - 3) / 4
+                    color: Theme.secondaryHighlightColor
                 }
 
                 Label {
                     text: qsTr("Arr.")
                     width: (parent.width - 3) / 4
+                    color: Theme.secondaryHighlightColor
                 }
 
                 Label {
                     horizontalAlignment: Text.AlignHCenter
                     text: qsTr("Dur.")
                     width: (parent.width - 3) / 4
+                    color: Theme.secondaryHighlightColor
                 }
 
                 Label {
                     horizontalAlignment: Text.AlignHCenter
                     text: qsTr("Trans.")
                     width: (parent.width - 3) / 4
+                    color: Theme.secondaryHighlightColor
                 }
             }
 
@@ -188,7 +191,7 @@ Page {
             console.log(result.count);
             indicator.visible = false;
 
-            journeyDesc.title = result.viaStation.length == 0 ? qsTr("<b>%1</b> to <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation) : qsTr("<b>%1</b> via <b>%3</b> to <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation).arg(result.viaStation)
+            journeyDesc.title = result.viaStation.length == 0 ? qsTr("<b>%1</b> to <br /> <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation) : qsTr("<b>%1</b> via <b>%3</b> to <br /> <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation).arg(result.viaStation)
 
             journeyDate.text = result.timeInfo;
 

@@ -77,6 +77,7 @@ Item {
                 id: trainTypeLabel
                 text: model.trainType
                 width: parent.width
+                color: Theme.secondaryHighlightColor
             }
 
             Label {

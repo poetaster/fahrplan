@@ -25,7 +25,7 @@ Item {
     id: item_train
 
     width: parent.width
-    height: lbl_train.height + 2*Theme.paddingMedium
+    height: lbl_train.height + 2*Theme.paddingLarge
 
     Rectangle {
         color: Theme.secondaryHighlightColor
@@ -57,7 +57,7 @@ Item {
             var result;
             if (model.trainDirection.length > 0) {
                 //: As in "%1 in direction %2"
-                result = qsTr("%1 to %2", "Direction").arg("<b>" + model.trainName + "</b>")
+                result = qsTr("%1 to %2", "Direction").arg("<b>" + model.trainName + "</b><br />")
                                                       .arg(model.trainDirection);
             } else {
                 result = "<b>" + model.trainName + "</b>";

@@ -66,12 +66,12 @@ Page {
 
                 Label {
                     id: lbljourneyDate
-                    color: Theme.secondaryColor
+                    color: Theme.secondaryHighlightColor
                     anchors {
                         left: parent.left
                         leftMargin: Theme.paddingMedium
                         top: parent.top
-                        topMargin: Theme.paddingLarge * 3
+                        topMargin: Theme.paddingLarge * 6
                     }
                     width: ((parent.width / 3) * 2) - 20
                     wrapMode: Text.WordWrap
@@ -79,13 +79,13 @@ Page {
 
                 Label {
                     id: lbljourneyDuration
-                    color: Theme.secondaryColor
+                    color: Theme.secondaryHighlightColor
                     anchors {
                         right: parent.right
                         rightMargin: Theme.paddingMedium
                         left: lbljourneyDate.right
                         top: parent.top
-                        topMargin: Theme.paddingLarge * 3
+                        topMargin: Theme.paddingLarge * 6
                     }
                     width: (parent.width / 3) - 20
                     horizontalAlignment: Text.AlignRight
@@ -163,7 +163,7 @@ Page {
                 if (debug) console.log(result.departureStation)
                 if (debug) console.log(result.arrivalStation)
 
-                journeyStations.title = result.viaStation.length == 0 ? qsTr("<b>%1</b> to <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation) : qsTr("<b>%1</b> via <b>%3</b> to <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation).arg(result.viaStation);
+                journeyStations.title = result.viaStation.length == 0 ? qsTr("<b>%1</b> to <br /> <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation) : qsTr("<b>%1</b> via <b>%3</b> to <b>%2</b>").arg(result.departureStation).arg(result.arrivalStation).arg(result.viaStation);
                 var departureDate = Qt.formatDate(result.departureDateTime);
                 var arrivalDate = Qt.formatDate(result.arrivalDateTime);
 
@@ -172,7 +172,7 @@ Page {
                 }
 
 
-                lbljourneyDate.text = departureDate + " " + Qt.formatTime(result.departureDateTime, Qt.DefaultLocaleShortDate) + " - <br/>" +
+                lbljourneyDate.text = departureDate + " " + Qt.formatTime(result.departureDateTime, Qt.DefaultLocaleShortDate) + " - " +
                                       arrivalDate + " " + Qt.formatTime(result.arrivalDateTime, Qt.DefaultLocaleShortDate);
 
                 lbljourneyDuration.text = qsTr("Dur.: %1").arg(result.duration);
