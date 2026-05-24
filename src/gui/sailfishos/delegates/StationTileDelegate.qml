@@ -31,6 +31,7 @@ TileBase {
     width: Screen.width / 2
     contentHeight: Theme.itemSizeExtraLarge
     opacity: !containsPress &&
+             !drag.active &&
              !!stationsContainer.currentItem &&
              stationsContainer.currentItem != root ?
                  0.4 : 1.0
@@ -63,12 +64,18 @@ TileBase {
     menu: Component {
         ContextMenu {
             MenuItem {
-                text: qsTr("Remove from favorites")
+                text: model.isFavorite ?
+                          qsTr("Remove from favorites") :
+                          qsTr("Add to favorites")
                 onClicked: {
-                    remorseDelete(function(){
-                        console.log("Removing %1 from favorites".arg(this.id))
-                        this.model.removeByIdFromFavorites(this.id)
-                    }.bind({id: ident, model: listModel}))
+                    if (model.isFavorite) {
+                        remorseDelete(function(){
+                            console.log("Removing %1 from favorites".arg(this.id))
+                            this.model.removeByIdFromFavorites(this.id)
+                        }.bind({id: ident, model: listModel}))
+                    } else {
+                        listModel.addToFavorites(modelIndex)
+                    }
                 }
             }
         }
