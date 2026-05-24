@@ -68,6 +68,10 @@ Fahrplan::Fahrplan(QObject *parent)
     }
     connect(m_stationSearchResults, &StationsListModel::stationSelected, this, &Fahrplan::setStation);
 
+    if (!m_trainrestrictions) {
+        m_trainrestrictions = new Trainrestrictions(this);
+    }
+
     if (!m_mostRecentStations) {
         m_mostRecentStations = new MostRecentStations(this);
     }
@@ -77,10 +81,6 @@ Fahrplan::Fahrplan(QObject *parent)
 
     if (!m_timetable) {
         m_timetable = new Timetable(this);
-    }
-
-    if (!m_trainrestrictions) {
-        m_trainrestrictions = new Trainrestrictions(this);
     }
 
     if (!m_backends) {
