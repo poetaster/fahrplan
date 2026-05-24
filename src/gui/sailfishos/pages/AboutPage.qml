@@ -65,7 +65,7 @@ Page {
                 spacing: 25
 
                 Image {
-                    source: "qrc:/data/sailfishos/harbour-fahrplan2.png"
+                    source: "qrc:///data/sailfishos/harbour-fahrplan2.png"
                     anchors {
                         horizontalCenter: parent.horizontalCenter
                     }
