@@ -54,19 +54,17 @@ Fahrplan::Fahrplan(QObject *parent)
         int currentBackend = settings->value("currentBackend", 0).toInt();
         m_parser_manager = new FahrplanBackendManager(currentBackend);
     }
-    connect(m_parser_manager, SIGNAL(parserChanged(const QString &, int)), this, SLOT(onParserChanged(const QString &, int)));
+    connect(m_parser_manager, &FahrplanBackendManager::parserChanged, this, &Fahrplan::onParserChanged);
 
     if (!m_favorites) {
         m_favorites = new Favorites(this);
     }
-    connect(m_favorites, SIGNAL(stationSelected(Fahrplan::StationType,Station))
-            , SLOT(setStation(Fahrplan::StationType,Station)));
+    connect(m_favorites, &StationsListModel::stationSelected, this, &Fahrplan::setStation);
 
     if (!m_stationSearchResults) {
         m_stationSearchResults = new StationSearchResults(this);
     }
-    connect(m_stationSearchResults, SIGNAL(stationSelected(Fahrplan::StationType,Station))
-            , SLOT(setStation(Fahrplan::StationType,Station)));
+    connect(m_stationSearchResults, &StationsListModel::stationSelected, this, &Fahrplan::setStation);
 
     if (!m_timetable) {
         m_timetable = new Timetable(this);
