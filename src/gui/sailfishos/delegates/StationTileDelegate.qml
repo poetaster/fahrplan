@@ -62,7 +62,8 @@ TileBase {
     // the search.ch backend implementation for detail/reference.
     // The already saved favorites will not be updated even when
     // the backend gets support for station types. Only new ones.
-    backgroundImage: !!type ? Qt.resolvedUrl("../images/tile-bg-%1.png".arg(type)) : ""
+    tileIcon: !!type ? Qt.resolvedUrl("../images/tile-bg-%1.png".arg(type)) : ""
+    backgroundImage: ""
 
     menu: Component {
         ContextMenu {

@@ -11,7 +11,7 @@ ListItem {
 
     // Important: width and contentHeight must be set manually!
 
-    property alias text: textLabel.text
+    property string text
     property alias textLabel: textLabel
 
     property bool highlightBackgroundPress: false
@@ -19,8 +19,12 @@ ListItem {
     property color alternateHighlightColor: Theme.rgba(Theme.highlightBackgroundColor, 0.15)
 
     property string backgroundImage  // optional
+    property string tileIcon  // optional
 
-    _backgroundColor: isAlternateHighlight ?
+    readonly property bool _noBackgroundImage: backgroundImageItem.status !== Image.Ready &&
+                                               backgroundImageItem.status !== Image.Loading
+
+    _backgroundColor: isAlternateHighlight && _noBackgroundImage ?
             alternateHighlightColor :
             (highlightBackgroundPress && _showPress ?
                  highlightedColor : "transparent")
@@ -33,9 +37,53 @@ ListItem {
         }
 
         fillMode: Image.PreserveAspectFit
-        source: backgroundImage
-        color: highlighted ? palette.highlightColor : palette.primaryColor
+        source: tileIcon
+        color: palette.primaryColor
+        highlightColor: palette.highlightColor
         opacity: 0.1
+
+        visible: _noBackgroundImage
+    }
+
+    HighlightImage {
+        id: backgroundImageItem
+
+        width: parent.width
+        height: parent.height
+
+        anchors {
+            top: parent.top
+            right: parent.right
+        }
+
+        fillMode: Image.PreserveAspectCrop
+        clip: true
+        source: backgroundImage
+        highlightColor: palette.highlightColor
+        opacity: 0.3
+    }
+
+    TextEdit {
+        // TODO find a way to add padding left and right of
+        // each line before enabling this
+        visible: false // !_noBackgroundImage
+
+        // Solid background for each styled text line to
+        // make it stand out more against the background image
+        enabled: false
+        anchors.fill: textLabel
+        wrapMode: textLabel.wrapMode
+        horizontalAlignment: textLabel.horizontalAlignment
+        verticalAlignment: textLabel.verticalAlignment
+        font: textLabel.font
+        color: textLabel.color
+        textFormat: Text.AutoText
+        selectedTextColor: textLabel.color
+        selectionColor: Theme.highlightDimmerColor
+
+        text: textLabel.text
+        onTextChanged: selectAll()
+        Component.onCompleted: selectAll()
     }
 
     Label {
@@ -61,6 +109,7 @@ ListItem {
         color: root.highlighted ? palette.highlightColor : palette.primaryColor
 
         textFormat: Text.StyledText
+        text: root.text
     }
 
     GradientBackground {

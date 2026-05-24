@@ -474,9 +474,10 @@ Dialog {
                         width: parent.width
                         contentHeight: allowSelectTwo ? Theme.itemSizeExtraLarge : 0
 
-                        backgroundImage: !down && stationsContainer.currentItem == customStation ?
+                        tileIcon: !dragActive && stationsContainer.currentItem == customStation ?
                             Qt.resolvedUrl("../images/tile-bg-to.png") :
                             Qt.resolvedUrl("../images/tile-bg-from.png")
+                        backgroundImage: ""
                         text: "<b>" + _dynamicLabel + "</b>&nbsp;&nbsp;\u2022 \u2022 \u2022"
                     }
                 }
