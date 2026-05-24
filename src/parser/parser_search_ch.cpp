@@ -563,6 +563,8 @@ void ParserSearchCH::findStationsByName(const QString &stationName)
     QUrl query;
 #endif
     query.addQueryItem("term", stationName);
+    query.addQueryItem("show_coordinates", "1");
+    query.addQueryItem("show_ids", "1");
 #if defined(BUILD_FOR_QT5)
     url.setQuery(query);
 #else
@@ -587,6 +589,8 @@ void ParserSearchCH::findStationsByCoordinates(qreal longitude, qreal latitude)
 #endif
     QString pos = QString::number(latitude) + "," + QString::number(longitude);
     query.addQueryItem("latlon", pos);
+    query.addQueryItem("show_coordinates", "1");
+    query.addQueryItem("show_ids", "1");
 
 #if defined(BUILD_FOR_QT5)
     url.setQuery(query);
@@ -600,6 +604,9 @@ void ParserSearchCH::parseStationRow(StationsList& rows, const QVariantMap& row)
 {
     const QVariant& icon = row.value("iconclass");
     const QVariant& label = row.value("label");
+    const QVariant& id = row.value("id");
+    const QVariant& lon = row.value("lon");
+    const QVariant& lat = row.value("lat");
 
     /* Ignore street addresses */
     if ((icon.toString() == "sl-icon-type-adr") ||
@@ -639,8 +646,10 @@ void ParserSearchCH::parseStationRow(StationsList& rows, const QVariantMap& row)
     if (!label.isNull())
     {
         const QString& name = label.toString();
-        s.id = name;
         s.name = name;
+        s.id = id;
+        s.latitude = lat.toReal();
+        s.longitude = lon.toReal();
         rows.append(s);
     }
 }
