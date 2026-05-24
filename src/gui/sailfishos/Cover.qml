@@ -33,8 +33,7 @@ CoverBackground {
        }
 
     CoverPlaceholder {
-        id: fahrplanTitle
-        text: qsTr("Fahrplan: ") + fahrplanBackend.parserName
+        text: fahrplanBackend.parserName
     }
 
     Connections {
