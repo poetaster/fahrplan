@@ -143,7 +143,7 @@ Page {
                     pageStack.push(Qt.resolvedUrl("StationSelectPage.qml"), {type: FahrplanBackend.DirectionStation, fahrplanBackend: fahrplanBackend})
                 }
                 onPressAndHold: {
-                    timeTableSelectContextMenu.show(directionButton);
+                    timeTableSelectContextMenu.open(directionButton);
                 }
             }
             ComboBox {
@@ -330,7 +330,7 @@ Page {
                 switchWithDepartureStation.visible = true;
             }
 
-            stationSelectContextMenu.show(opener);
+            stationSelectContextMenu.open(opener);
         }
     }
 
