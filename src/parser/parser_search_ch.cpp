@@ -701,6 +701,7 @@ void ParserSearchCH::getTimeTableForStation(const Station &station,
     query.addQueryItem("date", when.toString("yyyy-MM-dd"));
     query.addQueryItem("time", when.toString("hh:mm"));
     query.addQueryItem("show_tracks", "1");
+    query.addQueryItem("show_trackchanges", "1");
     query.addQueryItem("show_delays", "1");
 
     addRestrictionsToQuery(query, restrictions);
@@ -772,6 +773,7 @@ void ParserSearchCH::searchJourney(const Station &from, const Station &via,
     query.addQueryItem("date", when.toString("yyyy-MM-dd"));
     query.addQueryItem("time", when.toString("hh:mm"));
     query.addQueryItem("show_delays", "1");
+    query.addQueryItem("show_trackchanges", "1");
 
     if (via.valid) {
         query.addQueryItem("via", via.name);
