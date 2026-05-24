@@ -36,6 +36,10 @@ Dialog {
 
     property bool _showFavoritesAsList: false
     property bool _showingSearchResults: false
+    property bool _haveStationTiles: (
+           fahrplanBackend.favorites.count > 0
+        || fahrplanBackend.mostRecentStations.count > 0
+    )
 
     function selectOneStation(model, modelIndex) {
         model.selectStation(root.type, modelIndex)
@@ -200,6 +204,7 @@ Dialog {
                 width: parent.width
 
                 TileBase {
+                    visible: _haveStationTiles
                     width: parent.width
                     contentHeight: Theme.itemSizeSmall
 
@@ -223,6 +228,7 @@ Dialog {
 
                 SectionHeader {
                     text: qsTr("Search")
+                    visible: fahrplanBackend.stationSearchResults.count > 0
                 }
 
                 ListView {
@@ -248,10 +254,7 @@ Dialog {
 
                 property var currentItem: null
 
-                visible: opacity > 0.0 && (
-                       fahrplanBackend.favorites.count > 0
-                    || fahrplanBackend.mostRecentStations.count > 0
-                )
+                visible: opacity > 0.0 && _haveStationTiles
                 opacity: !_showFavoritesAsList && !_showingSearchResults ? 1.0 : 0.0
                 Behavior on opacity { FadeAnimator {} }
 
@@ -524,10 +527,12 @@ Dialog {
                 }
 
                 ViewPlaceholder {
-                    enabled: (
-                           fahrplanBackend.favorites.count == 0
-                        && fahrplanBackend.mostRecentStations.count == 0
-                    )
+                    id: favoritesHint
+
+                    enabled: !_haveStationTiles
+                             && (!_showingSearchResults
+                                 || (fahrplanBackend.stationSearchResults.count == 0
+                                     && searchString == ""))
                     text: qsTr("Click and hold in the search results to " +
                                "add or remove a station as a favorite")
                 }
