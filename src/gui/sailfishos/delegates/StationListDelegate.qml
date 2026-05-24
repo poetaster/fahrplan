@@ -45,7 +45,9 @@ ListItem {
     }
 
     width: listView.width
-    contentHeight: Theme.itemSizeMedium
+    contentHeight: Math.max(
+        Theme.itemSizeMedium,
+        contentsRow.height + 2*Theme.paddingMedium)
 
     menu: Component {
         ContextMenu {
@@ -66,23 +68,28 @@ ListItem {
     }
 
     Row {
+        id: contentsRow
+
         width: parent.width - 2*x
-        height: childrenRect.height
         x: Theme.horizontalPageMargin
         anchors.verticalCenter: parent.verticalCenter
 
         Column {
             height: childrenRect.height
             width: parent.width - spacing - star.width
+            anchors.verticalCenter: parent.verticalCenter
 
             Label {
                 width: parent.width
+                wrapMode: Text.Wrap
                 text: Theme.highlightText(model.name,_queryRegex, Theme.highlightColor).
                       replace(/^(.*?,\s*)?(.*?)$/, '$1<b>$2</b>')
             }
 
             Label {
+                height: !!text ? implicitHeight : 0
                 width: parent.width
+                wrapMode: Text.Wrap
                 text: model.miscInfo
 
                 font.pixelSize: Theme.fontSizeSmall
@@ -94,6 +101,7 @@ ListItem {
             id: star
 
             highlighted: down || root.highlighted
+            anchors.verticalCenter: parent.verticalCenter
 
             icon {
                 anchors {
