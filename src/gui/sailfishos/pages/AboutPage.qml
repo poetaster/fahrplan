@@ -171,6 +171,25 @@ Page {
                     }
 
                     Label {
+                        text: qsTr("Station background images")
+                        font.bold: true
+                    }
+
+                    Label {
+                        wrapMode: Text.WordWrap
+                        width: parent.width
+                        textFormat: Text.StyledText
+                        onLinkActivated : Qt.openUrlExternally(link)
+                        text: "<a href='https://www.maptiler.com/copyright/'>© MapTiler</a> " +
+                              "<a href='https://www.openstreetmap.org/copyright'>© OpenStreetMap contributors</a>"
+                    }
+
+                    Label {
+                        /* spacer */
+                        text: " "
+                    }
+
+                    Label {
                         text: qsTr("License")
                         font.bold: true
                     }
