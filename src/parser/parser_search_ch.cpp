@@ -186,7 +186,7 @@ JourneySegment::JourneySegment(const QVariantMap& leg, const QVariant& exit)
     this->loadDelay(leg);
     this->loadTrainType(leg);
     this->loadExit(leg, exit.toMap());
- 
+
 //  this->setInternalData1("UNUSED");
 //  this->setInternalData2("UNUSED");
 }
@@ -563,7 +563,7 @@ void ParserSearchCH::findStationsByName(const QString &stationName)
 
     currentRequestState = FahrplanNS::stationsByNameRequest;
 
-    QUrl url("http://timetable.search.ch/api/completion.json");
+    QUrl url("https://timetable.search.ch/api/completion.json");
 #if defined(BUILD_FOR_QT5)
     QUrlQuery query;
 #else
@@ -586,7 +586,7 @@ void ParserSearchCH::findStationsByCoordinates(qreal longitude, qreal latitude)
 
     currentRequestState = FahrplanNS::stationsByCoordinatesRequest;
 
-    QUrl url("http://timetable.search.ch/api/completion.json");
+    QUrl url("https://timetable.search.ch/api/completion.json");
 #if defined(BUILD_FOR_QT5)
     QUrlQuery query;
 #else
@@ -690,7 +690,7 @@ void ParserSearchCH::getTimeTableForStation(const Station &station,
 
     currentRequestState = FahrplanNS::getTimeTableForStationRequest;
 
-    QUrl url("http://timetable.search.ch/api/stationboard.json");
+    QUrl url("https://timetable.search.ch/api/stationboard.json");
 #if defined(BUILD_FOR_QT5)
     QUrlQuery query;
 #else
@@ -761,7 +761,7 @@ void ParserSearchCH::searchJourney(const Station &from, const Station &via,
     lastJourneySearch.when = when;
     lastJourneySearch.restrictions = restrictions;
 
-    QUrl url("http://timetable.search.ch/api/route.json");
+    QUrl url("https://timetable.search.ch/api/route.json");
 #if defined(BUILD_FOR_QT5)
     QUrlQuery query;
 #else
