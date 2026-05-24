@@ -39,6 +39,9 @@ Dialog {
 
     function selectOneStation(model, modelIndex) {
         model.selectStation(root.type, modelIndex)
+
+        acceptDestination = pageStack.previousPage()
+        acceptDestinationAction = PageStackAction.Pop
         canAccept = true
         accept()
     }
@@ -46,6 +49,9 @@ Dialog {
     function selectTwoStations(fromModel, fromIndex, toModel, toIndex) {
         fromModel.selectStation(FahrplanBackend.DepartureStation, fromIndex)
         toModel.selectStation(FahrplanBackend.ArrivalStation, toIndex)
+
+        acceptDestination = pageStack.previousPage()
+        acceptDestinationAction = PageStackAction.Pop
         canAccept = true
         accept()
     }
