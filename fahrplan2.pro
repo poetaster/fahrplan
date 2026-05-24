@@ -365,6 +365,14 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
         data/sailfishos/harbour-fahrplan2.desktop \
         data/sailfishos/openrepos/harbour-fahrplan2.desktop \
         data/sailfishos/harbour-fahrplan2.png
+
+    CUSTOM_SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
+
+    for(size, CUSTOM_SAILFISHAPP_ICONS) {
+        icon$${size}.files = data/sailfishos/icons/$${size}/$${TARGET}.png
+        icon$${size}.path = /usr/share/icons/hicolor/$${size}/apps
+        INSTALLS += icon$${size}
+    }
 }
 
 #win32|unix:!simulator:!maemo5:!contains(MEEGO_EDITION,harmattan):!symbian:!exists("/usr/include/sailfishapp/sailfishapp.h"):!ubuntu:!blackberry {
