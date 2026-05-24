@@ -43,9 +43,9 @@ Dialog {
         accept()
     }
 
-    function selectTwoStations(model, fromIndex, toIndex) {
-        model.selectStation(FahrplanBackend.DepartureStation, fromIndex)
-        model.selectStation(FahrplanBackend.ArrivalStation, toIndex)
+    function selectTwoStations(fromModel, fromIndex, toModel, toIndex) {
+        fromModel.selectStation(FahrplanBackend.DepartureStation, fromIndex)
+        toModel.selectStation(FahrplanBackend.ArrivalStation, toIndex)
         canAccept = true
         accept()
     }
@@ -260,8 +260,9 @@ Dialog {
                         )
                     } else {
                         root.selectTwoStations(
-                            fahrplanBackend.favorites,
+                            from.listModel,
                             from.modelIndex,
+                            stationsContainer.currentItem.listModel,
                             stationsContainer.currentItem.modelIndex
                         )
                     }
