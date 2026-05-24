@@ -345,6 +345,12 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
         INCLUDEPATH += /usr/include/mkcal-qt5 /usr/include/kcalcoren-qt5
     }
 
+    # needed for downloading station covers
+    MAPTILER_KEY = $$(FAHRPLAN2_MAPTILER_KEY)  # environment
+    equals(MAPTILER_KEY, "") {
+        message("No maptiler key found in FAHRPLAN2_MAPTILER_KEY. Station covers disabled.")
+    }
+    DEFINES += MAPTILER_KEY=\\\"$$MAPTILER_KEY\\\"
     include("3rdparty/QuickDownload/quickdownload.pri")
 
     RESOURCES += sailfishos_res.qrc

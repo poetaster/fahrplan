@@ -185,6 +185,8 @@ int main(int argc, char *argv[])
 
         #if defined(BUILD_FOR_SAILFISHOS)
             QQuickView *view = SailfishApp::createView();
+
+            view->rootContext()->setContextProperty("MAPTILER_KEY", QStringLiteral(MAPTILER_KEY));
         #elif defined(HAVE_DECLARATIVE_CACHE)
             QDeclarativeView* view = MDeclarativeCache::qDeclarativeView();
         #elif defined(BUILD_FOR_QT5)
