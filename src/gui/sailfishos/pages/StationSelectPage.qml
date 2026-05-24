@@ -247,7 +247,7 @@ Dialog {
                 Behavior on opacity { FadeAnimator {} }
 
                 width: parent.width
-                height: stationsFlow.height + customStation.height + 2*Theme.paddingMedium
+                height: stationsPickerContainer.height + 2*Theme.paddingMedium
 
                 function finalizeDrag(from) {
                     if (from === customStation || stationsContainer.currentItem == customStation) {
@@ -284,8 +284,8 @@ Dialog {
                         dragConnector.endY = y
                         dragConnector.requestPaint()
 
-                        var point = parent.mapToItem(stationsContainer, x, y)
-                        var container = stationsContainer.childAt(point.x, point.y)
+                        var point = parent.mapToItem(stationsPickerContainer, x, y)
+                        var container = stationsPickerContainer.childAt(point.x, point.y)
 
                         var newItem = null
                         if (!!container) {
@@ -331,8 +331,8 @@ Dialog {
                         }
 
                         var opacity = (
-                               endY < stationsFlow.y
-                            || endY > stationsFlow.y + stationsFlow.height
+                               endY < stationsPickerContainer.y
+                            || endY > stationsPickerContainer.y + stationsPickerContainer.height
                         ) ? 0.8 : 1.0
 
                         ctx.reset()
@@ -360,74 +360,77 @@ Dialog {
                     }
                 }
 
-                Flow {
-                    id: stationsFlow
-
-                    objectName: "FavoritesList"
-
-                    property int maxCount: Math.floor(
-                        (root.height-header.height-searchRow.height-2*column.spacing
-                         - Theme.itemSizeSmall
-                         - customStation.height
-                        ) / Theme.itemSizeExtraLarge) * 2
+                Column {
+                    id: stationsPickerContainer
 
                     width: parent.width
-                    anchors {
-                        top: parent.top
-                        topMargin: Theme.paddingMedium
+                    height: childrenRect.height
+
+                    Item {
+                        width: parent.width
+                        height: Theme.paddingMedium
                     }
 
-                    Repeater {
-                        model: fahrplanBackend.favorites
+                    Flow {
+                        id: stationsFlow
 
-                        delegate: StationTileDelegate {
-                            id: delegate
+                        width: parent.width
 
-                            visible: index < stationsFlow.maxCount
+                        property int maxCount: Math.floor(
+                            (root.height-header.height-searchRow.height-2*column.spacing
+                             - Theme.itemSizeSmall
+                             - customStation.height
+                            ) / Theme.itemSizeExtraLarge) * 2
 
-                            modelIndex: index
-                            listModel: fahrplanBackend.favorites
-                            name: model.name
-                            type: model.type
-                            ident: model.id
+                        Repeater {
+                            model: fahrplanBackend.favorites
 
-                            onClicked: {
-                                selectOneStation(fahrplanBackend.favorites, modelIndex)
+                            delegate: StationTileDelegate {
+                                visible: index < stationsFlow.maxCount
+
+                                modelIndex: index
+                                listModel: fahrplanBackend.favorites
+                                name: model.name
+                                type: model.type
+                                ident: model.id
+
+                                onClicked: {
+                                    selectOneStation(fahrplanBackend.favorites, modelIndex)
+                                }
                             }
                         }
                     }
-                }
 
-                StationTileDelegate {
-                    id: customStation
+                    StationTileDelegate {
+                        id: customStation
 
-                    property string _dynamicLabel: {
-                        if (dragActive || down) {
-                            qsTr("From")
-                        } else if (stationsContainer.currentItem == customStation) {
-                            qsTr("To")
-                        } else {
-                            qsTr("Other station")
+                        property string _dynamicLabel: {
+                            if (dragActive || down) {
+                                qsTr("From")
+                            } else if (stationsContainer.currentItem == customStation) {
+                                qsTr("To")
+                            } else {
+                                qsTr("Other station")
+                            }
                         }
+
+                        menu: null
+                        property int index: 0
+                        modelIndex: index
+                        listModel: fahrplanBackend.favorites
+
+                        isAlternateHighlight: false
+                        alternateHighlightColor: "transparent"
+
+                        visible: allowSelectTwo
+                        width: parent.width
+                        contentHeight: allowSelectTwo ? Theme.itemSizeExtraLarge : 0
+
+                        backgroundImage: !down && stationsContainer.currentItem == customStation ?
+                            Qt.resolvedUrl("../images/tile-bg-to.png") :
+                            Qt.resolvedUrl("../images/tile-bg-from.png")
+                        text: "<b>" + _dynamicLabel + "</b>&nbsp;&nbsp;\u2022 \u2022 \u2022"
                     }
-
-                    menu: null
-                    property int index: 0
-                    modelIndex: index
-                    listModel: fahrplanBackend.favorites
-
-                    isAlternateHighlight: false
-                    alternateHighlightColor: "transparent"
-
-                    visible: allowSelectTwo
-                    anchors.top: stationsFlow.bottom
-                    width: parent.width
-                    contentHeight: allowSelectTwo ? Theme.itemSizeExtraLarge : 0
-
-                    backgroundImage: !down && stationsContainer.currentItem == customStation ?
-                        Qt.resolvedUrl("../images/tile-bg-to.png") :
-                        Qt.resolvedUrl("../images/tile-bg-from.png")
-                    text: "<b>" + _dynamicLabel + "</b>&nbsp;&nbsp;\u2022 \u2022 \u2022"
                 }
 
                 TileBase {
@@ -436,7 +439,7 @@ Dialog {
                     visible: fahrplanBackend.favorites.count > stationsFlow.maxCount
                     contentHeight: root.height - (stationsContainer.y + y)
                     anchors {
-                        top: customStation.bottom
+                        top: stationsPickerContainer.bottom
                         left: parent.left
                         right: parent.right
                     }
