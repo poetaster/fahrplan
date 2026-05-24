@@ -345,6 +345,8 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
         INCLUDEPATH += /usr/include/mkcal-qt5 /usr/include/kcalcoren-qt5
     }
 
+    include("3rdparty/QuickDownload/quickdownload.pri")
+
     RESOURCES += sailfishos_res.qrc
 
     SAILFISH_GUI_FILES += \
