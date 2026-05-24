@@ -783,7 +783,18 @@ void ParserSearchCH::searchJourney(const Station &from, const Station &via,
 
     if (mode == Arrival) {
         query.addQueryItem("time_type", "arrival");
+
+        // When searching by arrival, show mainly connections that arrive early.
+        query.addQueryItem("pre", "7");
+        query.addQueryItem("num", "1");
+    } else if (mode == Departure) {
+        query.addQueryItem("time_type", "depart");
+
+        // When searching by departure, only show entries after the given time.
+        query.addQueryItem("pre", "0");
+        query.addQueryItem("num", "8");
     }
+
 #if defined(BUILD_FOR_QT5)
     url.setQuery(query);
 #else
