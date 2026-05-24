@@ -35,8 +35,8 @@
 ParserPTVVicGovAu::ParserPTVVicGovAu(QObject *parent) :
     ParserEFA(parent)
 {
+    // FIXME 2026-05-15: redirects to https://transport.vic.gov.au/
     baseRestUrl = "http://jp.ptv.vic.gov.au/ptv/";
-
 }
 
 

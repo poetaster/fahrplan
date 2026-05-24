@@ -854,7 +854,7 @@ void ParserSearchCH::searchJourneyEarlier()
     QDateTime nextQueryTime;
 
     if (details.length() > 0) {
-        // last search found something, skip 1 minute ahead from last result
+        // last search found something, skip 1 minute ahead from first result
         JourneyDetailResultList* result = details.first();
         nextQueryTime = result->arrivalDateTime().addSecs(-60);
     } else {

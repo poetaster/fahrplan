@@ -33,7 +33,7 @@
  *   * ResRobot enables searching for public transport connections in all of Sweden.
  *   * This backend actually uses two API's: "ResRobot - Reseplanerare" and "ResRobot - Stolptidtabeller 2".
  *   * Results are in XML or JSON.
- *   * ResRobot web frontend: http://resrobot.se/
+ *   * ResRobot web frontend: https://resrobot.se/
  *   * More API info: https://www.trafiklab.se/api/resrobot-reseplanerare
  *                    https://www.trafiklab.se/api/resrobot-stolptidtabeller-2
  *   * Backend project: https://www.trafiklab.se/projekt/fahrplan

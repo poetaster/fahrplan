@@ -36,7 +36,7 @@ ParserSydneyEFA::ParserSydneyEFA(QObject *parent) :
 {
     baseRestUrl = "https://transportnsw.info/web/";
     //baseRestUrl = "https://tp.transportnsw.info/nsw/";
-    //baseRestUrl = "http://mobile.131500.com.au/TripPlanner/mobile/";
+    //baseRestUrl = "https://mobile.131500.com.au/TripPlanner/mobile/";
 }
 
 
