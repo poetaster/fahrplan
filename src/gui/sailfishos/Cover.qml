@@ -25,7 +25,7 @@ CoverBackground {
     id: appCover
 
     Image {
-           source: "../../../data/sailfishos/cover.png"
+           source: "qrc:///data/sailfishos/cover.png"
            anchors.horizontalCenter: parent.horizontalCenter
            width: parent.width
            height: sourceSize.height * width / sourceSize.width
