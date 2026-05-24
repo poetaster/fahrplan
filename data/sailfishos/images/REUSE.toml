@@ -57,6 +57,13 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 SPDX-FileComment = "original: ship-solid-full.svg"
 
 [[annotations]]
+path = "tile-bg-generic.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: house-solid-full.svg"
+
+[[annotations]]
 path = ["tile-bg-from.svg", "tile-bg-to.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2016 Michael Zanetti, 2026 Mirian Margiani"

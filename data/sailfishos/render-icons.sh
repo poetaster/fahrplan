@@ -39,7 +39,7 @@ render_batch
 
 cNAME="images: tile backgrounds"
 cITEMS=(
-    images/tile-bg-{from,to,bus,cablecar,funicular,gondola,port,subway,train,tram}
+    images/tile-bg-{from,to,generic,bus,cablecar,funicular,gondola,port,subway,train,tram}
 )
 cRESOLUTIONS=(200x200)
 cTARGETS=(../../src/gui/sailfishos/images)

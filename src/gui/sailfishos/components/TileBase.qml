@@ -20,6 +20,7 @@ ListItem {
 
     property string backgroundImage  // optional
     property string tileIcon  // optional
+    property string fallbackIcon  // optional, fallback if tileIcon fails to load
 
     readonly property bool _noBackgroundImage: backgroundImageItem.status !== Image.Ready &&
                                                backgroundImageItem.status !== Image.Loading
@@ -43,6 +44,15 @@ ListItem {
         opacity: 0.1
 
         visible: _noBackgroundImage
+
+        onStatusChanged: {
+            if (status == Image.Error
+                && source !== fallbackIcon
+                && !!fallbackIcon
+            ) {
+                source = fallbackIcon
+            }
+        }
     }
 
     HighlightImage {

@@ -63,6 +63,7 @@ TileBase {
     // The already saved favorites will not be updated even when
     // the backend gets support for station types. Only new ones.
     tileIcon: !!type ? Qt.resolvedUrl("../images/tile-bg-%1.png".arg(type)) : ""
+    fallbackIcon: Qt.resolvedUrl("../images/tile-bg-generic.png")
     backgroundImage: ""
 
     menu: Component {
