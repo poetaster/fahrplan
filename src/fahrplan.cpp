@@ -350,6 +350,10 @@ void Fahrplan::onParserChanged(const QString &name, int index)
     if (m_favorites)
         m_favorites->reload();
 
+    if (m_mostRecentStations) {
+        m_mostRecentStations->reload();
+    }
+
     if (m_trainrestrictions) {
         QStringList list = parser()->getTrainRestrictions();
         m_trainrestrictions->setStringList(list);

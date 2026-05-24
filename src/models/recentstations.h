@@ -30,13 +30,14 @@ public:
     explicit MostRecentStations(Fahrplan *parent = 0);
 
 public slots:
+    void reload();
     void pushEntry(Fahrplan::StationType _, const Station &station);
 
 private slots:
     void onCountChanged();
 
 private:
-    QSettings *m_settings;
+    QSettings *m_settings {nullptr};
 
     void loadSettings();
     void saveSettings();

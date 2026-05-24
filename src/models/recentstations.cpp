@@ -30,18 +30,29 @@ const static uint8_t MAX_RECENT_ENTRIES = {4};
 MostRecentStations::MostRecentStations(Fahrplan *parent)
     : StationSearchResults(parent)
 {
-    m_settings = new QSettings(FAHRPLAN_SETTINGS_NAMESPACE, "fahrplan2", this);
-
-    if (!m_settings->group().isEmpty())
-        m_settings->endGroup();
-    m_settings->beginGroup(qobject_cast<Fahrplan *>(QObject::parent())->parser()->uid());
-
-    loadSettings();
-
     // When favorites change, we need to trigger view update
     // so that stars states in the search results are updated.
     connect(parent->favorites(), &StationsListModel::countChanged,
             this, &MostRecentStations::onCountChanged);
+
+    reload();
+}
+
+void MostRecentStations::reload()
+{
+    if (m_settings) {
+        m_settings->deleteLater();
+    }
+
+    m_settings = new QSettings(FAHRPLAN_SETTINGS_NAMESPACE, "fahrplan2", this);
+
+    if (!m_settings->group().isEmpty()) {
+        m_settings->endGroup();
+    }
+
+    m_settings->beginGroup(qobject_cast<Fahrplan *>(QObject::parent())->parser()->uid());
+
+    loadSettings();
 }
 
 void MostRecentStations::pushEntry(Fahrplan::StationType _, const Station& station)
@@ -76,6 +87,9 @@ void MostRecentStations::onCountChanged()
 
 void MostRecentStations::loadSettings()
 {
+    beginResetModel();
+    m_list.clear();
+
     int size = m_settings->beginReadArray("mostRecentStations");
 
     for (int k = 0; k < size; ++k) {
@@ -104,6 +118,8 @@ void MostRecentStations::loadSettings()
 
     // The model is intentionally sorted by usage and not by name.
     // not: qSort(m_list);
+
+    endResetModel();
 }
 
 void MostRecentStations::saveSettings()
