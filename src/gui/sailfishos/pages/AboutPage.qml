@@ -20,7 +20,16 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import Fahrplan 1.0
-import "../../about.js" as About
+
+// source paths:    src/gui/sailfishos/pages/AboutPage.qml
+//                          -----1---- --2--
+//                  src/gui/about.js -> two levels difference
+// installed paths: harbour-fahrplan2/qml/pages/AboutPage.qml
+//                                        --1--
+//                  harbour-fahrplan2/qml/about.js -> one level!
+// This is necessary because Sailfish doesn't allow pointing
+// outside of the harbour-fahrplan2/qml directory.
+import "../about.js" as About
 
 Page {
     id: aboutPage

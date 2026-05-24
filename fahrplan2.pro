@@ -345,7 +345,7 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
 
     RESOURCES += sailfishos_res.qrc
 
-    OTHER_FILES += \
+    SAILFISH_GUI_FILES += \
         src/gui/sailfishos/main.qml \
         src/gui/sailfishos/Cover.qml \
         src/gui/sailfishos/pages/MainPage.qml \
@@ -361,10 +361,24 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
         src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml \
         src/gui/sailfishos/pages/SettingsPage.qml \
         src/gui/sailfishos/pages/AboutPage.qml \
+        src/gui/about.js \
+
+    OTHER_FILES += \
+        $$SAILFISH_GUI_FILES \
         rpm/harbour-fahrplan2.spec \
         data/sailfishos/harbour-fahrplan2.desktop \
         data/sailfishos/openrepos/harbour-fahrplan2.desktop \
         data/sailfishos/harbour-fahrplan2.png
+
+    DISTFILES += \
+        $$SAILFISH_GUI_FILES
+
+    sfos_gui.path = /usr/share/$${TARGET}/qml
+    sfos_gui.files = \
+        src/gui/sailfishos/* \
+        src/gui/about.js \
+
+    INSTALLS += sfos_gui
 
     CUSTOM_SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
 
