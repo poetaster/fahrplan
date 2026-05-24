@@ -1,0 +1,64 @@
+version = 1
+
+[[annotations]]
+path = "mode-departure-now.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: alarm-clock-regular-full.svg"
+
+[[annotations]]
+path = "mode-departure.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: plane-departure-solid-full.svg"
+
+[[annotations]]
+path = "tile-bg-bus.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: bus-side-solid-full.svg"
+
+[[annotations]]
+path = ["tile-bg-cablecar.svg", "tile-bg-funicular.svg", "tile-bg-gondola.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: cable-car-solid-full.svg"
+
+[[annotations]]
+path = "tile-bg-train.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: train-solid-full.svg"
+
+[[annotations]]
+path = "tile-bg-subway.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: train-subway-solid-full.svg"
+
+[[annotations]]
+path = "tile-bg-tram.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: train-tram-solid-full.svg"
+
+[[annotations]]
+path = "tile-bg-port.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Adapted from FontAwesome"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "original: ship-solid-full.svg"
+
+[[annotations]]
+path = ["tile-bg-from.svg", "tile-bg-to.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Michael Zanetti, 2026 Mirian Margiani"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "original: swap-with-arrival.svg"

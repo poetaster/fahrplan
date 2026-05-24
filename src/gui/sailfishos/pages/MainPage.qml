@@ -109,7 +109,9 @@ Page {
                 height: menuOpen ? stationSelectContextMenu.height + contentItem.height : contentItem.height
 
                 onClicked: {
-                      pageStack.push(Qt.resolvedUrl("StationSelectPage.qml"), {type: type, fahrplanBackend: fahrplanBackend})
+                      pageStack.push(Qt.resolvedUrl("StationSelectPage.qml"), {
+                          type: type, fahrplanBackend: fahrplanBackend, allowSelectTwo: false
+                      })
                 }
                 onPressAndHold: {
                     stationSelectContextMenu.openMenu(viaButton, FahrplanBackend.ViaStation);
