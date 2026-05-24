@@ -610,20 +610,28 @@ void ParserSearchCH::parseStationRow(StationsList& rows, const QVariantMap& row)
     Station s;
     if (icon.toString() == "sl-icon-type-train") {
         s.miscInfo = tr("Train station");
+        s.type = "train";
     } else if (icon.toString() == "sl-icon-type-strain") {
         s.miscInfo = tr("Train station");
+        s.type = "train";
     } else if (icon.toString() == "sl-icon-type-tram") {
         s.miscInfo = tr("Tram stop");
+        s.type = "tram";
     } else if (icon.toString() == "sl-icon-type-ship") {
         s.miscInfo = tr("Port");
+        s.type = "port";
     } else if (icon.toString() == "sl-icon-type-bus") {
         s.miscInfo = tr("Bus stop");
+        s.type = "bus";
     } else if (icon.toString() == "sl-icon-type-funicular") {
         s.miscInfo = tr("Funicular");
+        s.type = "funicular";
     } else if (icon.toString() == "sl-icon-type-gondola") {
         s.miscInfo = tr("Gondola");
+        s.type = "gondola";
     } else if (icon.toString() == "sl-icon-type-cablecar") {
         s.miscInfo = tr("Cablecar");
+        s.type = "cablecar";
     } else {
         qDebug() << "Unknown icon type: " << icon.toString();
     }
