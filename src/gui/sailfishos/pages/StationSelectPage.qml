@@ -399,6 +399,8 @@ Dialog {
                                 name: model.name
                                 type: model.type
                                 ident: model.id
+                                latitude: model.latitude
+                                longitude: model.longitude
 
                                 onClicked: {
                                     selectOneStation(fahrplanBackend.mostRecentStations, modelIndex)
@@ -437,6 +439,8 @@ Dialog {
                                 name: model.name
                                 type: model.type
                                 ident: model.id
+                                latitude: model.latitude
+                                longitude: model.longitude
 
                                 onClicked: {
                                     selectOneStation(fahrplanBackend.favorites, modelIndex)

@@ -17,6 +17,8 @@ TileBase {
     property string name
     property string type
     property string ident
+    property real latitude
+    property real longitude
 
     // Alternating background colors: every second entry in
     // each of the two columns is highlighted. Highlighting
