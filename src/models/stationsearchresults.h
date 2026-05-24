@@ -34,6 +34,7 @@ public:
 public slots:
     void addToFavorites(int index);
     void removeFromFavorites(int index);
+    void removeByIdFromFavorites(const QString &id);
 
 private slots:
     void onCountChanged();

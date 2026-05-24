@@ -62,6 +62,16 @@ void StationSearchResults::removeFromFavorites(int index)
     emit dataChanged(i, i);
 }
 
+void StationSearchResults::removeByIdFromFavorites(const QString& id)
+{
+    for (int i = 0; i < m_list.length(); ++i) {
+        if (m_list[i].id == id) {
+            removeFromFavorites(i);
+            return;
+        }
+    }
+}
+
 void StationSearchResults::onCountChanged()
 {
     emit dataChanged(createIndex(0, 0), createIndex(rowCount() - 1, 0));
