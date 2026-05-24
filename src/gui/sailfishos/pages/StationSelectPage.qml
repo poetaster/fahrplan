@@ -29,7 +29,7 @@ Dialog {
     id: root
 
     property bool allowSelectTwo: true
-    property bool focusSearchImmediately: false
+    property bool focusSearchImmediately: !_haveStationTiles
     property string searchString
     property int type: FahrplanBackend.DepartureStation
     property FahrplanBackend fahrplanBackend: null
