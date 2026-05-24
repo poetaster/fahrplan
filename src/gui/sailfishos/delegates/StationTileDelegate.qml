@@ -33,6 +33,7 @@ TileBase {
     opacity: !containsPress &&
              !drag.active &&
              !!stationsContainer.currentItem &&
+             allowSelectTwo &&
              stationsContainer.currentItem != root ?
                  0.4 : 1.0
 

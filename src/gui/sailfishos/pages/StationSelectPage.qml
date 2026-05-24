@@ -286,6 +286,8 @@ Dialog {
                     property point position: Qt.point(x, y)
 
                     onPositionChanged: {
+                        if (!allowSelectTwo) return
+
                         dragConnector.endX = x
                         dragConnector.endY = y
                         dragConnector.requestPaint()
@@ -454,7 +456,7 @@ Dialog {
                         }
 
                         menu: null
-                        property int index: 0
+                        property int index: -1
                         modelIndex: index
                         listModel: fahrplanBackend.favorites
 
