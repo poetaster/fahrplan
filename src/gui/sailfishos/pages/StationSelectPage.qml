@@ -248,7 +248,10 @@ Dialog {
 
                 property var currentItem: null
 
-                visible: opacity > 0.0
+                visible: opacity > 0.0 && (
+                       fahrplanBackend.favorites.count > 0
+                    || fahrplanBackend.mostRecentStations.count > 0
+                )
                 opacity: !_showFavoritesAsList && !_showingSearchResults ? 1.0 : 0.0
                 Behavior on opacity { FadeAnimator {} }
 
@@ -516,7 +519,10 @@ Dialog {
                 }
 
                 ViewPlaceholder {
-                    enabled: (fahrplanBackend.favorites.count === 0)
+                    enabled: (
+                           fahrplanBackend.favorites.count == 0
+                        && fahrplanBackend.mostRecentStations.count == 0
+                    )
                     text: qsTr("Click and hold in the search results to " +
                                "add or remove a station as a favorite")
                 }
