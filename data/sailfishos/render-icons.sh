@@ -36,3 +36,11 @@ cITEMS=(cover)
 cRESOLUTIONS=(204x230)
 cTARGETS=(.)
 render_batch
+
+cNAME="images: mode icons"
+cITEMS=(
+    images/mode-{arrival,departure,departure-now}
+)
+cRESOLUTIONS=(112)
+cTARGETS=(../../src/gui/sailfishos/images)
+render_batch

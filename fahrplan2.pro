@@ -356,6 +356,7 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
         src/gui/sailfishos/delegates/JourneyDetailsDelegate.qml \
         src/gui/sailfishos/delegates/JourneyDetailsStationDelegate.qml \
         src/gui/sailfishos/delegates/JourneyDetailsTrainDelegate.qml \
+        src/gui/sailfishos/components/ModePicker.qml \
         src/gui/sailfishos/pages/JourneyResultsPage.qml \
         src/gui/sailfishos/delegates/TimetableEntryDelegate.qml \
         src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml \
