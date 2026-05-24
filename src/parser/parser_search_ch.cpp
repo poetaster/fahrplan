@@ -136,31 +136,24 @@ TrainTypeList::TrainTypeList() :
 {
 }
 
-void TrainTypeList::appendUnique(const QString& type)
-{
-    if (!types.contains(type)) {
-        types.append(type);
-    }
-}
-
 void TrainTypeList::append(const QString& type)
 {
     if (type == "B") {
-        appendUnique(tr("Bus"));
+        types.append(tr("Bus"));
     } else if (type == "BN") {
-        appendUnique(tr("Bus"));
+        types.append(tr("Bus"));
     } else if (type == "T") {
-        appendUnique(tr("Tram"));
+        types.append(tr("Tram"));
     } else if (type == "FUN") {
-        appendUnique(tr("Funi"));
+        types.append(tr("Funi"));
     } else if (type == "GB") {
-        appendUnique(tr("Gondola"));
+        types.append(tr("Gondola"));
     } else if (type == "PB") {
-        appendUnique(tr("Cableway"));
+        types.append(tr("Cableway"));
     } else if (type == "BAT") {
-        appendUnique(tr("Ship"));
+        types.append(tr("Ship"));
     } else {
-        appendUnique(type);
+        types.append(type);
     }
 }
 
