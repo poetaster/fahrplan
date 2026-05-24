@@ -47,6 +47,11 @@ Page {
         }
 
         PullDownMenu {
+            MenuLabel {
+                id: currentBackend
+                text: fahrplanBackend.parserShortName
+                enabled: false
+            }
             MenuItem {
                 text: qsTr("Settings")
                 onClicked: {
@@ -70,9 +75,11 @@ Page {
                 }
             }
             MenuItem {
-                id: currentBackend
-                text: fahrplanBackend.parserShortName
-                enabled: false
+                text: qsTr("Switch direction")
+                visible: searchmode === 0 // routing
+                onClicked: {
+                    fahrplanBackend.swapStations(FahrplanBackend.DepartureStation, FahrplanBackend.ArrivalStation)
+                }
             }
         }
 
