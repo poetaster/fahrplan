@@ -24,6 +24,7 @@
 #include "calendar_sfos_wrapper.h"
 #include "models/favorites.h"
 #include "models/stationsearchresults.h"
+#include "models/recentstations.h"
 #include "models/timetable.h"
 #include "models/trainrestrictions.h"
 #include "models/backends.h"
@@ -31,7 +32,8 @@
 #include <QThread>
 
 FahrplanBackendManager *Fahrplan::m_parser_manager = NULL;
-StationSearchResults *Fahrplan::m_stationSearchResults= NULL;
+StationSearchResults *Fahrplan::m_stationSearchResults = NULL;
+MostRecentStations *Fahrplan::m_mostRecentStations = NULL;
 Favorites *Fahrplan::m_favorites = NULL;
 Timetable *Fahrplan::m_timetable = NULL;
 Trainrestrictions *Fahrplan::m_trainrestrictions = NULL;
@@ -65,6 +67,13 @@ Fahrplan::Fahrplan(QObject *parent)
         m_stationSearchResults = new StationSearchResults(this);
     }
     connect(m_stationSearchResults, &StationsListModel::stationSelected, this, &Fahrplan::setStation);
+
+    if (!m_mostRecentStations) {
+        m_mostRecentStations = new MostRecentStations(this);
+    }
+    connect(m_mostRecentStations, &StationsListModel::stationSelected, this, &Fahrplan::setStation);
+    connect(m_stationSearchResults, &StationsListModel::stationSelected,
+            m_mostRecentStations, &MostRecentStations::pushEntry);
 
     if (!m_timetable) {
         m_timetable = new Timetable(this);
@@ -109,6 +118,11 @@ FahrplanParserThread* Fahrplan::parser()
 Favorites* Fahrplan::favorites() const
 {
     return m_favorites;
+}
+
+MostRecentStations* Fahrplan::mostRecentStations() const
+{
+    return m_mostRecentStations;
 }
 
 QString Fahrplan::getVersion()

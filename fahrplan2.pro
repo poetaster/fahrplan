@@ -112,6 +112,7 @@ HEADERS += \
     src/models/stationslistmodel.h \
     src/models/favorites.h \
     src/models/stationsearchresults.h \
+    src/models/recentstations.h \
     src/models/timetable.h \
     src/models/trainrestrictions.h \
     src/parser/parser_xmlnri.h \
@@ -146,6 +147,7 @@ SOURCES += src/main.cpp \
     src/models/stationslistmodel.cpp \
     src/models/favorites.cpp \
     src/models/stationsearchresults.cpp \
+    src/models/recentstations.cpp \
     src/models/timetable.cpp \
     src/models/trainrestrictions.cpp \
     src/parser/parser_movas_bahnde.cpp \

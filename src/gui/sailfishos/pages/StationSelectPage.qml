@@ -35,7 +35,7 @@ Dialog {
     property FahrplanBackend fahrplanBackend: null
 
     property bool _showFavoritesAsList: false
-    property bool _showingSearchResults: (fahrplanBackend.stationSearchResults.count > 0)
+    property bool _showingSearchResults: false
 
     function selectOneStation(model, modelIndex) {
         model.selectStation(root.type, modelIndex)
@@ -289,7 +289,10 @@ Dialog {
 
                         var newItem = null
                         if (!!container) {
-                            if (container.objectName === stationsFlow.objectName) {
+                            if (container === mostRecentFlow) {
+                                point = parent.mapToItem(mostRecentFlow, x, y)
+                                newItem = mostRecentFlow.childAt(point.x, point.y)
+                            } else if (container === stationsFlow) {
                                 point = parent.mapToItem(stationsFlow, x, y)
                                 newItem = stationsFlow.childAt(point.x, point.y)
                             } else if (container === customStation) {
@@ -372,6 +375,35 @@ Dialog {
                     }
 
                     Flow {
+                        id: mostRecentFlow
+
+                        width: parent.width
+
+                        Repeater {
+                            model: fahrplanBackend.mostRecentStations
+
+                            delegate: StationTileDelegate {
+                                modelIndex: index
+                                listModel: fahrplanBackend.mostRecentStations
+                                name: model.name
+                                type: model.type
+                                ident: model.id
+
+                                onClicked: {
+                                    selectOneStation(fahrplanBackend.mostRecentStations, modelIndex)
+                                }
+                            }
+                        }
+                    }
+
+                    Separator {
+                        visible: fahrplanBackend.mostRecentStations.count > 0
+                        width: parent.width
+                        color: Theme.highlightColor
+                        horizontalAlignment: Qt.AlignHCenter
+                    }
+
+                    Flow {
                         id: stationsFlow
 
                         width: parent.width
@@ -380,6 +412,7 @@ Dialog {
                             (root.height-header.height-searchRow.height-2*column.spacing
                              - Theme.itemSizeSmall
                              - customStation.height
+                             - mostRecentFlow.height
                             ) / Theme.itemSizeExtraLarge) * 2
 
                         Repeater {
