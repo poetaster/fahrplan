@@ -136,31 +136,24 @@ TrainTypeList::TrainTypeList() :
 {
 }
 
-void TrainTypeList::appendUnique(const QString& type)
-{
-    if (!types.contains(type)) {
-        types.append(type);
-    }
-}
-
 void TrainTypeList::append(const QString& type)
 {
     if (type == "B") {
-        appendUnique(tr("Bus"));
+        types.append(tr("Bus"));
     } else if (type == "BN") {
-        appendUnique(tr("Bus"));
+        types.append(tr("Bus"));
     } else if (type == "T") {
-        appendUnique(tr("Tram"));
+        types.append(tr("Tram"));
     } else if (type == "FUN") {
-        appendUnique(tr("Funi"));
+        types.append(tr("Funi"));
     } else if (type == "GB") {
-        appendUnique(tr("Gondola"));
+        types.append(tr("Gondola"));
     } else if (type == "PB") {
-        appendUnique(tr("Cableway"));
+        types.append(tr("Cableway"));
     } else if (type == "BAT") {
-        appendUnique(tr("Ship"));
+        types.append(tr("Ship"));
     } else {
-        appendUnique(type);
+        types.append(type);
     }
 }
 
@@ -570,6 +563,8 @@ void ParserSearchCH::findStationsByName(const QString &stationName)
     QUrl query;
 #endif
     query.addQueryItem("term", stationName);
+    query.addQueryItem("show_coordinates", "1");
+    query.addQueryItem("show_ids", "1");
 #if defined(BUILD_FOR_QT5)
     url.setQuery(query);
 #else
@@ -594,6 +589,8 @@ void ParserSearchCH::findStationsByCoordinates(qreal longitude, qreal latitude)
 #endif
     QString pos = QString::number(latitude) + "," + QString::number(longitude);
     query.addQueryItem("latlon", pos);
+    query.addQueryItem("show_coordinates", "1");
+    query.addQueryItem("show_ids", "1");
 
 #if defined(BUILD_FOR_QT5)
     url.setQuery(query);
@@ -607,6 +604,9 @@ void ParserSearchCH::parseStationRow(StationsList& rows, const QVariantMap& row)
 {
     const QVariant& icon = row.value("iconclass");
     const QVariant& label = row.value("label");
+    const QVariant& id = row.value("id");
+    const QVariant& lon = row.value("lon");
+    const QVariant& lat = row.value("lat");
 
     /* Ignore street addresses */
     if ((icon.toString() == "sl-icon-type-adr") ||
@@ -617,20 +617,28 @@ void ParserSearchCH::parseStationRow(StationsList& rows, const QVariantMap& row)
     Station s;
     if (icon.toString() == "sl-icon-type-train") {
         s.miscInfo = tr("Train station");
+        s.type = "train";
     } else if (icon.toString() == "sl-icon-type-strain") {
         s.miscInfo = tr("Train station");
+        s.type = "train";
     } else if (icon.toString() == "sl-icon-type-tram") {
         s.miscInfo = tr("Tram stop");
+        s.type = "tram";
     } else if (icon.toString() == "sl-icon-type-ship") {
         s.miscInfo = tr("Port");
+        s.type = "port";
     } else if (icon.toString() == "sl-icon-type-bus") {
         s.miscInfo = tr("Bus stop");
+        s.type = "bus";
     } else if (icon.toString() == "sl-icon-type-funicular") {
         s.miscInfo = tr("Funicular");
+        s.type = "funicular";
     } else if (icon.toString() == "sl-icon-type-gondola") {
         s.miscInfo = tr("Gondola");
+        s.type = "gondola";
     } else if (icon.toString() == "sl-icon-type-cablecar") {
         s.miscInfo = tr("Cablecar");
+        s.type = "cablecar";
     } else {
         qDebug() << "Unknown icon type: " << icon.toString();
     }
@@ -638,8 +646,10 @@ void ParserSearchCH::parseStationRow(StationsList& rows, const QVariantMap& row)
     if (!label.isNull())
     {
         const QString& name = label.toString();
-        s.id = name;
         s.name = name;
+        s.id = id;
+        s.latitude = lat.toReal();
+        s.longitude = lon.toReal();
         rows.append(s);
     }
 }
@@ -698,9 +708,10 @@ void ParserSearchCH::getTimeTableForStation(const Station &station,
 #endif
     query.addQueryItem("stop", station.name);
     query.addQueryItem("limit", "15");
-    query.addQueryItem("date", when.toString("MM/dd/yyyy"));
+    query.addQueryItem("date", when.toString("yyyy-MM-dd"));
     query.addQueryItem("time", when.toString("hh:mm"));
     query.addQueryItem("show_tracks", "1");
+    query.addQueryItem("show_trackchanges", "1");
     query.addQueryItem("show_delays", "1");
 
     addRestrictionsToQuery(query, restrictions);
@@ -769,9 +780,10 @@ void ParserSearchCH::searchJourney(const Station &from, const Station &via,
 #endif
     query.addQueryItem("from", from.name);
     query.addQueryItem("to", to.name);
-    query.addQueryItem("date", when.toString("MM/dd/yyyy"));
+    query.addQueryItem("date", when.toString("yyyy-MM-dd"));
     query.addQueryItem("time", when.toString("hh:mm"));
     query.addQueryItem("show_delays", "1");
+    query.addQueryItem("show_trackchanges", "1");
 
     if (via.valid) {
         query.addQueryItem("via", via.name);
@@ -781,7 +793,18 @@ void ParserSearchCH::searchJourney(const Station &from, const Station &via,
 
     if (mode == Arrival) {
         query.addQueryItem("time_type", "arrival");
+
+        // When searching by arrival, show mainly connections that arrive early.
+        query.addQueryItem("pre", "7");
+        query.addQueryItem("num", "1");
+    } else if (mode == Departure) {
+        query.addQueryItem("time_type", "depart");
+
+        // When searching by departure, only show entries after the given time.
+        query.addQueryItem("pre", "0");
+        query.addQueryItem("num", "8");
     }
+
 #if defined(BUILD_FOR_QT5)
     url.setQuery(query);
 #else

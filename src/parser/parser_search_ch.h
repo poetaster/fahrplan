@@ -36,7 +36,6 @@ namespace parser_search_ch
             void append(const QString&);
             QString toString();
         private:
-            void appendUnique(const QString&);
             QStringList types;
     };
 
