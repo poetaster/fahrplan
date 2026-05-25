@@ -13,7 +13,7 @@
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License along
-**  with this program.  If not, see <http://www.gnu.org/licenses/>.
+**  with this program.  If not, see <https://www.gnu.org/licenses/>.
 **
 ****************************************************************************/
 
@@ -21,72 +21,72 @@
  *  This parser was written by Evan Sebire
  *  Should work with both EFAv9 and v10
  *  Information regarding EFA can be found at the following links:
- *  main webpage from Mentz Datenverarbeitung GmbH(Munich, 02, DE), http://www.mentzdv.de/englisch/products/efa/
- *  good explaination of XML; http://data.linz.gv.at/katalog/linz_ag/linz_ag_linien/fahrplan/LINZ_LINIEN_Schnittstelle_EFA_V1.pdf
- *  http://www.tfl.gov.uk/assets/downloads/businessandpartners/journey-planner-api-documentation.pdf.pdf    Still refers to EFAv9 not v10
+ *  main webpage from Mentz Datenverarbeitung GmbH(Munich, 02, DE), https://www.mentzdv.de/englisch/products/efa/
+ *  good explaination of XML; https://data.linz.gv.at/katalog/linz_ag/linz_ag_linien/fahrplan/LINZ_LINIEN_Schnittstelle_EFA_V1.pdf
+ *  https://www.tfl.gov.uk/assets/downloads/businessandpartners/journey-planner-api-documentation.pdf.pdf    Still refers to EFAv9 not v10
  *  documentation for the london deployment, https://code.google.com/p/openefa/
- *  http://patrickbrosi.de/?q=simpleefa#q=simpleefa
+ *  https://patrickbrosi.de/?q=simpleefa#q=simpleefa
  *
  *
  * Transport providers that use EFA
  *  Austria
- *  http://efa.vvt.at/vvtadr/   VVT
- *  http://efa.vor.at/wvb/
- *  http://efa.svv-info.at/svv/
- *  http://fahrplan.verbundlinie.at/stv/
- *  http://efaneu.vmobil.at/vvvmobile/      Verkehrsverbund Vorarlberg
- *  http://www.linzag.at/linz2/
- *  http://efa.ivb.at/ivb/
+ *  https://efa.vvt.at/vvtadr/   VVT
+ *  https://efa.vor.at/wvb/
+ *  https://efa.svv-info.at/svv/
+ *  https://fahrplan.verbundlinie.at/stv/
+ *  https://efaneu.vmobil.at/vvvmobile/      Verkehrsverbund Vorarlberg
+ *  https://www.linzag.at/linz2/
+ *  https://efa.ivb.at/ivb/
  *
  *  Australian
- *  Melbourne: http://jp.ptv.vic.gov.au/ptv/
- *  Sydney: http://mobile.131500.com.au/TripPlanner/mobile/     changed to v10 in Jan 2014
+ *  Melbourne: https://jp.ptv.vic.gov.au/ptv/
+ *  Sydney: https://mobile.131500.com.au/TripPlanner/mobile/     changed to v10 in Jan 2014
  *
  *  England
- *  http://www.travelinemidlands.co.uk/wmtis/
- *  http://www.travelineeastmidlands.co.uk/em/
- *  http://www.travelinesw.com/swe/XSLT_REQUEST?  Southern England and midlands
- *  London; http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en    EFA 10
+ *  https://www.travelinemidlands.co.uk/wmtis/
+ *  https://www.travelineeastmidlands.co.uk/em/
+ *  https://www.travelinesw.com/swe/XSLT_REQUEST?  Southern England and midlands
+ *  London; https://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en    EFA 10
  *
  *  German
- *  http://www.kvv.de/tunnelEfaDirect.php?action=XML_COORD_REQUEST  XML_GEOOBJECT_REQUEST   EFAv10
- *  http://efa.naldo.de/naldo/
- *  http://www2.vvs.de/vvs/
- *  http://efa.vvo-online.de:8080/dvb/
- *  http://efa.mobilitaetsverbund.de/web/
- *  http://efa9.vrn.de/vrt/
- *  http://app.vrr.de/standard/
- *  http://fahrplanauskunft.vrn.de/vrn_mobile/
- *  http://www.vms.de/vms2/     VMS
- *  http://www.efa-bw.de/nvbw/
- *  http://efa.mvv-muenchen.de/mobile/
- *  http://mobil.mvg-online.de/
- *  http://efa.vag-freiburg.de/vagfr/
- *  http://mobil.efa.de/mobile3/    GVH
- *  Donau-Iller-Nahverkehrsverbund-GmbH;    http://www.ding.eu/fahrplaene/fahrplanauskunft.html
- *  http://195.30.98.162:8081/vvv2/     Verkehrsverbund Vogtland (VVV), In West-Sachsen
- * http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
+ *  https://www.kvv.de/tunnelEfaDirect.php?action=XML_COORD_REQUEST  XML_GEOOBJECT_REQUEST   EFAv10
+ *  https://efa.naldo.de/naldo/
+ *  https://www2.vvs.de/vvs/
+ *  https://efa.vvo-online.de:8080/dvb/
+ *  https://efa.mobilitaetsverbund.de/web/
+ *  https://efa9.vrn.de/vrt/
+ *  https://app.vrr.de/standard/
+ *  https://fahrplanauskunft.vrn.de/vrn_mobile/
+ *  https://www.vms.de/vms2/     VMS
+ *  https://www.efa-bw.de/nvbw/
+ *  https://efa.mvv-muenchen.de/mobile/
+ *  https://mobil.mvg-online.de/
+ *  https://efa.vag-freiburg.de/vagfr/
+ *  https://mobil.efa.de/mobile3/    GVH
+ *  Donau-Iller-Nahverkehrsverbund-GmbH;    https://www.ding.eu/fahrplaene/fahrplanauskunft.html
+ *  https://195.30.98.162:8081/vvv2/     Verkehrsverbund Vogtland (VVV), In West-Sachsen
+ * https://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
 
  *
  *  Ireland
- *  http://www.journeyplanner.transportforireland.ie/nta/      EFA 10
+ *  https://www.journeyplanner.transportforireland.ie/nta/      EFA 10
  *
  *  Italian
- *  Bologna: http://tpweb.atc.bo.it/atc2/    ATC
+ *  Bologna: https://tpweb.atc.bo.it/atc2/    ATC
  *
  *  Slovenia
- *  Maribor: http://164.8.32.183/slo/
+ *  Maribor: https://164.8.32.183/slo/
  *
  *  Swiss
- *  http://www.efa-bvb.ch/bvb/
- *  http://mobil.vbl.ch/vblmobil/
+ *  https://www.efa-bvb.ch/bvb/
+ *  https://mobil.vbl.ch/vblmobil/
  *
  *  UAE
- *  http://wojhati.rta.ae/dub/
+ *  https://wojhati.rta.ae/dub/
  *
  *  US
- *  Chicago; http://www.transitchicago.com/   Chicago Transit Authority, also known as CTA, can't find public access
- *  San Francisco, Bay area; http://tripplanner.transit.511.org/mtc/XSLT_TRIP_REQUEST2?language=en
+ *  Chicago; https://www.transitchicago.com/   Chicago Transit Authority, also known as CTA, can't find public access
+ *  San Francisco, Bay area; https://tripplanner.transit.511.org/mtc/XSLT_TRIP_REQUEST2?language=en
  */
 
 
@@ -147,8 +147,8 @@ QStringList ParserEFA::getTrainRestrictions()
 
 void ParserEFA::findStationsByName(const QString &stationName)
 {
-    // http://jp.ptv.vic.gov.au/ptv/XML_STOPFINDER_REQUEST?locationServerActive=1&outputFormat=XML&type_sf=any&name_sf=lilydale
-    //http://www.journeyplanner.transportforireland.ie/nta/XML_DM_REQUEST?language=en&type_sf=any&type_dm=any&coordOutputFormat=WGS84&name_dm=cork&name_sf=cork&itdDateDay=26&itDateYearMonth=201309&itdTimeHour=09&itdTimeMinute=48&itdTripDateTimeDepArr=dep&deleteAssignedStops_dm=1&useRealtime=1&mode=direct
+    // https://jp.ptv.vic.gov.au/ptv/XML_STOPFINDER_REQUEST?locationServerActive=1&outputFormat=XML&type_sf=any&name_sf=lilydale
+    //https://www.journeyplanner.transportforireland.ie/nta/XML_DM_REQUEST?language=en&type_sf=any&type_dm=any&coordOutputFormat=WGS84&name_dm=cork&name_sf=cork&itdDateDay=26&itDateYearMonth=201309&itdTimeHour=09&itdTimeMinute=48&itdTripDateTimeDepArr=dep&deleteAssignedStops_dm=1&useRealtime=1&mode=direct
 
     qDebug() << "ParserEFA::findStationsByName(" <<  stationName << ")";
     if (currentRequestState != FahrplanNS::noneRequest) {
@@ -186,7 +186,7 @@ void ParserEFA::getTimeTableForStation(const Station &currentStation, const Stat
 {
     qDebug() << "void ParserEFA::getTimeTableForStation(" << currentStation.name << dateTime;
 
-    // http://journeyplanner.tfl.gov.uk/user/XML_DM_REQUEST?language=en&sessionID=0&ptOptionsActive=&itdLPxx_tubeMap=&itdLPxx_request=&command=&lsShowTrainsExplicit=1&name_dm=1001180&nameState_dm=notidentified&place_dm=London&type_dm=stopID
+    // https://journeyplanner.tfl.gov.uk/user/XML_DM_REQUEST?language=en&sessionID=0&ptOptionsActive=&itdLPxx_tubeMap=&itdLPxx_request=&command=&lsShowTrainsExplicit=1&name_dm=1001180&nameState_dm=notidentified&place_dm=London&type_dm=stopID
     if (currentRequestState != FahrplanNS::noneRequest)
         return;
     currentRequestState = FahrplanNS::getTimeTableForStationRequest;
@@ -233,7 +233,7 @@ void ParserEFA::findStationsByCoordinates(qreal longitude, qreal latitude)
     qDebug() << "ParserEFA::findStationsByCoordinates(longitude=" << longitude << ", latitude=" << latitude << ")";
 
     /* With EFA it's possible to send latitude and longitude and specify WGS84;
-     *http://jp.ptv.vic.gov.au/ptv/XML_TRIP_REQUEST2?type_origin=coord&name_origin=-37.75587,145.347519:WGS84
+     *https://jp.ptv.vic.gov.au/ptv/XML_TRIP_REQUEST2?type_origin=coord&name_origin=-37.75587,145.347519:WGS84
      */
 
     if (currentRequestState != FahrplanNS::noneRequest)

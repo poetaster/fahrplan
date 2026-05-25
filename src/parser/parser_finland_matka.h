@@ -13,7 +13,7 @@
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License along
-**  with this program.  If not, see <http://www.gnu.org/licenses/>.
+**  with this program.  If not, see <https://www.gnu.org/licenses/>.
 **
 ****************************************************************************/
 
@@ -26,7 +26,7 @@
  *      - Geocoding: HTTP GET (for finding stops etc. by name or position)
  *      - Routing: GraphQL (for finding routes and timetables).
  *   - Status of the new service (February 2017):
- *      - The old web frontend http://matka.fi redirects to the Finnish Transport Agency
+ *      - The old web frontend https://matka.fi redirects to the Finnish Transport Agency
  *      - It's not really obvious how the new service is going to be branded. It's
  *        documented at https://digitransit.fi/, but points at https://beta.digitransit.fi/
  *        for web access. That website labels itself at "the new matka.fi". The new

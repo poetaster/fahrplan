@@ -13,7 +13,7 @@
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License along
-**  with this program.  If not, see <http://www.gnu.org/licenses/>.
+**  with this program.  If not, see <https://www.gnu.org/licenses/>.
 **
 ****************************************************************************/
 
@@ -27,7 +27,7 @@
     #include <QUrlQuery>
 #endif
 
-//http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
+//https://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
 /*
 https://www.vrr.de/vrr-efa/XML_STOPFINDER_REQUEST?
 convertAddressesITKernel2LocationServer=1
@@ -51,7 +51,7 @@ ParserVRREFA::ParserVRREFA(QObject *parent) :
 {
     // new    https://www.vrr.de/vrr-efa
     baseRestUrl = "https://www.vrr.de/vrr-efa/";
-    //baseRestUrl = "http://efa.vrr.de/standard/";
+    //baseRestUrl = "https://efa.vrr.de/standard/";
     acceptEncoding = "gzip";
 }
 
@@ -71,7 +71,7 @@ QStringList ParserVRREFA::getTrainRestrictions()
 */
 void ParserVRREFA::findStationsByName(const QString &stationName)
 {
-    // http://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
+    // https://efa.vrr.de/standard/XML_STOPFINDER_REQUEST?doNotSearchForStops_sf=1&language=en&locationInfoActive=1&locationServerActive=1&name_sf=Solingen&serverInfo=1&type_sf=any
 
     qDebug() << "ParserEFA::findStationsByName(" <<  stationName << ")";
     if (currentRequestState != FahrplanNS::noneRequest) {

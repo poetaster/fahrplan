@@ -13,7 +13,7 @@
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License along
-**  with this program.  If not, see <http://www.gnu.org/licenses/>.
+**  with this program.  If not, see <https://www.gnu.org/licenses/>.
 **
 ****************************************************************************/
 
@@ -29,10 +29,10 @@
 ParserHafasBinary::ParserHafasBinary(QObject *parent) :
     ParserHafasXml(parent)
 {
-    // baseXmlUrl = "http://reiseauskunft.bahn.de/bin/query.exe";
-    // baseSTTableUrl = "http://mobile.bahn.de/bin/mobil/stboard.exe/en";
-    // baseUrl = "http://reiseauskunft.bahn.de/bin/query.exe";
-    // baseBinaryUrl = "http://reiseauskunft.bahn.de/bin/query.exe/eox";
+    // baseXmlUrl = "https://reiseauskunft.bahn.de/bin/query.exe";
+    // baseSTTableUrl = "https://mobile.bahn.de/bin/mobil/stboard.exe/en";
+    // baseUrl = "https://reiseauskunft.bahn.de/bin/query.exe";
+    // baseBinaryUrl = "https://reiseauskunft.bahn.de/bin/query.exe/eox";
 }
 
 void ParserHafasBinary::searchJourney(const Station &departureStation, const Station &viaStation, const Station &arrivalStation, const QDateTime &dateTime, Mode mode, int trainrestrictions)
@@ -734,7 +734,7 @@ QDate ParserHafasBinary::toDate(quint16 date)
 QString ParserHafasBinary::errorString(int error) const
 {
     // Some error code descriptions can be found here:
-    // http://code.google.com/p/public-transport-enabler/source/browse/enabler/src/de/schildbach/pte/AbstractHafasProvider.java
+    // https://code.google.com/p/public-transport-enabler/source/browse/enabler/src/de/schildbach/pte/AbstractHafasProvider.java
     switch (error) {
     case 1:
         return tr("Your session has expired. Please, perform the search again.");

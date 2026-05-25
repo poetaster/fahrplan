@@ -13,7 +13,7 @@
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License along
-**  with this program.  If not, see <http://www.gnu.org/licenses/>.
+**  with this program.  If not, see <https://www.gnu.org/licenses/>.
 **
 ****************************************************************************/
 
@@ -36,7 +36,7 @@ ParserSydneyEFA::ParserSydneyEFA(QObject *parent) :
 {
     baseRestUrl = "https://transportnsw.info/web/";
     //baseRestUrl = "https://tp.transportnsw.info/nsw/";
-    //baseRestUrl = "http://mobile.131500.com.au/TripPlanner/mobile/";
+    //baseRestUrl = "https://mobile.131500.com.au/TripPlanner/mobile/";
 }
 
 

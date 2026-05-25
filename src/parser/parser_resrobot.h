@@ -13,7 +13,7 @@
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License along
-**  with this program.  If not, see <http://www.gnu.org/licenses/>.
+**  with this program.  If not, see <https://www.gnu.org/licenses/>.
 **
 ****************************************************************************/
 
@@ -33,7 +33,7 @@
  *   * ResRobot enables searching for public transport connections in all of Sweden.
  *   * This backend actually uses two API's: "ResRobot - Reseplanerare" and "ResRobot - Stolptidtabeller 2".
  *   * Results are in XML or JSON.
- *   * ResRobot web frontend: http://resrobot.se/
+ *   * ResRobot web frontend: https://resrobot.se/
  *   * More API info: https://www.trafiklab.se/api/resrobot-reseplanerare
  *                    https://www.trafiklab.se/api/resrobot-stolptidtabeller-2
  *   * Backend project: https://www.trafiklab.se/projekt/fahrplan

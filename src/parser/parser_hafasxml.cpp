@@ -13,7 +13,7 @@
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License along
-**  with this program.  If not, see <http://www.gnu.org/licenses/>.
+**  with this program.  If not, see <https://www.gnu.org/licenses/>.
 **
 ****************************************************************************/
 
@@ -29,19 +29,19 @@
 #endif
 
 // XML Schema Documentation:
-// http://stefanwehrmeyer.com/projects/vbbxsd/
+// https://stefanwehrmeyer.com/projects/vbbxsd/
 
 ParserHafasXml::ParserHafasXml(QObject *parent) :
     ParserAbstract(parent)
 {
-     //baseUrl = "http://fahrplan.oebb.at/bin/query.exe"; //OEB (fully operational/no RT) //no xmlhandle, detaildate already present!
-     //baseUrl = "http://hafas.bene-system.com/bin/query.exe"; //hafas dev?? system? / no gps
-     //baseUrl = "http://reiseauskunft.bahn.de/bin/query.exe"; //bahn.de (journey stuff fails)
-     //baseUrl = "http://fahrplan.sbb.ch/bin/query.exe"; //SBB (only returns one journey) / Xmlhandle present
-     //baseUrl = "http://www.fahrplaner.de/hafas/query.exe"; //?? No Gps, returns only one result
-     //baseUrl = "http://www.rejseplanen.dk/bin/query.exe";//?? No Gps, returns only one result //no xmlhandle, detaildate already present!
-     //baseUrl = "http://airs1.septa.org/bin/query.exe";// not working at all
-     //baseUrl = "http://mobiliteitszentral.hafas.de/hafas/query.exe";// Luxenburg, //no xmlhandle, detaildate already present!
+     //baseUrl = "https://fahrplan.oebb.at/bin/query.exe"; //OEB (fully operational/no RT) //no xmlhandle, detaildate already present!
+     //baseUrl = "https://hafas.bene-system.com/bin/query.exe"; //hafas dev?? system? / no gps
+     //baseUrl = "https://reiseauskunft.bahn.de/bin/query.exe"; //bahn.de (journey stuff fails)
+     //baseUrl = "https://fahrplan.sbb.ch/bin/query.exe"; //SBB (only returns one journey) / Xmlhandle present
+     //baseUrl = "https://www.fahrplaner.de/hafas/query.exe"; //?? No Gps, returns only one result
+     //baseUrl = "https://www.rejseplanen.dk/bin/query.exe";//?? No Gps, returns only one result //no xmlhandle, detaildate already present!
+     //baseUrl = "https://airs1.septa.org/bin/query.exe";// not working at all
+     //baseUrl = "https://mobiliteitszentral.hafas.de/hafas/query.exe";// Luxenburg, //no xmlhandle, detaildate already present!
 
      hafasHeader.accessid = "";
      hafasHeader.prod = "String";
