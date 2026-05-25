@@ -66,6 +66,7 @@
 #include "models/stationsearchresults.h"
 #include "models/favorites.h"
 #include "models/timetable.h"
+#include "models/recentstations.h"
 #include "models/trainrestrictions.h"
 #include "models/backends.h"
 
@@ -165,6 +166,9 @@ int main(int argc, char *argv[])
         qmlRegisterUncreatableType<Favorites>("Fahrplan", 1, 0, "Favorites"
             , "Favorites cannot be created from QML. "
               "Access it through FahrplanBackend.favorites.");
+        qmlRegisterUncreatableType<MostRecentStations>("Fahrplan", 1, 0, "MostRecentStations"
+            , "MostRecentStations cannot be created from QML. "
+              "Access it through FahrplanBackend.mostRecentStations.");
         qmlRegisterUncreatableType<Timetable>("Fahrplan", 1, 0, "Timetable"
             , "Timetable cannot be created from QML. "
               "Access it through FahrplanBackend.timetable.");

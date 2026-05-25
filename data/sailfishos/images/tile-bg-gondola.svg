@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 640 640"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="cable-car-solid-full Kopie (1).svg"
+   inkscape:version="1.4.4 (unknown)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.555"
+     inkscape:cx="319.81982"
+     inkscape:cy="304.5045"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <!--!Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <path
+     d="m 312,52 c 17.7,0 32,14.3 32,32 0,17.7 -14.3,32 -32,32 -17.7,0 -32,-14.3 -32,-32 0,-17.7 14.3,-32 32,-32 z M 196,352 c 0,-35.3 28.7,-64 64,-64 h 36 v -96.2 l -193.4,55.3 c -12.7,3.6 -26,-3.7 -29.7,-16.5 -3.7,-12.8 3.7,-26 16.5,-29.7 l 224,-64 v 0 l 224,-64 c 12.7,-3.6 26,3.7 29.7,16.5 3.7,12.8 -3.7,26 -16.5,29.7 L 344,178.1 V 288 h 36 c 35.3,0 64,28.7 64,64 v 160 c 0,35.3 -28.7,64 -64,64 H 260 c -35.3,0 -64,-28.7 -64,-64 z m 164,96 v -96 h -80 v 96 z"
+     id="path1"
+     sodipodi:nodetypes="ssssssscccsccccscccsssssssccccc" />
+</svg>

@@ -21,6 +21,8 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import Fahrplan 1.0
 
+import "../components"
+
 Page {
     property int searchmode : 0
     id: mainPage
@@ -47,6 +49,10 @@ Page {
         }
 
         PullDownMenu {
+            MenuLabel {
+                text: fahrplanBackend.parserShortName
+                enabled: false
+            }
             MenuItem {
                 text: qsTr("Settings")
                 onClicked: {
@@ -70,14 +76,15 @@ Page {
                 }
             }
             MenuItem {
-                id: currentBackend
-                text: fahrplanBackend.parserShortName
-                enabled: false
+                text: qsTr("Switch direction")
+                visible: searchmode === 0 // routing
+                onClicked: {
+                    fahrplanBackend.swapStations(FahrplanBackend.DepartureStation, FahrplanBackend.ArrivalStation)
+                }
             }
         }
 
         model: VisualItemModel {
-
             ValueButton {
                 id: departureButton
                 label: qsTr("Departure Station")
@@ -102,7 +109,9 @@ Page {
                 height: menuOpen ? stationSelectContextMenu.height + contentItem.height : contentItem.height
 
                 onClicked: {
-                      pageStack.push(Qt.resolvedUrl("StationSelectPage.qml"), {type: type, fahrplanBackend: fahrplanBackend})
+                      pageStack.push(Qt.resolvedUrl("StationSelectPage.qml"), {
+                          type: type, fahrplanBackend: fahrplanBackend, allowSelectTwo: false
+                      })
                 }
                 onPressAndHold: {
                     stationSelectContextMenu.openMenu(viaButton, FahrplanBackend.ViaStation);
@@ -129,7 +138,6 @@ Page {
                 value: fahrplanBackend.currentStationName
                 onClicked: {
                     pageStack.push(Qt.resolvedUrl("StationSelectPage.qml"), {type: FahrplanBackend.CurrentStation, fahrplanBackend: fahrplanBackend})
-
                 }
             }
             ValueButton {
@@ -146,30 +154,11 @@ Page {
                     timeTableSelectContextMenu.open(directionButton);
                 }
             }
-            ComboBox {
-                id: modeSelect
-                label: qsTr("Mode")
-                menu: ContextMenu {
-                    MenuItem {
-                        text: qsTr("Departure: now")
-                        onClicked: {
-                            fahrplanBackend.mode = FahrplanBackend.NowMode;
-                        }
-                    }
-                    MenuItem {
-                        text: qsTr("Departure")
-                        onClicked: {
-                            fahrplanBackend.mode = FahrplanBackend.DepartureMode;
-                        }
-                    }
-                    MenuItem {
-                        text: qsTr("Arrival")
-                        onClicked: {
-                            fahrplanBackend.mode = FahrplanBackend.ArrivalMode;
-                        }
-                    }
-                }
+
+            ModePicker {
+                //
             }
+
             ValueButton {
                 id: datePickerButton
                 label: qsTr("Date")
@@ -254,22 +243,11 @@ Page {
     function updateModeCheckboxes()
     {
         if (fahrplanBackend.mode === FahrplanBackend.NowMode) {
-            modeSelect.currentIndex = 0;
-            datePickerButton.visible = false;
-            timePickerButton.visible = false;
-            return;
-        }
-
-        datePickerButton.visible = true;
-        timePickerButton.visible = true;
-
-        if (fahrplanBackend.mode === FahrplanBackend.DepartureMode) {
-            modeSelect.currentIndex = 1;
-            return;
-        }
-        if (fahrplanBackend.mode === FahrplanBackend.ArrivalMode) {
-            modeSelect.currentIndex = 2;
-            return;
+            datePickerButton.visible = false
+            timePickerButton.visible = false
+        } else {
+            datePickerButton.visible = true
+            timePickerButton.visible = true
         }
     }
 

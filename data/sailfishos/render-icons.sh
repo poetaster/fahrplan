@@ -36,3 +36,19 @@ cITEMS=(cover)
 cRESOLUTIONS=(204x230)
 cTARGETS=(.)
 render_batch
+
+cNAME="images: tile backgrounds"
+cITEMS=(
+    images/tile-bg-{from,to,generic,bus,cablecar,funicular,gondola,port,subway,train,tram}
+)
+cRESOLUTIONS=(200x200)
+cTARGETS=(../../src/gui/sailfishos/images)
+render_batch
+
+cNAME="images: mode icons"
+cITEMS=(
+    images/mode-{arrival,departure,departure-now}
+)
+cRESOLUTIONS=(112)
+cTARGETS=(../../src/gui/sailfishos/images)
+render_batch

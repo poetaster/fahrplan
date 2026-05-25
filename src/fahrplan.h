@@ -31,6 +31,7 @@
 class FahrplanBackendManager;
 class FahrplanParserThread;
 class StationSearchResults;
+class MostRecentStations;
 class Timetable;
 class Favorites;
 class Backends;
@@ -47,6 +48,7 @@ class Fahrplan : public QObject
 
     Q_PROPERTY(StationSearchResults *stationSearchResults READ stationSearchResults CONSTANT)
     Q_PROPERTY(Favorites *favorites READ favorites CONSTANT)
+    Q_PROPERTY(MostRecentStations *mostRecentStations READ mostRecentStations CONSTANT)
     Q_PROPERTY(Timetable *timetable READ timetable CONSTANT)
     Q_PROPERTY(Backends *backends READ backends CONSTANT)
     Q_PROPERTY(Trainrestrictions *trainrestrictions READ trainrestrictions CONSTANT)
@@ -81,6 +83,7 @@ class Fahrplan : public QObject
         explicit Fahrplan(QObject *parent = 0);
         FahrplanParserThread *parser();
         Favorites *favorites() const;
+        MostRecentStations *mostRecentStations() const;
         QString parserName() const;
         QString parserShortName() const;
         QString getVersion();
@@ -147,6 +150,7 @@ class Fahrplan : public QObject
     private:
         static FahrplanBackendManager *m_parser_manager;
         static StationSearchResults *m_stationSearchResults;
+        static MostRecentStations *m_mostRecentStations;
         static Favorites *m_favorites;
         static Timetable *m_timetable;
         static Trainrestrictions *m_trainrestrictions;

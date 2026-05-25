@@ -112,6 +112,7 @@ HEADERS += \
     src/models/stationslistmodel.h \
     src/models/favorites.h \
     src/models/stationsearchresults.h \
+    src/models/recentstations.h \
     src/models/timetable.h \
     src/models/trainrestrictions.h \
     src/parser/parser_xmlnri.h \
@@ -146,6 +147,7 @@ SOURCES += src/main.cpp \
     src/models/stationslistmodel.cpp \
     src/models/favorites.cpp \
     src/models/stationsearchresults.cpp \
+    src/models/recentstations.cpp \
     src/models/timetable.cpp \
     src/models/trainrestrictions.cpp \
     src/parser/parser_movas_bahnde.cpp \
@@ -352,10 +354,12 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
         src/gui/sailfishos/pages/TimetablePage.qml \
         src/gui/sailfishos/pages/StationSelectPage.qml \
         src/gui/sailfishos/delegates/StationDelegate.qml \
+        src/gui/sailfishos/delegates/StationTileDelegate.qml \
         src/gui/sailfishos/delegates/JourneyDelegate.qml \
         src/gui/sailfishos/delegates/JourneyDetailsDelegate.qml \
         src/gui/sailfishos/delegates/JourneyDetailsStationDelegate.qml \
         src/gui/sailfishos/delegates/JourneyDetailsTrainDelegate.qml \
+        src/gui/sailfishos/components/ModePicker.qml \
         src/gui/sailfishos/pages/JourneyResultsPage.qml \
         src/gui/sailfishos/delegates/TimetableEntryDelegate.qml \
         src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml \
