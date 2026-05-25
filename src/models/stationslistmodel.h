@@ -58,7 +58,6 @@ public slots:
 
 signals:
     void countChanged();
-    void dataChanged(const QModelIndex &topLeft, const QModelIndex &bottomRight);
     void stationSelected(Fahrplan::StationType type, const Station &station);
 
 protected:

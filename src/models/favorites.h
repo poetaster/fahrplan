@@ -40,6 +40,7 @@ public slots:
     void addToFavorites(const Station &station);
     void removeFromFavorites(const Station &station);
     void removeFromFavorites(int index);
+    void removeByIdFromFavorites(const QString &id);
 
 private:
     QSettings *m_settings;

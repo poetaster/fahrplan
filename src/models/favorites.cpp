@@ -76,6 +76,16 @@ void Favorites::removeFromFavorites(int index)
     saveToSettings();
 }
 
+void Favorites::removeByIdFromFavorites(const QString& id)
+{
+    for (int i = 0; i < m_list.length(); ++i) {
+        if (m_list[i].id == id) {
+            removeFromFavorites(i);
+            return;
+        }
+    }
+}
+
 void Favorites::reload()
 {
     if (!m_settings->group().isEmpty())

@@ -49,7 +49,7 @@ void StationSearchResults::addToFavorites(int index)
 
     qobject_cast<Fahrplan *>(QObject::parent())->favorites()->addToFavorites(m_list.at(index));
     QModelIndex i = this->index(index, 0);
-    emit dataChanged(i, i);
+    emit dataChanged(i, i, {IsFavorite});
 }
 
 void StationSearchResults::removeFromFavorites(int index)
@@ -59,7 +59,17 @@ void StationSearchResults::removeFromFavorites(int index)
 
     qobject_cast<Fahrplan *>(QObject::parent())->favorites()->removeFromFavorites(m_list.at(index));
     QModelIndex i = this->index(index, 0);
-    emit dataChanged(i, i);
+    emit dataChanged(i, i, {IsFavorite});
+}
+
+void StationSearchResults::removeByIdFromFavorites(const QString& id)
+{
+    for (int i = 0; i < m_list.length(); ++i) {
+        if (m_list[i].id == id) {
+            removeFromFavorites(i);
+            return;
+        }
+    }
 }
 
 void StationSearchResults::onCountChanged()

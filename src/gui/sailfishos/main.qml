@@ -23,6 +23,11 @@ import Fahrplan 1.0
 
 ApplicationWindow {
     id: mainWindow
+
+    // TODO implement support for landscape orientations
+    _defaultPageOrientations: Orientation.PortraitMask
+    allowedOrientations: Orientation.PortraitMask
+
     initialPage: Qt.resolvedUrl("pages/MainPage.qml")
     cover: Qt.resolvedUrl("Cover.qml")
 
