@@ -214,10 +214,9 @@ int main(int argc, char *argv[])
             // sailjail and calendar export cleanup
             migrateConf();
             cleanIcs();
-            view->setSource(QUrl("qrc:/src/gui/sailfishos/main.qml"));
 
-            view->showFullScreen();
-
+            view->setSource(SailfishApp::pathTo("qml/main.qml"));
+            view->show();
         #elif defined(BUILD_FOR_BLACKBERRY)
             qDebug() << "Blackberry";
 

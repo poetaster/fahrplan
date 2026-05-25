@@ -122,10 +122,9 @@ void FahrplanParserThread::run()
     switch (i_parser) {
         default:
             i_parser = 0;
-        //case 0:
-        //    m_parser = new ParserMobileBahnDe();
-        //    break;
+            [[fallthrough]];
         case 0:
+            // m_parser = new ParserMobileBahnDe();
             m_parser = new ParserMovasBahnDe();
             break;
         case 1:
