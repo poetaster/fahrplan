@@ -6,6 +6,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import Fahrplan 1.0
+import com.blackgrain.qml.quickdownload 1.0
 
 import "../components"
 
@@ -138,5 +139,72 @@ TileBase {
 
     Behavior on opacity {
         FadeAnimator {}
+    }
+
+    Download {
+        id: coverDownload
+
+        running: false
+        followRedirects: true
+        overwrite: false
+
+        onError: {
+            if (errorCode == Download.ErrorDestination &&
+                    /^Overwriting not allowed/.test(errorString)) {
+                console.log("using cached station cover:", ident, latitude, longitude)
+                backgroundImage = destination
+            } else {
+                console.error("failed to fetch station cover:", ident, latitude, longitude, errorString)
+            }
+        }
+        onFinished: {
+            console.log("station cover downloaded:", ident, latitude, longitude)
+            backgroundImage = destination
+        }
+
+        Component.onCompleted: {
+            // @disable-check M126
+            if (MAPS_KEY == "") {
+                // Station covers are disabled if we don't have an API key for
+                // downloading map tiles.
+                return
+            }
+
+            if (latitude < -90 || latitude > 90 ||
+                longitude < -180 || longitude > 180 ||
+                (latitude == 0.0 && longitude == 0.0)
+            ) {
+                return
+            }
+
+            var zoom_level = 18  // looks best
+            var tile_url = 'https://api.maptiler.com/tiles/satellite-v2/%1/%2/%3.jpg?key=%4'
+
+            // SPDX-SnippetBegin
+            // SPDX-SnippetCopyrightText: OSM Wiki Contributors
+            // SPDX-License-Identifier: CC-BY-SA-2.0
+            // Source: https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
+            function lon2tile(lon, zoom) {
+                return (Math.floor((lon+180)/360*Math.pow(2,zoom)));
+            }
+            function lat2tile(lat, zoom) {
+                return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180)
+                                               + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2
+                                   * Math.pow(2,zoom)));
+            }
+            // SPDX-SnippetEnd
+
+            var xtile = lon2tile(longitude, zoom_level)
+            var ytile = lat2tile(latitude, zoom_level)
+            var final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(MAPS_KEY)
+
+            destination = "%1/%2x%3x%4"
+                .arg(StandardPaths.cache)
+                .arg(zoom_level)
+                .arg(xtile)
+                .arg(ytile)
+            url = final_url
+            running = true
+        }
     }
 }
