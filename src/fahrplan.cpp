@@ -132,7 +132,7 @@ QString Fahrplan::getVersion()
 
 bool Fahrplan::supportsCalendar()
 {
-#if defined(BUILD_FOR_BLACKBERRY) || defined(BUILD_FOR_HARMATTAN) || defined(BUILD_FOR_MAEMO_5) || defined(BUILD_FOR_SYMBIAN) || (defined(BUILD_FOR_OPENREPOS) && defined(BUILD_FOR_SAILFISHOS))
+# if defined(BUILD_FOR_SAILFISHOS)
     return true;
 #else
     return false;

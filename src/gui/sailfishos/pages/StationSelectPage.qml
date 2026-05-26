@@ -461,7 +461,7 @@ Dialog {
                             } else if (stationsContainer.currentItem == customStation) {
                                 qsTr("To")
                             } else {
-                                qsTr("Other station")
+                                qsTr("Search")
                             }
                         }
 

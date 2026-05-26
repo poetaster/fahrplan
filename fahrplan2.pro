@@ -2,7 +2,7 @@
 APP_NAME = Fahrplan
 
 # Define Version
-VERSION = 2.0.51-1
+VERSION = 2.0.52-1
 
 #CONFIG+= openrepos
 
@@ -330,6 +330,7 @@ blackberry {
     QML_IMPORT_PATH = 3rdparty/bb10-qt-components/imports
 }
 
+
 exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
     TARGET = harbour-fahrplan2
 
@@ -354,6 +355,14 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
     include("3rdparty/QuickDownload/quickdownload.pri")
 
     RESOURCES += sailfishos_res.qrc
+
+#   HEADERS += \
+#        3rdparty/QuickDownload/src/quickdownload.h \
+#        3rdparty/QuickDownload/src/quickdownload_plugin.h \
+
+#    SOURCES += \
+#        3rdparty/QuickDownload/src/quickdownload.cpp \
+#        3rdparty/QuickDownload/src/quickdownload_plugin.cpp \
 
     SAILFISH_GUI_FILES += \
         src/gui/sailfishos/main.qml \

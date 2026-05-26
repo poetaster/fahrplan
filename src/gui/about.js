@@ -36,7 +36,7 @@ var support = qsTr("<p>If fahrplan is not translated in your language, help us <
         "<p>If you like fahrplan, I would appreciate a donation. <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DW3LGJ6VEKFVS\">Donate using PayPal</a></p>" +
         "<p>If you encounter bugs or have feature requests visit the <a href=\"https://github.com/smurfy/fahrplan/issues\">Fahrplan issue tracker on GitHub</a>.</p>");
 
-var maintainers = ["Mark Washeim (poetaster)", "Philipp Andreas (smurfy)", "Michael Stevens (stevensmi)", "Oleksii Serdiuk (leppa)"];
+var maintainers = ["Mark Washeim (poetaster)"];
 var codeContributors = ["kfg", "attah", "smatkovi", "Thaodan", "gri", "lorenzph", "CaCO3", "hcm", "thp", "qwerty12", "qbast", "Thomas Fischer", "Oleksii Serdiuk (leppa)", "Nekhelesh Ramananthan (nik90)", "NightShift79", "pirast", "Michael Zanetti (mzanetti)", "Chris Clime (balcy)", "dayrover", "shentok", "evansebire", "unsanded", "Morpog", "benni0815", "Erik Lundin", "Mirian Margiani (ichthyosaurus)"].sort();
 
 var translators = [

@@ -17,6 +17,7 @@ TileBase {
     property int modelIndex
     property string name
     property string type
+    property string final_url
     property string ident
     property real latitude
     property real longitude
@@ -141,6 +142,53 @@ TileBase {
         FadeAnimator {}
     }
 
+    Image {
+        visible: false
+        id: coverDownload
+        source: Qt.resolvedUrl( final_url )
+
+        Component.onCompleted: {
+
+            var maps_key = fahrplanBackend.getSettingsValue("mapbox", "")
+            var zoom_level = 17  // looks best
+
+            // original maptiler
+            //var tile_url = 'https://api.maptiler.com/tiles/satellite-v2/%1/%2/%3.jpg?key=%4'
+            // mapbox pattern
+            // https://api.mapbox.com/v4/{tileset_id}/{zoom}/{x}/{y}{@2x}.{format}
+            // mapbox satellite followed by vector
+            var tile_url = 'https://api.mapbox.com/v4/mapbox.satellite/%1/%2/%3@2x.jpg90?access_token=%4'
+            //var tile_url = 'https://api.mapbox.com/v4/mapbox.mapbox-streets-v8/%1/%2/%3@2x.jpg90?access_token=%4'
+
+
+            // SPDX-SnippetBegin
+            // SPDX-SnippetCopyrightText: OSM Wiki Contributors
+            // SPDX-License-Identifier: CC-BY-SA-2.0
+            // Source: https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
+            function lon2tile(lon, zoom) {
+                return (Math.floor((lon+180)/360*Math.pow(2,zoom)));
+            }
+            function lat2tile(lat, zoom) {
+                return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180)
+                                               + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2
+                                   * Math.pow(2,zoom)));
+            }
+            // SPDX-SnippetEnd
+
+            var xtile = lon2tile(longitude, zoom_level)
+            var ytile = lat2tile(latitude, zoom_level)
+            if (maps_key !== "" ) {
+              final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(maps_key)
+            } else {
+                final_url = ""
+            }
+
+            //console.log(final_url)
+
+            backgroundImage = source
+        }
+    }
+    /*
     Download {
         id: coverDownload
 
@@ -163,8 +211,9 @@ TileBase {
         }
 
         Component.onCompleted: {
-            // @disable-check M126
-            if (MAPS_KEY == "") {
+
+
+            if (MAPS_KEY === "") {
                 // Station covers are disabled if we don't have an API key for
                 // downloading map tiles.
                 return
@@ -178,7 +227,11 @@ TileBase {
             }
 
             var zoom_level = 18  // looks best
-            var tile_url = 'https://api.maptiler.com/tiles/satellite-v2/%1/%2/%3.jpg?key=%4'
+            //var tile_url = 'https://api.maptiler.com/tiles/satellite-v2/%1/%2/%3.jpg?key=%4'
+
+           // https://api.mapbox.com/v4/{tileset_id}/{zoom}/{x}/{y}{@2x}.{format}
+            var tile_url = 'https://api.mapbox.com/v4/mapbox.satellite/%1/%2/%3@2x.jpg90?access_token=%4'
+
 
             // SPDX-SnippetBegin
             // SPDX-SnippetCopyrightText: OSM Wiki Contributors
@@ -197,7 +250,7 @@ TileBase {
             var xtile = lon2tile(longitude, zoom_level)
             var ytile = lat2tile(latitude, zoom_level)
             var final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(MAPS_KEY)
-
+            console.log(final_url)
             destination = "%1/%2x%3x%4"
                 .arg(StandardPaths.cache)
                 .arg(zoom_level)
@@ -207,4 +260,5 @@ TileBase {
             running = true
         }
     }
+*/
 }

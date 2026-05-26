@@ -40,6 +40,27 @@ Page {
                 title: qsTr("Settings")
             }
 
+            ComboBox {
+                id: currentBackend
+                label: qsTr("Backend")
+                value: fahrplanBackend.parserName
+                menu: ContextMenu {
+                      Repeater {
+                           model: fahrplanBackend.backends
+                           MenuItem {
+                               text: model.name
+                           }
+                      }
+                      Component.onCompleted: {
+                          currentBackend.currentIndex = fahrplanBackend.backends.getItemIndexForParserId(fahrplanBackend.getSettingsValue("currentBackend", 0));
+                      }
+                }
+                onCurrentIndexChanged: {
+                    fahrplanBackend.setParser(fahrplanBackend.backends.getParserIdForItemIndex(currentIndex))
+                }
+
+            }
+
             TextSwitch {
                 visible: fahrplanBackend.supportsCalendar
                 text: qsTr("Compact calendar entries")
@@ -70,25 +91,25 @@ Page {
 
             }
 
-            ComboBox {
-                id: currentBackend
-                label: qsTr("Backend")
-                value: fahrplanBackend.parserName
-                menu: ContextMenu {
-                      Repeater {
-                           model: fahrplanBackend.backends
-                           MenuItem {
-                               text: model.name
-                           }
-                      }
-                      Component.onCompleted: {
-                          currentBackend.currentIndex = fahrplanBackend.backends.getItemIndexForParserId(fahrplanBackend.getSettingsValue("currentBackend", 0));
-                      }
-                }
-                onCurrentIndexChanged: {
-                    fahrplanBackend.setParser(fahrplanBackend.backends.getParserIdForItemIndex(currentIndex))
-                }
+            Label {
+              anchors{
+                  left: mapKey.left
+              }
+              visible: fahrplanBackend.supportsCalendar
+              id:mapboxLabel
+              text: qsTr(" Mapbox key for Station backgrounds")
+            }
 
+            TextField {
+                id: mapKey
+                visible: fahrplanBackend.supportsCalendar
+                text:  ""
+                onTextChanged: {
+                    fahrplanBackend.storeSettingsValue("mapbox", text);
+                }
+                Component.onCompleted: {
+                    text = fahrplanBackend.getSettingsValue("mapbox", "")
+                }
             }
 
             Button {
