@@ -164,7 +164,9 @@ TileBase {
 
         Component.onCompleted: {
             // @disable-check M126
-            if (MAPTILER_KEY == "") {
+            if (MAPS_KEY == "") {
+                // Station covers are disabled if we don't have an API key for
+                // downloading map tiles.
                 return
             }
 
@@ -194,7 +196,7 @@ TileBase {
 
             var xtile = lon2tile(longitude, zoom_level)
             var ytile = lat2tile(latitude, zoom_level)
-            var final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(MAPTILER_KEY)
+            var final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(MAPS_KEY)
 
             destination = "%1/%2x%3x%4"
                 .arg(StandardPaths.cache)
