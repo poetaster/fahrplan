@@ -93,7 +93,7 @@ Page {
 
             Label {
               anchors{
-                  left: mapKey.left
+                 leftMargin: Theme.paddingMedium
               }
               visible: fahrplanBackend.supportsCalendar
               id:mapboxLabel

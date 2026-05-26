@@ -566,7 +566,7 @@ void ParserXmlVasttrafikSe::sendHttpRequestWithBearer(const QUrl &uri) {
 
 void ParserXmlVasttrafikSe::requestNewAccessToken() {
     qDebug() << "Requesting new access token for device" << m_deviceId;
-    QNetworkRequest request(QUrl(QLatin1String("https://api.vasttrafik.se/token")));
+    QNetworkRequest request(QUrl(QLatin1String("https://ext-api.vasttrafik.se/token")));
     request.setHeader(QNetworkRequest::ContentTypeHeader, QLatin1String("application/x-www-form-urlencoded"));
     QByteArray authorizationData("Basic ");
     authorizationData.append(consumerCredentials);

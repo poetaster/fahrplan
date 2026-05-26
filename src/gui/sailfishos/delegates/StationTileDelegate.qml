@@ -177,13 +177,15 @@ TileBase {
 
             var xtile = lon2tile(longitude, zoom_level)
             var ytile = lat2tile(latitude, zoom_level)
-            if (maps_key !== "" ) {
+           // this only works for one backend. sigh.
+
+            var cur_parser = fahrplanBackend.backends.getItemIndexForParserId(fahrplanBackend.getSettingsValue("currentBackend", 0));
+            console.log(cur_parser)
+            if (maps_key !== "" && cur_parser === 6 ) {
               final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(maps_key)
             } else {
                 final_url = ""
             }
-
-            //console.log(final_url)
 
             backgroundImage = source
         }
