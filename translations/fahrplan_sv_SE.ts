@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="sv_SE">
+<TS version="2.1" language="sv_SE">
 <context>
     <name>AboutPage</name>
     <message>
@@ -55,6 +55,33 @@
         <source>Source code available on %1</source>
         <translation>Källkod tillgänglig på %1</translation>
     </message>
+    <message>
+        <source>Station background images</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CalendarSfosWrapper</name>
+    <message>
+        <source>  %1 / %2</source>
+        <comment>STATION / PLATFORM</comment>
+        <extracomment>STATION / PLATFORM</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>  %1 %2   %3</source>
+        <comment>DATE TIME   STATION</comment>
+        <extracomment>DATE TIME STATION</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 to %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 via %3 to %2</source>
+        <translation type="unfinished">%1 via %3 till %2</translation>
+    </message>
 </context>
 <context>
     <name>CalendarThreadWrapper</name>
@@ -83,13 +110,6 @@
 Added by Fahrplan. Please, re-check the information before your journey.</source>
         <translation>-- 
 Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
-    </message>
-</context>
-<context>
-    <name>Cover</name>
-    <message>
-        <source>Fahrplan: </source>
-        <translation>Fahrplan: </translation>
     </message>
 </context>
 <context>
@@ -200,6 +220,10 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <source>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</translation>
     </message>
+    <message>
+        <source>&lt;b&gt;%1&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>JourneyDetailsTrainDelegate</name>
@@ -283,6 +307,14 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;%1&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -420,14 +452,6 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <translation>Inställningar</translation>
     </message>
     <message>
-        <source>Mode</source>
-        <translation>Läge</translation>
-    </message>
-    <message>
-        <source>Departure: now</source>
-        <translation>Avgång: nu</translation>
-    </message>
-    <message>
         <source>From</source>
         <translation>Från</translation>
     </message>
@@ -474,6 +498,10 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Time table</source>
         <translation>Tidtabell</translation>
+    </message>
+    <message>
+        <source>Switch direction</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -524,37 +552,25 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
 </context>
 <context>
+    <name>ModePicker</name>
+    <message>
+        <source>Departure</source>
+        <translation type="unfinished">Avgång</translation>
+    </message>
+    <message>
+        <source>Departure: Now</source>
+        <translation type="unfinished">Avgång: nu</translation>
+    </message>
+    <message>
+        <source>Arrival</source>
+        <translation type="unfinished">Ankomst</translation>
+    </message>
+</context>
+<context>
     <name>ParserAbstract</name>
     <message>
         <source>Request timed out.</source>
         <translation>Anropet tog för lång tid.</translation>
-    </message>
-</context>
-<context>
-    <name>ParserDubaiEFA</name>
-    <message>
-        <source>All</source>
-        <translation>Alla</translation>
-    </message>
-    <message>
-        <source>Bus</source>
-        <translation>Buss</translation>
-    </message>
-    <message>
-        <source>Water Bus</source>
-        <translation>Vattenbuss</translation>
-    </message>
-    <message>
-        <source>Metro</source>
-        <translation>Tunnelbana</translation>
-    </message>
-    <message>
-        <source>Taxi</source>
-        <translation>Taxi</translation>
-    </message>
-    <message>
-        <source>Dubai</source>
-        <translation>Dubai</translation>
     </message>
 </context>
 <context>
@@ -997,6 +1013,240 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
 </context>
 <context>
+    <name>ParserMovasBahnDe</name>
+    <message>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished">Kunde inte tolka svaret från servern</translation>
+    </message>
+    <message>
+        <source>Backend returns an error: </source>
+        <translation type="unfinished">Tjänsten returnerade ett fel: </translation>
+    </message>
+    <message>
+        <source>Canceled!</source>
+        <translation type="unfinished">Inställd!</translation>
+    </message>
+    <message>
+        <source>On-Time</source>
+        <translation type="unfinished">I tid</translation>
+    </message>
+    <message numerus="yes">
+        <source>Departure delayed: %n min</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Arrival delayed: %n min</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Walk %1</source>
+        <translation type="unfinished">Gång %1</translation>
+    </message>
+    <message>
+        <source>Arrivals</source>
+        <translation type="unfinished">Ankomster</translation>
+    </message>
+    <message>
+        <source>Departures</source>
+        <translation type="unfinished">Avgångar</translation>
+    </message>
+    <message>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished">ddd d MMM, HH:mm</translation>
+    </message>
+    <message>
+        <source>Track changed to %1</source>
+        <comment>Departure</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(From %1)</source>
+        <comment>Departure</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Track %1</source>
+        <comment>Departure</comment>
+        <translation type="unfinished">Spår %1</translation>
+    </message>
+    <message>
+        <source>Track changed to %1</source>
+        <comment>Arrival</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(From %1)</source>
+        <comment>Arrival</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Track %1</source>
+        <comment>Arrival</comment>
+        <translation type="unfinished">Spår %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n min late</source>
+        <translation type="unfinished">
+            <numerusform>%n min sent</numerusform>
+            <numerusform>%n min sent</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>on time</source>
+        <translation type="unfinished">i tid</translation>
+    </message>
+    <message>
+        <source>Train canceled!</source>
+        <translation type="unfinished">Anslutning inställd!</translation>
+    </message>
+    <message>
+        <source>Departure stop canceled!</source>
+        <translation type="unfinished">Avgång inställd!</translation>
+    </message>
+    <message>
+        <source>Arrival stop canceled!</source>
+        <translation type="unfinished">Ankomst inställd!</translation>
+    </message>
+    <message>
+        <source>Low demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Medium demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>High demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Exceptionally high demand expected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1: %2</source>
+        <comment>travel class: expected demand</comment>
+        <translation type="unfinished">%1, %2 {1:?}</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation type="unfinished">Byte</translation>
+    </message>
+    <message numerus="yes">
+        <source>%1 (%n min)</source>
+        <comment>Transfer</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Distance %n meter(s)</source>
+        <translation type="unfinished">
+            <numerusform>Avstånd %n meter</numerusform>
+            <numerusform>Avstånd %n meter</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Bike take along limited</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wheelchair parking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Vehicle bound boarding aid available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Handicapped accessible facilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Laptop power sockets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Air conditioning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wifi available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No journey details found.</source>
+        <translation type="unfinished">Inga detaljer hittades för resan.</translation>
+    </message>
+    <message>
+        <source>First class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Second class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Walk</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ship</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bus</source>
+        <translation type="unfinished">Buss</translation>
+    </message>
+    <message>
+        <source>Train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>S-Bahn</source>
+        <translation type="unfinished">S-Bahn</translation>
+    </message>
+    <message>
+        <source>Metro</source>
+        <translation type="unfinished">Tunnelbana</translation>
+    </message>
+    <message>
+        <source>Tram</source>
+        <translation type="unfinished">Spårvagn</translation>
+    </message>
+    <message>
+        <source>Unknown transport type: %1</source>
+        <translation type="unfinished">Okänt transportmedel: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation type="unfinished">Alla</translation>
+    </message>
+    <message>
+        <source>All without ICE</source>
+        <translation type="unfinished">Alla utom ICE</translation>
+    </message>
+    <message>
+        <source>Only local transport</source>
+        <translation type="unfinished">Endast lokaltrafik</translation>
+    </message>
+    <message>
+        <source>Local transport without S-Bahn</source>
+        <translation type="unfinished">Lokaltrafik förutom S-Bahn</translation>
+    </message>
+    <message>
+        <source>Germany</source>
+        <translation type="unfinished">Tyskland</translation>
+    </message>
+</context>
+<context>
     <name>ParserMunichEFA</name>
     <message>
         <source>All</source>
@@ -1048,22 +1298,6 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>On-Time</source>
         <translation>I tid</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n m</source>
-        <extracomment>Distance in meters</extracomment>
-        <translation>
-            <numerusform>%n m</numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>%1 for %2 min</source>
-        <translation>%1 i %2 min</translation>
-    </message>
-    <message>
-        <source>, </source>
-        <translation>, </translation>
     </message>
     <message>
         <source>Cannot parse reply from the server</source>
@@ -1469,165 +1703,6 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
 </context>
 <context>
-    <name>ParserSFBayEFA</name>
-    <message>
-        <source>All</source>
-        <translation>Alla</translation>
-    </message>
-    <message>
-        <source>AC Transit (Local Service)</source>
-        <translation>AC Transit (lokalt)</translation>
-    </message>
-    <message>
-        <source>AC Transit (Transbay Service)</source>
-        <translation>AC Transit (hela Bay-området)</translation>
-    </message>
-    <message>
-        <source>ACE</source>
-        <translation>ACE</translation>
-    </message>
-    <message>
-        <source>AirBART</source>
-        <translation>AirBART</translation>
-    </message>
-    <message>
-        <source>American Canyon Transit</source>
-        <translation>American Canyon Transit</translation>
-    </message>
-    <message>
-        <source>Amtrak Capitol Cor. &amp; Reg. Svc</source>
-        <translation>Amtrak Capitol Cor. &amp; Reg. Svc</translation>
-    </message>
-    <message>
-        <source>Angel Island - Tiburon Ferry</source>
-        <translation>Angel Island - Tiburon Ferry</translation>
-    </message>
-    <message>
-        <source>BART</source>
-        <translation>BART</translation>
-    </message>
-    <message>
-        <source>Blue &amp; Gold Fleet</source>
-        <translation>Blue &amp; Gold Fleet</translation>
-    </message>
-    <message>
-        <source>Caltrain</source>
-        <translation>Caltrain</translation>
-    </message>
-    <message>
-        <source>County Connection</source>
-        <translation>County Connection</translation>
-    </message>
-    <message>
-        <source>Dumbarton Express</source>
-        <translation>Dumbarton Express</translation>
-    </message>
-    <message>
-        <source>Emery Go-Round</source>
-        <translation>Emery Go-Round</translation>
-    </message>
-    <message>
-        <source>Fairfield and Suisun Transit (FAST)</source>
-        <translation>Fairfield and Suisun Transit (FAST)</translation>
-    </message>
-    <message>
-        <source>Golden Gate Ferry</source>
-        <translation>Golden Gate-färjan</translation>
-    </message>
-    <message>
-        <source>Golden Gate Transit</source>
-        <translation>Golden Gate Transit</translation>
-    </message>
-    <message>
-        <source>Hornblower Alcatraz Ferry</source>
-        <translation>Hornblower Alcatraz-färja</translation>
-    </message>
-    <message>
-        <source>Marin Transit</source>
-        <translation>Marin Transit</translation>
-    </message>
-    <message>
-        <source>Petaluma Transit</source>
-        <translation>Petaluma Transit</translation>
-    </message>
-    <message>
-        <source>Rio Vista Delta Breeze</source>
-        <translation>Rio Vista Delta Breeze</translation>
-    </message>
-    <message>
-        <source>SamTrans</source>
-        <translation>SamTrans</translation>
-    </message>
-    <message>
-        <source>San Francisco Muni</source>
-        <translation>San Francisco Muni</translation>
-    </message>
-    <message>
-        <source>Santa Clara VTA</source>
-        <translation>Santa Clara VTA</translation>
-    </message>
-    <message>
-        <source>Santa Rosa CityBus</source>
-        <translation>Santa Rosa CityBus</translation>
-    </message>
-    <message>
-        <source>SF Bay Ferry</source>
-        <translation>SF Bay-färja</translation>
-    </message>
-    <message>
-        <source>SolTrans</source>
-        <translation>SolTrans</translation>
-    </message>
-    <message>
-        <source>Sonoma County Transit</source>
-        <translation>Sonoma County Transit</translation>
-    </message>
-    <message>
-        <source>St Helena VINE</source>
-        <translation>St Helena VINE</translation>
-    </message>
-    <message>
-        <source>Stanford Marguerite Shuttle</source>
-        <translation>Stanford Marguerite Shuttle</translation>
-    </message>
-    <message>
-        <source>Tri Delta Transit</source>
-        <translation>Tri Delta Transit</translation>
-    </message>
-    <message>
-        <source>Union City Transit</source>
-        <translation>Union City Transit</translation>
-    </message>
-    <message>
-        <source>Vacaville City Transit</source>
-        <translation>Vacaville City Transit</translation>
-    </message>
-    <message>
-        <source>VINE (Napa County)</source>
-        <translation>VINE (Napa County)</translation>
-    </message>
-    <message>
-        <source>WestCAT</source>
-        <translation>WestCAT</translation>
-    </message>
-    <message>
-        <source>WHEELS</source>
-        <translation>WHEELS</translation>
-    </message>
-    <message>
-        <source>Yountville Shuttle</source>
-        <translation>Yountville Shuttle</translation>
-    </message>
-    <message>
-        <source>USA</source>
-        <translation>USA</translation>
-    </message>
-    <message>
-        <source>SF Bay</source>
-        <translation>SF Bay</translation>
-    </message>
-</context>
-<context>
     <name>ParserSalzburgEFA</name>
     <message>
         <source>All</source>
@@ -1648,6 +1723,73 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Salzburg</source>
         <translation>Salzburg</translation>
+    </message>
+</context>
+<context>
+    <name>ParserSearchCH</name>
+    <message>
+        <source>All</source>
+        <translation type="unfinished">Alla</translation>
+    </message>
+    <message>
+        <source>Train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tram</source>
+        <translation type="unfinished">Spårvagn</translation>
+    </message>
+    <message>
+        <source>Ship</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bus</source>
+        <translation type="unfinished">Buss</translation>
+    </message>
+    <message>
+        <source>Cableway</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Train station</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tram stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bus stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Funicular</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Gondola</source>
+        <translation type="unfinished">Gondolbana</translation>
+    </message>
+    <message>
+        <source>Cablecar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished">Kunde inte tolka svaret från servern</translation>
+    </message>
+    <message>
+        <source>No journey details found.</source>
+        <translation type="unfinished">Inga detaljer hittades för resan.</translation>
+    </message>
+    <message>
+        <source>Switzerland</source>
+        <translation type="unfinished">Schweiz</translation>
     </message>
 </context>
 <context>
@@ -1679,6 +1821,37 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Sydney</source>
         <translation>Sydney</translation>
+    </message>
+</context>
+<context>
+    <name>ParserVRREFA</name>
+    <message>
+        <source>All</source>
+        <translation type="unfinished">Alla</translation>
+    </message>
+    <message>
+        <source>S-Bahn</source>
+        <translation type="unfinished">S-Bahn</translation>
+    </message>
+    <message>
+        <source>U-Bahn</source>
+        <translation type="unfinished">U-Bahn</translation>
+    </message>
+    <message>
+        <source>Tram</source>
+        <translation type="unfinished">Spårvagn</translation>
+    </message>
+    <message>
+        <source>Bus</source>
+        <translation type="unfinished">Buss</translation>
+    </message>
+    <message>
+        <source>Germany</source>
+        <translation type="unfinished">Tyskland</translation>
+    </message>
+    <message>
+        <source>Rhine Ruhr</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1736,21 +1909,6 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Denmark</source>
         <translation>Danmark</translation>
-    </message>
-</context>
-<context>
-    <name>ParserXmlSbbCh</name>
-    <message>
-        <source>All</source>
-        <translation>Alla</translation>
-    </message>
-    <message>
-        <source>All without ICE</source>
-        <translation>Alla utom ICE</translation>
-    </message>
-    <message>
-        <source>Switzerland</source>
-        <translation>Schweiz</translation>
     </message>
 </context>
 <context>
@@ -1872,6 +2030,10 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <source>Enable GPS location support</source>
         <translation>Aktivera stöd för GPS-positionering</translation>
     </message>
+    <message>
+        <source> Mapbox key for Station backgrounds</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StationDelegate</name>
@@ -1883,17 +2045,16 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <source>Adding &apos;%1&apos; to favorites</source>
         <translation>Lägger till &apos;%1&apos; till favoriter</translation>
     </message>
+</context>
+<context>
+    <name>StationListDelegate</name>
     <message>
         <source>Remove from favorites</source>
-        <translation>Ta bort från favoriter</translation>
+        <translation type="unfinished">Ta bort från favoriter</translation>
     </message>
     <message>
         <source>Add to favorites</source>
-        <translation>Lägg till som favorit</translation>
-    </message>
-    <message>
-        <source>Removing favorite...</source>
-        <translation>Tar bort favorit...</translation>
+        <translation type="unfinished">Lägg till som favorit</translation>
     </message>
 </context>
 <context>
@@ -1952,6 +2113,45 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Click and hold in the search results to add or remove a station as a favorite</source>
         <translation>Klicka och håll på ett sökresultat för att lägga till eller ta bort en plats som favorit</translation>
+    </message>
+    <message>
+        <source>Select departure station</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select intermediate station</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation type="unfinished">Från</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation type="unfinished">Till</translation>
+    </message>
+    <message>
+        <source>Show more</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>StationTileDelegate</name>
+    <message>
+        <source>Remove from favorites</source>
+        <translation type="unfinished">Ta bort från favoriter</translation>
+    </message>
+    <message>
+        <source>Add to favorites</source>
+        <translation type="unfinished">Lägg till som favorit</translation>
     </message>
 </context>
 <context>
@@ -2041,6 +2241,121 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Time table</source>
         <translation>Tidtabell</translation>
+    </message>
+</context>
+<context>
+    <name>parser_search_ch::JourneyConnection</name>
+    <message>
+        <source>Walk</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>parser_search_ch::JourneySearchResult</name>
+    <message>
+        <source>Arrivals %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Departures %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished">ddd d MMM, HH:mm</translation>
+    </message>
+</context>
+<context>
+    <name>parser_search_ch::JourneySegment</name>
+    <message>
+        <source>Track %1</source>
+        <translation type="unfinished">Spår %1</translation>
+    </message>
+    <message>
+        <source>Train cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Departure delayed: %1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bus</source>
+        <translation type="unfinished">Buss</translation>
+    </message>
+    <message>
+        <source>Bus %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tram %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>parser_search_ch::TimetableRow</name>
+    <message>
+        <source>Ship</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Funicular</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cablecar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Gondola</source>
+        <translation type="unfinished">Gondolbana</translation>
+    </message>
+    <message>
+        <source>Bus %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tram %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Departure delayed: %1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>parser_search_ch::TrainTypeList</name>
+    <message>
+        <source>Bus</source>
+        <translation type="unfinished">Buss</translation>
+    </message>
+    <message>
+        <source>Tram</source>
+        <translation type="unfinished">Spårvagn</translation>
+    </message>
+    <message>
+        <source>Funi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Gondola</source>
+        <translation type="unfinished">Gondolbana</translation>
+    </message>
+    <message>
+        <source>Cableway</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ship</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Walk</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

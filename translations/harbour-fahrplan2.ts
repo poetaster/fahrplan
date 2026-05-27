@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sl_SI">
+<TS version="2.1">
 <context>
     <name>AboutPage</name>
     <message>
@@ -8,13 +8,13 @@
         <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="52"/>
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="50"/>
         <source>About Fahrplan</source>
-        <translation>O Fahrplan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="70"/>
         <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="75"/>
         <source>Version</source>
-        <translation>Različica</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="95"/>
@@ -22,7 +22,7 @@
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="99"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="172"/>
         <source>Maintainers</source>
-        <translation>Vdrževalci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="113"/>
@@ -30,7 +30,7 @@
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="119"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="185"/>
         <source>Code Contributors</source>
-        <translation>Soavtorji kode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="130"/>
@@ -38,7 +38,7 @@
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="138"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="197"/>
         <source>Translators</source>
-        <translation>Prevajalci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="153"/>
@@ -46,7 +46,7 @@
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="162"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="35"/>
         <source>Support</source>
-        <translation>Podpora</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="171"/>
@@ -54,43 +54,43 @@
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="182"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="43"/>
         <source>License</source>
-        <translation>Licenca</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="174"/>
+        <source>Station background images</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="73"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="103"/>
         <source>Version %1</source>
-        <translation>Različica %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="30"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="35"/>
         <source>About</source>
-        <translation>O</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="35"/>
         <source>Credits</source>
-        <translation>Zasluge</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/AboutPage.qml" line="140"/>
-        <source>View License Terms</source>
-        <translation>Poglejte licenčne pogoje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="126"/>
         <source>Released under the terms of the GNU GPL v2 or higher</source>
-        <translation>Izdano pod pogoji GNU GPL v2 ali višje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="135"/>
         <source>Source code available on %1</source>
-        <translation>Izvorna koda je na voljo </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="174"/>
-        <source>Station background images</source>
+        <location filename="../src/gui/ubuntu/AboutPage.qml" line="140"/>
+        <source>View License Terms</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -119,7 +119,7 @@
     <message>
         <location filename="../src/calendar_sfos_wrapper.cpp" line="90"/>
         <source>%1 via %3 to %2</source>
-        <translation type="unfinished">%1 via %3 do %2</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -129,32 +129,31 @@
         <source>%1 / %2</source>
         <comment>STATION / PLATFORM</comment>
         <extracomment>STATION / PLATFORM</extracomment>
-        <translation>%1 / %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/calendarthreadwrapper.cpp" line="53"/>
         <source>%1 %2   %3</source>
         <comment>DATE TIME   STATION</comment>
         <extracomment>DATE TIME STATION</extracomment>
-        <translation>%1 %2   %3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/calendarthreadwrapper.cpp" line="80"/>
         <location filename="../src/calendarthreadwrapper.cpp" line="96"/>
         <source>%1 to %2</source>
-        <translation>%1 do %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/calendarthreadwrapper.cpp" line="83"/>
         <source>%1 via %3 to %2</source>
-        <translation>%1 via %3 do %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/calendarthreadwrapper.cpp" line="123"/>
         <source>-- 
 Added by Fahrplan. Please, re-check the information before your journey.</source>
-        <translation>-- 
-Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informacij.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -162,17 +161,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/ubuntu/components/DatePicker.qml" line="28"/>
         <source>&lt;b&gt;Date&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Datum&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/components/DatePicker.qml" line="44"/>
         <source>Cancel</source>
-        <translation>Prekliči</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/components/DatePicker.qml" line="55"/>
         <source>Ok</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -184,7 +183,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/fahrplan.cpp" line="193"/>
         <location filename="../src/fahrplan.cpp" line="201"/>
         <source>please select</source>
-        <translation>prosim izberite</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -192,35 +191,35 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/fahrplan_calendar_manager.cpp" line="138"/>
         <source>&lt;loading calendars list...&gt;</source>
-        <translation>&lt;loading calendars list...&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/fahrplan_calendar_manager.cpp" line="141"/>
         <source>&lt;invalid calendar&gt;</source>
-        <translation>&lt;invalid calendar&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/fahrplan_calendar_manager.cpp" line="143"/>
         <location filename="../src/fahrplan_calendar_manager.cpp" line="158"/>
         <source>Default Calendar</source>
-        <translation>Privzeti koledar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/fahrplan_calendar_manager.cpp" line="189"/>
         <source>Local Calendar</source>
-        <translation>Lokalni koledar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/fahrplan_calendar_manager.cpp" line="194"/>
         <source>%1 (%2)</source>
         <comment>Calendar name (Account name)</comment>
         <extracomment>Calendar name (Account name)</extracomment>
-        <translation>%1 (%2)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/fahrplan_calendar_manager.cpp" line="274"/>
         <source>Personal</source>
-        <translation>Osebno</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -231,7 +230,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <source>%1 to %2</source>
         <comment>Direction</comment>
         <extracomment>As in &quot;%1 in direction %2&quot;</extracomment>
-        <translation>%1 v smeri %2</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -240,26 +239,26 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="146"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="149"/>
         <source>Journey has been added to your calendar.</source>
-        <translation>Potovanje je bilo dodano v vaš koledar.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="148"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="151"/>
         <source>Failed to add Journey to your calendar!</source>
-        <translation>Potovanje ni bilo dodano v vaš koledar!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="159"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="162"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; do &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="159"/>
         <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="166"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="162"/>
         <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; do &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="170"/>
@@ -267,17 +266,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="173"/>
         <location filename="../src/gui/ubuntu/JourneyDetailsResultsPage.qml" line="334"/>
         <source>Dur.: %1</source>
-        <translation>Trajanje: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="44"/>
         <source>Add to calendar</source>
-        <translation>Dodaj na koledar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="129"/>
         <source>Searching...</source>
-        <translation>Iščem ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="166"/>
@@ -294,17 +293,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <source>%1 to %2</source>
         <comment>Direction</comment>
         <extracomment>As in &quot;%1 in direction %2&quot;</extracomment>
-        <translation>%1 v smeri %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyDetailsResultsPage.qml" line="323"/>
         <source>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyDetailsResultsPage.qml" line="323"/>
         <source>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -314,7 +313,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <source>%1 to %2</source>
         <comment>Direction</comment>
         <extracomment>As in &quot;%1 in direction %2&quot;</extracomment>
-        <translation>%1 do %2</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -324,73 +323,73 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="91"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="105"/>
         <source>Dep.</source>
-        <translation>Odh.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="115"/>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="97"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="111"/>
         <source>Arr.</source>
-        <translation>Prih.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="126"/>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="104"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="118"/>
         <source>Dur.</source>
-        <translation>Traj.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="137"/>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="111"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="125"/>
         <source>Trans.</source>
-        <translation>Prest.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="156"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="147"/>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="180"/>
         <source>Loading details</source>
-        <translation>Pridobivanje podrobnosti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="157"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="148"/>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="180"/>
         <source>please wait...</source>
-        <translation>prosimo počakajte ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="183"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="175"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; do &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="183"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="175"/>
         <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; do &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="217"/>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="38"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="213"/>
         <source>Earlier</source>
-        <translation>Prej</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="225"/>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="50"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="222"/>
         <source>Later</source>
-        <translation>Kasneje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="160"/>
         <source>Searching...</source>
-        <translation>Iščem ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="194"/>
@@ -405,37 +404,37 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="218"/>
         <source>Error</source>
-        <translation>Napaka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="28"/>
         <source>Journey alternatives</source>
-        <translation>Alternativne poti potovanja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="95"/>
         <source>↥ View earlier options</source>
-        <translation>↥ Prikaži zgodnejše možnosti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="118"/>
         <source>↧ View later options</source>
-        <translation>↧ Prikaži kasnejše možnosti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="153"/>
         <source>Duration: %1 | Transfer: %2</source>
-        <translation>Trajanje: %1 | Prestop: %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="198"/>
         <source>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/JourneyResultsPage.qml" line="198"/>
         <source>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; ↦ &lt;b&gt;%3&lt;/b&gt; ↦ &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -445,21 +444,21 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="90"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="170"/>
         <source>Departure Station</source>
-        <translation>Odhodna postaja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="187"/>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="105"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="190"/>
         <source>Via Station</source>
-        <translation>Vmesna postaja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="206"/>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="122"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="210"/>
         <source>Arrival Station</source>
-        <translation>Ciljna postaja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="225"/>
@@ -467,7 +466,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="230"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="289"/>
         <source>Station</source>
-        <translation>Postaja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="238"/>
@@ -475,7 +474,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="244"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="300"/>
         <source>Direction</source>
-        <translation>Smer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="253"/>
@@ -485,7 +484,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="446"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="321"/>
         <source>Date</source>
-        <translation>Datum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="264"/>
@@ -495,48 +494,48 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="476"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="339"/>
         <source>Time</source>
-        <translation>Čas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="281"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="297"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="313"/>
         <source>Departure</source>
-        <translation>Odhod</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="288"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="305"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="313"/>
         <source>Arrival</source>
-        <translation>Prihod</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="297"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="315"/>
         <source>Departure: Now</source>
-        <translation>Odhod: zdaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="320"/>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="203"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="340"/>
         <source>Trains</source>
-        <translation>Vlaki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="331"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="353"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="372"/>
         <source>Show departures</source>
-        <translation>Prikaži odhode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="331"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="353"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="372"/>
         <source>Show arrivals</source>
-        <translation>Prikaži prihode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="339"/>
@@ -551,49 +550,49 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/ubuntu/MainPage.qml" line="371"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="385"/>
         <source>please select</source>
-        <translation>prosimo izberite</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="340"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="363"/>
         <source>Please select a Station</source>
-        <translation>Prosimo izberite postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="354"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="378"/>
         <source>Start search</source>
-        <translation>Začni iskanje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="363"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="388"/>
         <source>Please select a departure and arrival station.</source>
-        <translation>Prosimo izberite odhodno in ciljno postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="370"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="395"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; do &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="372"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="397"/>
         <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; do &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="389"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="415"/>
         <source>Select backend</source>
-        <translation>Izberite vir podatkov</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="398"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="425"/>
         <source>Select train</source>
-        <translation>Izberite vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="419"/>
@@ -601,7 +600,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="447"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="477"/>
         <source>Ok</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="420"/>
@@ -609,7 +608,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="448"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="478"/>
         <source>Cancel</source>
-        <translation>Prekliči</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="503"/>
@@ -620,13 +619,13 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="590"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="509"/>
         <source>Clear station</source>
-        <translation>Počisti postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="517"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="559"/>
         <source>Select station</source>
-        <translation>Izberi postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="524"/>
@@ -634,7 +633,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="567"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="501"/>
         <source>Switch with Departure station</source>
-        <translation>Zamenjaj z odhodno postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="531"/>
@@ -642,7 +641,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="575"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="504"/>
         <source>Switch with Arrival station</source>
-        <translation>Zamenjaj s ciljno postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="538"/>
@@ -650,21 +649,21 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="583"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="507"/>
         <source>Switch with Via station</source>
-        <translation>Zamenjaj z vmesno postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="581"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="629"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="523"/>
         <source>No results found</source>
-        <translation>Ni zadetkov</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/MainPage.qml" line="588"/>
         <location filename="../src/gui/symbian/pages/MainPage.qml" line="636"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="530"/>
         <source>Error loading details</source>
-        <translation>Napaka pri nalaganju podrobnosti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="48"/>
@@ -672,18 +671,18 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/ubuntu/MainPage.qml" line="34"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="39"/>
         <source>Journey</source>
-        <translation>Potovanje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="48"/>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="71"/>
         <source>Time Table</source>
-        <translation>Urnik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="57"/>
         <source>Settings</source>
-        <translation>Nastavitve</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/MainPage.qml" line="79"/>
@@ -694,62 +693,62 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/ubuntu/MainPage.qml" line="34"/>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="44"/>
         <source>Time table</source>
-        <translation type="unfinished">Urnik</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="156"/>
-        <source>From</source>
-        <translation>Od</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="201"/>
-        <source>Via</source>
-        <translation>Preko</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="246"/>
-        <source>To</source>
-        <translation>Do</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="312"/>
-        <source>&lt;b&gt;Date and time&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Datum in čas&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="313"/>
-        <source>Now</source>
-        <translation>Zdaj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="357"/>
-        <source>Transport Options</source>
-        <translation>Možnosti prevoza</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="386"/>
-        <source>Plan my journey</source>
-        <translation>Načrtovanje potovanja</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="400"/>
-        <source>&lt;b&gt;Select backend&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Izberite vir podatkov&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="419"/>
-        <source>Close</source>
-        <translation>Zapri</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/ubuntu/MainPage.qml" line="432"/>
-        <source>&lt;b&gt;Select transport mode&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Izberi vrsto prevoza&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/MainPage.qml" line="53"/>
         <source>About</source>
-        <translation>O</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="156"/>
+        <source>From</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="201"/>
+        <source>Via</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="246"/>
+        <source>To</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="312"/>
+        <source>&lt;b&gt;Date and time&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="313"/>
+        <source>Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="357"/>
+        <source>Transport Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="386"/>
+        <source>Plan my journey</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="400"/>
+        <source>&lt;b&gt;Select backend&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="419"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/ubuntu/MainPage.qml" line="432"/>
+        <source>&lt;b&gt;Select transport mode&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -757,57 +756,57 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="6"/>
         <source>MainWindow</source>
-        <translation>MainWindow</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="18"/>
         <source>Zurich</source>
-        <translation>Zürich</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="25"/>
         <source>getTimeTableForStation</source>
-        <translation>getTimeTableForStation</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="32"/>
         <source>findStationsByName</source>
-        <translation>findStationsByName</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="39"/>
         <source>findStationsByCoordinates</source>
-        <translation>findStationsByCoordinates</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="56"/>
         <source>selectStation</source>
-        <translation>selectStation</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="79"/>
         <source>searchJourney</source>
-        <translation>searchJourney</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="93"/>
         <source>searchJourneyEarlier</source>
-        <translation>searchJourneyEarlier</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="100"/>
         <source>searchJourneyLater</source>
-        <translation>searchJourneyLater</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="123"/>
         <source>getJourneyDetails</source>
-        <translation>getJourneyDetails</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/desktop-test/mainwindow.ui" line="150"/>
         <source>cancelRequest</source>
-        <translation>cancelRequest</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -815,17 +814,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/sailfishos/components/ModePicker.qml" line="20"/>
         <source>Departure</source>
-        <translation type="unfinished">Odhod</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/components/ModePicker.qml" line="25"/>
         <source>Departure: Now</source>
-        <translation type="unfinished">Odhod: zdaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/components/ModePicker.qml" line="30"/>
         <source>Arrival</source>
-        <translation type="unfinished">Prihod</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -833,7 +832,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_abstract.cpp" line="232"/>
         <source>Request timed out.</source>
-        <translation>Request timed out.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -841,42 +840,42 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="138"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="139"/>
         <source>Metro Train</source>
-        <translation>Podzemna železnica</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="140"/>
         <source>Metro Tram</source>
-        <translation>Podzemna železnica</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="141"/>
         <source>Metro Bus</source>
-        <translation>Metro avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="142"/>
         <source>Regional Train</source>
-        <translation>Regionalni vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="143"/>
         <source>Regional Coach</source>
-        <translation>Regionalni avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="144"/>
         <source>Airport(SKYBUS)</source>
-        <translation>Letališče (SKYBUS)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="316"/>
         <source>Server Error: </source>
-        <translation>Napaka strežnika:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="529"/>
@@ -885,28 +884,28 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <source>%1, %2</source>
         <comment>DATE, TIME</comment>
         <extracomment>DATE, TIME</extracomment>
-        <translation>%1, %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="550"/>
         <location filename="../src/parser/parser_efa.cpp" line="552"/>
         <source>Walk</source>
-        <translation>Hoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="553"/>
         <source>Guaranteed connection</source>
-        <translation>Zagotovljena povezava</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="701"/>
         <source>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min late&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min zamude&lt;/span&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="704"/>
         <source>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;brez zamud&lt;/span&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -914,19 +913,19 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="63"/>
         <source>All</source>
-        <translation type="unfinished">Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="64"/>
         <location filename="../src/parser/parser_finland_matka.cpp" line="956"/>
         <source>Bus</source>
-        <translation type="unfinished">Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="65"/>
         <location filename="../src/parser/parser_finland_matka.cpp" line="964"/>
         <source>Train</source>
-        <translation type="unfinished">Vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="66"/>
@@ -947,47 +946,6 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_finland_matka.cpp" line="69"/>
         <source>Train and airplane</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="753"/>
-        <source>Walk %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="774"/>
-        <source>Arrivals</source>
-        <translation type="unfinished">Prihodi</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="776"/>
-        <source>Departures</source>
-        <translation type="unfinished">Odhodi</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="777"/>
-        <source>ddd MMM d, HH:mm</source>
-        <translation type="unfinished">ddd MMM d, HH:mm</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="827"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="970"/>
-        <source>Walk</source>
-        <translation type="unfinished">Hoja</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="954"/>
-        <source>Flight</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="968"/>
-        <source>Tram</source>
-        <translation type="unfinished">Tramvaj</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="966"/>
-        <source>Metro</source>
-        <translation type="unfinished">Metro</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="152"/>
@@ -1026,8 +984,39 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="753"/>
+        <source>Walk %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="774"/>
+        <source>Arrivals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="776"/>
+        <source>Departures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="777"/>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="827"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="970"/>
+        <source>Walk</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="872"/>
         <source>No journey details found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="954"/>
+        <source>Flight</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1038,11 +1027,21 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="960"/>
         <source>Ferry</source>
-        <translation type="unfinished">Trajekt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="962"/>
         <source>Gondola</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="966"/>
+        <source>Metro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="968"/>
+        <source>Tram</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1058,7 +1057,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="1068"/>
         <source>Station</source>
-        <translation type="unfinished">Postaja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_finland_matka.cpp" line="1070"/>
@@ -1082,67 +1081,59 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_hafasbinary.cpp" line="96"/>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="117"/>
         <source>An error ocurred with the backend</source>
-        <translation>Nastopila je težava z zaledjem.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="449"/>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="452"/>
         <source>Walk</source>
-        <translation>Hoja</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_hafasbinary.cpp" line="557"/>
-        <source>, </source>
-        <translation>, </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="449"/>
         <source>Transfer</source>
-        <translation>Prestop</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="454"/>
         <source>Use bike</source>
-        <translation>Uporabite kolo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="456"/>
         <source>Drive car</source>
-        <translation>Vozite avto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="464"/>
         <source>%1 for %2 min</source>
-        <translation>%1 za %2 min</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="472"/>
         <source> / </source>
         <comment>Alternative trains</comment>
         <extracomment>Separator for trains list, if more than one provided</extracomment>
-        <translation> / </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/parser/parser_hafasbinary.cpp" line="507"/>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="527"/>
         <source>%n min late</source>
-        <translation>
-            <numerusform>%n minuta zamude</numerusform>
-            <numerusform>%n minuti zamude</numerusform>
-            <numerusform>%n minute zmude</numerusform>
-            <numerusform>%n minut zamude</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="514"/>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="534"/>
         <source>on time</source>
-        <translation>brez zamud</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="544"/>
         <source>Train canceled!</source>
-        <translation>Vlak odpovedan!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="547"/>
@@ -1155,29 +1146,34 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_hafasbinary.cpp" line="557"/>
+        <source>, </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="584"/>
         <source>Journey contains canceled trains!</source>
-        <translation>Potovanje vključuje odpovedane vlake!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="626"/>
         <source>Internal error occured, going later is not possible</source>
-        <translation>Prišlo je do notranje napake, kasnejši odhod ni možen!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="661"/>
         <source>Internal error occured, going earlier is not possible</source>
-        <translation>Prišlo je do notranje napake, zgodnejši odhod ni možen!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="740"/>
         <source>Your session has expired. Please, perform the search again.</source>
-        <translation>Vaša seja je potekla. Prosimo, znova zaženite iskanje.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="742"/>
         <source>One of the station names is too ambiguous.</source>
-        <translation>Eno od imen postaj je preveč splošno.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="744"/>
@@ -1187,7 +1183,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="746"/>
         <source>There was an unsuccessful or incomplete search due to a timetable change.</source>
-        <translation>Neuspešno ali nepopolno poizvedovanje zaradi sprememb urnika.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="748"/>
@@ -1202,12 +1198,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="752"/>
         <source>Dep./Arr./Intermed. or equivalent station defined more than once.</source>
-        <translation>Odh./Prih./Vmes. ali kater od podobnih postaj je določena več kot enkrat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasbinary.cpp" line="754"/>
         <source>Unknown error ocurred with the backend (error %1).</source>
-        <translation>Nastopila je težava z zaledjem (napaka %1).</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,39 +1211,39 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="181"/>
         <source>Backend returns an error: </source>
-        <translation>Napaka zaledja:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="213"/>
         <location filename="../src/parser/parser_hafasxml.cpp" line="366"/>
         <source>On-Time</source>
-        <translation>Pravočasno</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="216"/>
         <location filename="../src/parser/parser_hafasxml.cpp" line="369"/>
         <source>Canceled!</source>
-        <translation>Odpovedano!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="514"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="515"/>
         <source>All without ICE</source>
-        <translation>Vsi brez ICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="516"/>
         <source>Only local transport</source>
-        <translation>Le lokalni prevoz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="517"/>
         <source>Local transport without S-Bahn</source>
-        <translation>Lokalni prevoz brez S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="619"/>
@@ -1257,23 +1253,23 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="629"/>
         <source>%1 replied: &quot;%2&quot;</source>
-        <translation>%1 je odgovoril: &quot;%2&quot;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="706"/>
         <location filename="../src/parser/parser_hafasxml.cpp" line="951"/>
         <source>, </source>
-        <translation>, </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="752"/>
         <source>Internal error occured, going later is not possible</source>
-        <translation>Prišlo je do notranje napake, kasnejši odhod ni možen!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="777"/>
         <source>Internal error occured, going earlier is not possible</source>
-        <translation>Prišlo je do notranje napake, zgodnejši odhod ni možen!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="828"/>
@@ -1285,18 +1281,18 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_hafasxml.cpp" line="887"/>
         <location filename="../src/parser/parser_hafasxml.cpp" line="1014"/>
         <source>Pl. %1</source>
-        <translation>Pl. %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="964"/>
         <location filename="../src/parser/parser_hafasxml.cpp" line="978"/>
         <source>Walk</source>
-        <translation>Hoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="964"/>
         <source>Transfer</source>
-        <translation>Prestop</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="966"/>
@@ -1305,37 +1301,34 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <extracomment>%1 can be &quot;Walk&quot; or &quot;Transfer&quot;
 ----------
 %1 can be &quot;Walk&quot;, &quot;Use bike&quot;, &quot;Take taxi&quot;, or &quot;Drive car&quot;</extracomment>
-        <translation>%1 za %2 min</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/parser/parser_hafasxml.cpp" line="968"/>
         <source>Distance %n meter(s)</source>
-        <translation>
-            <numerusform>Razdalja %n meter</numerusform>
-            <numerusform>Razdalja %n metra</numerusform>
-            <numerusform>Razdalja %n metre</numerusform>
-            <numerusform>Razdalja %n metrov</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="980"/>
         <source>Use bike</source>
-        <translation>Uporabite kolo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="982"/>
         <source>Take taxi</source>
-        <translation>Uporabite taxi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="984"/>
         <source>Drive car</source>
-        <translation>Vozite avto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_hafasxml.cpp" line="1094"/>
         <source>d</source>
-        <translation>d</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1343,37 +1336,37 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_ireland_efa.cpp" line="45"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ireland_efa.cpp" line="46"/>
         <source>Train</source>
-        <translation>Vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ireland_efa.cpp" line="47"/>
         <source>Tram</source>
-        <translation>Tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ireland_efa.cpp" line="48"/>
         <source>Bus</source>
-        <translation>Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ireland_efa.cpp" line="49"/>
         <source>Ferry</source>
-        <translation>Trajekt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ireland_efa.cpp" line="50"/>
         <source>Taxi</source>
-        <translation>Taxi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ireland_efa.h" line="31"/>
         <source>Ireland</source>
-        <translation>Irska</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1381,27 +1374,27 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_mobilebahnde.cpp" line="38"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_mobilebahnde.cpp" line="39"/>
         <source>All without ICE</source>
-        <translation>Vsi brez ICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_mobilebahnde.cpp" line="40"/>
         <source>Only local transport</source>
-        <translation>Le lokalni prevoz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_mobilebahnde.cpp" line="41"/>
         <source>Local transport without S-Bahn</source>
-        <translation>Lokalni prevoz brez S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_mobilebahnde.h" line="35"/>
         <source>Germany</source>
-        <translation>Nemčija</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1419,25 +1412,22 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="399"/>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="546"/>
         <source>Backend returns an error: </source>
-        <translation type="unfinished">Napaka zaledja:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="228"/>
         <source>Canceled!</source>
-        <translation type="unfinished">Odpovedano!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="232"/>
         <source>On-Time</source>
-        <translation type="unfinished">Pravočasno</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="240"/>
         <source>Departure delayed: %n min</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1445,9 +1435,6 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="244"/>
         <source>Arrival delayed: %n min</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1459,17 +1446,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="652"/>
         <source>Arrivals</source>
-        <translation type="unfinished">Prihodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="654"/>
         <source>Departures</source>
-        <translation type="unfinished">Odhodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="655"/>
         <source>ddd MMM d, HH:mm</source>
-        <translation type="unfinished">ddd MMM d, HH:mm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="729"/>
@@ -1487,7 +1474,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="734"/>
         <source>Track %1</source>
         <comment>Departure</comment>
-        <translation type="unfinished">Tir %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="741"/>
@@ -1505,29 +1492,26 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="746"/>
         <source>Track %1</source>
         <comment>Arrival</comment>
-        <translation type="unfinished">Tir %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="760"/>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="779"/>
         <source>%n min late</source>
         <translation type="unfinished">
-            <numerusform>%n minuta zamude</numerusform>
-            <numerusform>%n minuti zamude</numerusform>
-            <numerusform>%n minute zmude</numerusform>
-            <numerusform>%n minut zamude</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="767"/>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="786"/>
         <source>on time</source>
-        <translation type="unfinished">brez zamud</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="845"/>
         <source>Train canceled!</source>
-        <translation type="unfinished">Vlak odpovedan!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="848"/>
@@ -1563,12 +1547,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="915"/>
         <source>%1: %2</source>
         <comment>travel class: expected demand</comment>
-        <translation type="unfinished">%1, %2 {1:?}</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="935"/>
         <source>Transfer</source>
-        <translation type="unfinished">Prestop</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="936"/>
@@ -1576,19 +1560,13 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <comment>Transfer</comment>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="941"/>
         <source>Distance %n meter(s)</source>
         <translation type="unfinished">
-            <numerusform>Razdalja %n meter</numerusform>
-            <numerusform>Razdalja %n metra</numerusform>
-            <numerusform>Razdalja %n metre</numerusform>
-            <numerusform>Razdalja %n metrov</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -1644,7 +1622,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1183"/>
         <source>Walk</source>
-        <translation type="unfinished">Hoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1191"/>
@@ -1654,27 +1632,27 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1195"/>
         <source>Bus</source>
-        <translation type="unfinished">Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1199"/>
         <source>Train</source>
-        <translation type="unfinished">Vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1203"/>
         <source>S-Bahn</source>
-        <translation type="unfinished">S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1207"/>
         <source>Metro</source>
-        <translation type="unfinished">Metro</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1211"/>
         <source>Tram</source>
-        <translation type="unfinished">Tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1214"/>
@@ -1684,27 +1662,27 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1221"/>
         <source>All</source>
-        <translation type="unfinished">Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1222"/>
         <source>All without ICE</source>
-        <translation type="unfinished">Vsi brez ICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1223"/>
         <source>Only local transport</source>
-        <translation type="unfinished">Le lokalni prevoz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.cpp" line="1224"/>
         <source>Local transport without S-Bahn</source>
-        <translation type="unfinished">Lokalni prevoz brez S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_movas_bahnde.h" line="35"/>
         <source>Germany</source>
-        <translation type="unfinished">Nemčija</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1712,37 +1690,37 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_munich_efa.cpp" line="38"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_munich_efa.cpp" line="39"/>
         <source>S-Bahn</source>
-        <translation>S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_munich_efa.cpp" line="40"/>
         <source>U-Bahn</source>
-        <translation>U-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_munich_efa.cpp" line="41"/>
         <source>Tram</source>
-        <translation>Tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_munich_efa.cpp" line="42"/>
         <source>Bus</source>
-        <translation>Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_munich_efa.h" line="31"/>
         <source>Germany</source>
-        <translation>Nemčija</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_munich_efa.h" line="31"/>
         <source>Munich</source>
-        <translation>München</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1750,27 +1728,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_ninetwo.cpp" line="236"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ninetwo.cpp" line="237"/>
         <source>Only trains</source>
-        <translation>Samo vlaki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ninetwo.cpp" line="238"/>
         <source>All, except ferry</source>
-        <translation>Vse, razen trajekta</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="293"/>
-        <source>%1 via %2</source>
-        <translation>%1 via %2</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="297"/>
-        <source>On-Time</source>
-        <translation>Pravočasno</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ninetwo.cpp" line="258"/>
@@ -1779,15 +1747,25 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="293"/>
+        <source>%1 via %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="297"/>
+        <source>On-Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_ninetwo.cpp" line="521"/>
         <location filename="../src/parser/parser_ninetwo.cpp" line="523"/>
         <source>Pl. %1</source>
-        <translation>Pl. %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ninetwo.h" line="66"/>
         <source>Netherlands</source>
-        <translation>Nizozemska</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1795,60 +1773,135 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="46"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="47"/>
         <source>Metro Train</source>
-        <translation>Metro vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="48"/>
         <source>Metro Tram</source>
-        <translation>Metro tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="49"/>
         <source>Metro Bus</source>
-        <translation>Metro avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="50"/>
         <source>Regional Train</source>
-        <translation>Regionalni vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="51"/>
         <source>Regional Coach</source>
-        <translation>Regionalni avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="52"/>
         <source>Airport(SKYBUS)</source>
-        <translation>Letališče (SKYBUS)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.h" line="31"/>
         <source>Australia</source>
-        <translation>Avstralija</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.h" line="31"/>
         <source>Victoria</source>
-        <translation>Victoria</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ParserResRobot</name>
     <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="37"/>
+        <source>Food in first class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="38"/>
+        <source>Business class Plus available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="39"/>
+        <source>No pets allowed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="40"/>
+        <source>Standard class only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="41"/>
+        <source>Seat reservation not possible in second class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="42"/>
+        <source>Trolley service</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="43"/>
+        <source>Restaurant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="44"/>
         <source>No reservation</source>
-        <translation>Brez rezervacij</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="45"/>
+        <source>Mandatory seat reservation</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="46"/>
         <source>Optional seat reservation</source>
-        <translation>Možnost rezervacije sedeža</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="47"/>
+        <source>Access to sleeper before dep.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="48"/>
+        <source>Access to sleeper after arr.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="49"/>
+        <source>Telephone reservation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="50"/>
+        <source>Family coach</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="51"/>
+        <source>Coach with cinema and bistro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="52"/>
+        <source>Supplement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="53"/>
+        <source>Wheelchair lift</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="54"/>
@@ -1891,89 +1944,9 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="81"/>
-        <source>Breakfast in first class</source>
-        <translation>Zajtrk v 1. razredu</translation>
-    </message>
-    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="62"/>
         <source>Internet connection</source>
-        <translation>Internetna povezava</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="37"/>
-        <source>Food in first class</source>
-        <translation>Hrana v 1. razredu</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="38"/>
-        <source>Business class Plus available</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="39"/>
-        <source>No pets allowed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="40"/>
-        <source>Standard class only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="41"/>
-        <source>Seat reservation not possible in second class</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="42"/>
-        <source>Trolley service</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="43"/>
-        <source>Restaurant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="45"/>
-        <source>Mandatory seat reservation</source>
-        <translation>Obvezna rezervacija sedeža</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="47"/>
-        <source>Access to sleeper before dep.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="48"/>
-        <source>Access to sleeper after arr.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="49"/>
-        <source>Telephone reservation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="50"/>
-        <source>Family coach</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="51"/>
-        <source>Coach with cinema and bistro</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="52"/>
-        <source>Supplement</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="53"/>
-        <source>Wheelchair lift</source>
-        <translation>Dvigalo za invalide</translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="63"/>
@@ -2058,6 +2031,11 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="81"/>
+        <source>Breakfast in first class</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="82"/>
         <source>Tavern</source>
         <translation type="unfinished"></translation>
@@ -2118,72 +2096,6 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="132"/>
-        <source>Bus</source>
-        <translation>Avtobus</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="98"/>
-        <source>Express bus</source>
-        <translation>Hitri avtobus</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="133"/>
-        <source>Ferry</source>
-        <translation>Trajekt</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="651"/>
-        <source>Walk</source>
-        <translation>Hoja</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="108"/>
-        <location filename="../src/parser/parser_resrobot.cpp" line="122"/>
-        <source>Night train</source>
-        <translation>Nočni vlak</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="99"/>
-        <source>Normal ferry (reduced price)</source>
-        <translation>Običajen trajekt (znižana cena)</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="127"/>
-        <source>High-speed train</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="126"/>
-        <source>Special train</source>
-        <translation>Poseben vlak</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="136"/>
-        <source>Tram</source>
-        <translation>Tramvaj</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="135"/>
-        <source>Train</source>
-        <translation>Vlak</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="100"/>
-        <source>International ferry</source>
-        <translation>Mednarodni trajekt</translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="404"/>
-        <source>Realtime info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/parser/parser_resrobot.cpp" line="164"/>
-        <source>All</source>
-        <translation>Vsi</translation>
-    </message>
-    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="95"/>
         <source>Airport transfer (bus)</source>
         <translation type="unfinished"></translation>
@@ -2192,6 +2104,21 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_resrobot.cpp" line="96"/>
         <location filename="../src/parser/parser_resrobot.cpp" line="97"/>
         <source>replacement bus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="98"/>
+        <source>Express bus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="99"/>
+        <source>Normal ferry (reduced price)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="100"/>
+        <source>International ferry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2220,8 +2147,24 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="108"/>
+        <location filename="../src/parser/parser_resrobot.cpp" line="122"/>
+        <source>Night train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="112"/>
         <source>Express train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="126"/>
+        <source>Special train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="127"/>
+        <source>High-speed train</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2235,18 +2178,43 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="132"/>
+        <source>Bus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="133"/>
+        <source>Ferry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="134"/>
         <source>Helicopter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="135"/>
+        <source>Train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="136"/>
+        <source>Tram</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="137"/>
         <source>Taxi</source>
-        <translation type="unfinished">Taxi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="138"/>
         <source>Rapid transit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="164"/>
+        <source>All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2268,24 +2236,34 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="404"/>
+        <source>Realtime info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="594"/>
         <source>Arrivals</source>
-        <translation>Prihodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="596"/>
         <source>Departures</source>
-        <translation>Odhodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.cpp" line="597"/>
         <source>ddd MMM d, HH:mm</source>
-        <translation>ddd MMM d, HH:mm</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_resrobot.cpp" line="651"/>
+        <source>Walk</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_resrobot.h" line="52"/>
         <source>Sweden</source>
-        <translation>Švedska</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2293,27 +2271,27 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_salzburg_efa.cpp" line="39"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_salzburg_efa.cpp" line="40"/>
         <source>S-Bahn</source>
-        <translation>S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_salzburg_efa.cpp" line="41"/>
         <source>Bus</source>
-        <translation>Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_salzburg_efa.h" line="31"/>
         <source>Austria</source>
-        <translation>Avstrija</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_salzburg_efa.h" line="31"/>
         <source>Salzburg</source>
-        <translation>Salzburg</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2321,17 +2299,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="460"/>
         <source>All</source>
-        <translation type="unfinished">Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="461"/>
         <source>Train</source>
-        <translation type="unfinished">Vlak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="462"/>
         <source>Tram</source>
-        <translation type="unfinished">Tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="463"/>
@@ -2341,7 +2319,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="464"/>
         <source>Bus</source>
-        <translation type="unfinished">Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="465"/>
@@ -2399,7 +2377,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_search_ch.h" line="116"/>
         <source>Switzerland</source>
-        <translation type="unfinished">Švica</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2407,37 +2385,37 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_sydney_efa.cpp" line="46"/>
         <source>All, except School Buses</source>
-        <translation>Vse, razen šolskih avtobusov</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sydney_efa.cpp" line="47"/>
         <source>Regular Buses</source>
-        <translation>Redni avtobusi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sydney_efa.cpp" line="48"/>
         <source>Trains</source>
-        <translation>Vlaki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sydney_efa.cpp" line="49"/>
         <source>Ferries</source>
-        <translation>Trajekti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sydney_efa.cpp" line="50"/>
         <source>STA School Bus</source>
-        <translation>STA School Bus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sydney_efa.h" line="31"/>
         <source>Australia</source>
-        <translation>Avstralija</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_sydney_efa.h" line="31"/>
         <source>Sydney</source>
-        <translation>Sydney</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2445,32 +2423,32 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_vrr_efa.cpp" line="61"/>
         <source>All</source>
-        <translation type="unfinished">Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_vrr_efa.cpp" line="62"/>
         <source>S-Bahn</source>
-        <translation type="unfinished">S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_vrr_efa.cpp" line="63"/>
         <source>U-Bahn</source>
-        <translation type="unfinished">U-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_vrr_efa.cpp" line="64"/>
         <source>Tram</source>
-        <translation type="unfinished">Tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_vrr_efa.cpp" line="65"/>
         <source>Bus</source>
-        <translation type="unfinished">Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_vrr_efa.h" line="31"/>
         <source>Germany</source>
-        <translation type="unfinished">Nemčija</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_vrr_efa.h" line="31"/>
@@ -2483,12 +2461,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_xmlnri.cpp" line="35"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlnri.h" line="31"/>
         <source>Norway</source>
-        <translation>Norveška</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2496,22 +2474,22 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_xmloebbat.cpp" line="36"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmloebbat.cpp" line="37"/>
         <source>All without ICE, TGV</source>
-        <translation>Vsi brez ICE, TGV</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmloebbat.cpp" line="38"/>
         <source>Einfach-Raus-Ticket</source>
-        <translation>Einfach-Raus karta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmloebbat.h" line="31"/>
         <source>Austria</source>
-        <translation>Avstrija</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2519,32 +2497,32 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_xmlrejseplanendk.cpp" line="54"/>
         <source>All</source>
-        <translation>Vsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlrejseplanendk.cpp" line="55"/>
         <source>All without ICE</source>
-        <translation>Vsi brez ICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlrejseplanendk.cpp" line="56"/>
         <source>All without buses </source>
-        <translation>Vsi brez avtobusov</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlrejseplanendk.cpp" line="57"/>
         <source>Only local transport</source>
-        <translation>Le lokalni prevoz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlrejseplanendk.cpp" line="58"/>
         <source>Local transport without S-Bahn</source>
-        <translation>Lokalni prevoz brez S-Bahn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlrejseplanendk.h" line="31"/>
         <source>Denmark</source>
-        <translation>Danska</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2552,13 +2530,13 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="347"/>
         <source>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min late&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#b30;&quot;&gt;%1 min zamude&lt;/span&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="349"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="495"/>
         <source>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;brez zamud&lt;/span&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="374"/>
@@ -2568,65 +2546,65 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <source>%1, %2</source>
         <comment>DATE, TIME</comment>
         <extracomment>DATE, TIME</extracomment>
-        <translation>%1, %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="426"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="431"/>
         <source>Track %1</source>
-        <translation>Tir %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="438"/>
         <source>Walk</source>
-        <translation>Hoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="456"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="471"/>
         <source>&lt;br/&gt;&lt;span style=&quot;color:#b30;&quot;&gt;%1 min late&lt;/span&gt;</source>
-        <translation>&lt;br/&gt;&lt;span style=&quot;color:#b30;&quot;&gt;%1 min zamude&lt;/span&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="462"/>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="473"/>
         <source>&lt;br/&gt;&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;on time&lt;/span&gt;</source>
-        <translation>&lt;br/&gt;&lt;span style=&quot;color:#093; font-weight: normal;&quot;&gt;brez zamud&lt;/span&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="488"/>
         <source>%1:%2</source>
-        <translation>%1:%2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="493"/>
         <source>&lt;span style=&quot;color:#b30;&quot;&gt;traffic warning&lt;/span&gt;</source>
-        <translation>&lt;span style=&quot;color:#b30;&quot;&gt;prometno opozorilo&lt;/span&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="553"/>
         <source>Bus</source>
-        <translation>Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="553"/>
         <source>Exp Bus</source>
-        <translation>Hitri avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="553"/>
         <source>Tram</source>
-        <translation>Tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.cpp" line="553"/>
         <source>Ferry</source>
-        <translation>Trajekt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_xmlvasttrafikse.h" line="33"/>
         <source>Sweden</source>
-        <translation>Švedska</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2637,32 +2615,32 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="48"/>
         <location filename="../src/gui/ubuntu/SettingsPage.qml" line="49"/>
         <source>Settings</source>
-        <translation>Nastavitve</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="87"/>
         <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="66"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="87"/>
         <source>Compact calendar entries</source>
-        <translation>Strnjen pogled koledarja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="88"/>
         <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="67"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="88"/>
         <source>Use shorter text format in the calendar event description</source>
-        <translation>Uporabi kratek format za opis koledarkega dogodka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="98"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="99"/>
         <source>Inverted style</source>
-        <translation>Obrnjen slog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="99"/>
         <source>Use dark color scheme</source>
-        <translation>Temna barvna shema</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="110"/>
@@ -2674,20 +2652,20 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="111"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="113"/>
         <source>Right</source>
-        <translation>Desno</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="111"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="113"/>
         <source>Left</source>
-        <translation>Levo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="122"/>
         <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="78"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="125"/>
         <source>Add journeys to calendar</source>
-        <translation>Dodaj potovanja na koledar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="134"/>
@@ -2695,18 +2673,18 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="138"/>
         <location filename="../src/gui/ubuntu/SettingsPage.qml" line="89"/>
         <source>About</source>
-        <translation>O</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="150"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="155"/>
         <source>Select a calendar</source>
-        <translation>Izberite koledar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="45"/>
         <source>Backend</source>
-        <translation>Vir podatkov</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="100"/>
@@ -2716,12 +2694,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="100"/>
         <source>Use light color scheme</source>
-        <translation>Svetla barvna shema</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/SettingsPage.qml" line="72"/>
         <source>Enable GPS location support</source>
-        <translation>Omogoči GPS za lociranje</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2730,13 +2708,13 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/harmattan/delegates/StationDelegate.qml" line="78"/>
         <location filename="../src/gui/symbian/delegates/StationDelegate.qml" line="87"/>
         <source>Removing &apos;%1&apos; from favorites</source>
-        <translation>Odstranjujem &apos;%1&apos; iz priljubljenih</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/delegates/StationDelegate.qml" line="82"/>
         <location filename="../src/gui/symbian/delegates/StationDelegate.qml" line="91"/>
         <source>Adding &apos;%1&apos; to favorites</source>
-        <translation>Dodajam &apos;%1&apos; k priljubljenim</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2744,12 +2722,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/sailfishos/delegates/StationListDelegate.qml" line="57"/>
         <source>Remove from favorites</source>
-        <translation type="unfinished">Odstrani iz priljubljenih</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/delegates/StationListDelegate.qml" line="58"/>
         <source>Add to favorites</source>
-        <translation type="unfinished">Dodaj k priljubljenim</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2757,7 +2735,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/ubuntu/components/StationSelect.qml" line="66"/>
         <source>Search for Station...</source>
-        <translation>Išči postajo ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/components/StationSelect.qml" line="106"/>
@@ -2771,19 +2749,19 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/harmattan/pages/StationSelectPage.qml" line="77"/>
         <location filename="../src/gui/symbian/pages/StationSelectPage.qml" line="64"/>
         <source>Search for Station...</source>
-        <translation>Iščem postajo ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/StationSelectPage.qml" line="109"/>
         <location filename="../src/gui/symbian/pages/StationSelectPage.qml" line="83"/>
         <source>Searching ...</source>
-        <translation>Iskanje ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/StationSelectPage.qml" line="127"/>
         <location filename="../src/gui/symbian/pages/StationSelectPage.qml" line="117"/>
         <source>Requesting GPS...</source>
-        <translation>Zahteva za GPS ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/StationSelectPage.qml" line="154"/>
@@ -2795,24 +2773,24 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/harmattan/pages/StationSelectPage.qml" line="164"/>
         <location filename="../src/gui/symbian/pages/StationSelectPage.qml" line="155"/>
         <source>Start typing station name into the search box to see a list stations</source>
-        <translation>Za prikaz postaj začnite z vnosom imena postaje v polje za iskanje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/StationSelectPage.qml" line="205"/>
         <location filename="../src/gui/symbian/pages/StationSelectPage.qml" line="202"/>
         <source>Searching for stations...</source>
-        <translation>Iščem postaje ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/StationSelectPage.qml" line="210"/>
         <location filename="../src/gui/symbian/pages/StationSelectPage.qml" line="205"/>
         <source>Waiting for GPS lock...</source>
-        <translation>Čakam na GPS signal ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="148"/>
         <source>Select station</source>
-        <translation>Izberi postajo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="150"/>
@@ -2838,17 +2816,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="230"/>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="464"/>
         <source>Search</source>
-        <translation>Iskanje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="460"/>
         <source>From</source>
-        <translation type="unfinished">Od</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="462"/>
         <source>To</source>
-        <translation type="unfinished">Do</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="500"/>
@@ -2858,12 +2836,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="526"/>
         <source>Favorites</source>
-        <translation>Priljubljene</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="536"/>
         <source>Click and hold in the search results to add or remove a station as a favorite</source>
-        <translation>Pritisnite in pridržite rezultat iskanja, da dodate ali odstranite postajo kot priljubljeno</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2871,12 +2849,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/sailfishos/delegates/StationTileDelegate.qml" line="75"/>
         <source>Remove from favorites</source>
-        <translation type="unfinished">Odstrani iz priljubljenih</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/delegates/StationTileDelegate.qml" line="76"/>
         <source>Add to favorites</source>
-        <translation type="unfinished">Dodaj k priljubljenim</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2884,17 +2862,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/ubuntu/components/TimePicker.qml" line="28"/>
         <source>&lt;b&gt;Time&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Čas&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/components/TimePicker.qml" line="44"/>
         <source>Cancel</source>
-        <translation>Prekliči</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/components/TimePicker.qml" line="55"/>
         <source>Ok</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2902,17 +2880,17 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/gui/ubuntu/TimeTableResultsPage.qml" line="33"/>
         <source>Arrivals</source>
-        <translation>Prihodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/TimeTableResultsPage.qml" line="33"/>
         <source>Departures</source>
-        <translation>Odhodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/TimeTableResultsPage.qml" line="120"/>
         <source>Pl. %1</source>
-        <translation>Pl. %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2922,21 +2900,21 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/sailfishos/delegates/TimetableEntryDelegate.qml" line="53"/>
         <location filename="../src/gui/symbian/delegates/TimetableEntryDelegate.qml" line="67"/>
         <source>from</source>
-        <translation>od</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/delegates/TimetableEntryDelegate.qml" line="59"/>
         <location filename="../src/gui/sailfishos/delegates/TimetableEntryDelegate.qml" line="53"/>
         <location filename="../src/gui/symbian/delegates/TimetableEntryDelegate.qml" line="67"/>
         <source>to</source>
-        <translation>do</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/delegates/TimetableEntryDelegate.qml" line="73"/>
         <location filename="../src/gui/sailfishos/delegates/TimetableEntryDelegate.qml" line="69"/>
         <location filename="../src/gui/symbian/delegates/TimetableEntryDelegate.qml" line="85"/>
         <source>Pl. %1</source>
-        <translation>Pl. %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2946,24 +2924,24 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="105"/>
         <location filename="../src/gui/symbian/pages/TimetablePage.qml" line="46"/>
         <source>Arrivals</source>
-        <translation>Prihodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/TimetablePage.qml" line="47"/>
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="105"/>
         <location filename="../src/gui/symbian/pages/TimetablePage.qml" line="46"/>
         <source>Departures</source>
-        <translation>Odhodi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="81"/>
         <source>Searching...</source>
-        <translation type="unfinished">Iščem ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/TimetablePage.qml" line="113"/>
         <source>Error</source>
-        <translation type="unfinished">Napaka</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2971,7 +2949,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/models/trainrestrictions.cpp" line="48"/>
         <source>None</source>
-        <translation>Brez</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2988,13 +2966,13 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/gui/ubuntu/main.qml" line="47"/>
         <location filename="../src/gui/ubuntu/main.qml" line="49"/>
         <source>Journey</source>
-        <translation>Potovanje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/gui/ubuntu/main.qml" line="54"/>
         <location filename="../src/gui/ubuntu/main.qml" line="56"/>
         <source>Time table</source>
-        <translation>Urnik</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3002,7 +2980,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="305"/>
         <source>Walk</source>
-        <translation type="unfinished">Hoja</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3020,7 +2998,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="429"/>
         <source>ddd MMM d, HH:mm</source>
-        <translation type="unfinished">ddd MMM d, HH:mm</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3029,7 +3007,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_search_ch.cpp" line="192"/>
         <location filename="../src/parser/parser_search_ch.cpp" line="238"/>
         <source>Track %1</source>
-        <translation type="unfinished">Tir %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="202"/>
@@ -3044,7 +3022,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="216"/>
         <source>Bus</source>
-        <translation type="unfinished">Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="218"/>
@@ -3109,12 +3087,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
         <location filename="../src/parser/parser_search_ch.cpp" line="142"/>
         <location filename="../src/parser/parser_search_ch.cpp" line="144"/>
         <source>Bus</source>
-        <translation type="unfinished">Avtobus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="146"/>
         <source>Tram</source>
-        <translation type="unfinished">Tramvaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="148"/>
@@ -3139,7 +3117,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <message>
         <location filename="../src/parser/parser_search_ch.cpp" line="165"/>
         <source>Walk</source>
-        <translation type="unfinished">Hoja</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

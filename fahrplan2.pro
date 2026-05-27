@@ -356,14 +356,6 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
 
     RESOURCES += sailfishos_res.qrc
 
-#   HEADERS += \
-#        3rdparty/QuickDownload/src/quickdownload.h \
-#        3rdparty/QuickDownload/src/quickdownload_plugin.h \
-
-#    SOURCES += \
-#        3rdparty/QuickDownload/src/quickdownload.cpp \
-#        3rdparty/QuickDownload/src/quickdownload_plugin.cpp \
-
     SAILFISH_GUI_FILES += \
         src/gui/sailfishos/main.qml \
         src/gui/sailfishos/Cover.qml \
@@ -408,6 +400,24 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
         icon$${size}.path = /usr/share/icons/hicolor/$${size}/apps
         INSTALLS += icon$${size}
     }
+    CONFIG += sailfishapp_i18n
+    TRANSLATIONS += translations/fahrplan_ar.ts \
+                translations/fahrplan_ca.ts \
+                translations/fahrplan_de.ts \
+                translations/fahrplan_el.ts \
+                translations/fahrplan_en.ts \
+                translations/fahrplan_es.ts \
+                translations/fahrplan_fa_IR.ts \
+                translations/fahrplan_fr.ts \
+                translations/fahrplan_hu.ts \
+                translations/fahrplan_nb.ts \
+                translations/fahrplan_nl_NL.ts \
+                translations/fahrplan_ro_RO.ts \
+                translations/fahrplan_ru.ts \
+                translations/fahrplan_sl_SI.ts \
+                translations/fahrplan_sv_SE.ts \
+                translations/fahrplan_uk.ts \
+
 }
 
 #win32|unix:!simulator:!maemo5:!contains(MEEGO_EDITION,harmattan):!symbian:!exists("/usr/include/sailfishapp/sailfishapp.h"):!ubuntu:!blackberry {
