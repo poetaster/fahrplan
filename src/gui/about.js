@@ -19,7 +19,7 @@
 
 .pragma library
 
-var copyright = "(C) 2008-2018 smurfy (maemo@smurfy.de), 2022-2026 poetaster (blueprint@poetaster.de)";
+var copyright = "(C) 2008-2018 smurfy (maemo@smurfy.de), <br/> 2022-2026 poetaster (blueprint@poetaster.de)";
 
 var license = "<p>This program is free software; you can redistribute it and/or " +
         "modify it under the terms of the GNU General Public License " +
