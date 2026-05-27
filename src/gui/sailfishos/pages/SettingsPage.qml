@@ -92,16 +92,16 @@ Page {
             }
 
             Label {
-              anchors{
-                 leftMargin: Theme.paddingMedium
-              }
+             anchors {
+                    horizontalCenter: parent.horizontalCenter
+             }
               visible: fahrplanBackend.supportsCalendar
               id:mapboxLabel
-              text: qsTr(" Mapbox key for Station backgrounds")
+              text: qsTr(" Mapbox key, Station backgrounds")
             }
 
             TextField {
-                id: mapKey
+                id: mapboxKey
                 visible: fahrplanBackend.supportsCalendar
                 text:  ""
                 onTextChanged: {
@@ -109,6 +109,25 @@ Page {
                 }
                 Component.onCompleted: {
                     text = fahrplanBackend.getSettingsValue("mapbox", "")
+                }
+            }
+            Label {
+             anchors {
+                    horizontalCenter: parent.horizontalCenter
+             }
+              visible: fahrplanBackend.supportsCalendar
+              id:maptilerLabel
+              text: qsTr("Maptiler key,  Station backgrounds")
+            }
+            TextField {
+                id: maptilerKey
+                visible: fahrplanBackend.supportsCalendar
+                text:  ""
+                onTextChanged: {
+                    fahrplanBackend.storeSettingsValue("maptiler", text);
+                }
+                Component.onCompleted: {
+                    text = fahrplanBackend.getSettingsValue("maptiler", "")
                 }
             }
 

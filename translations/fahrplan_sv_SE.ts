@@ -2031,7 +2031,11 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <translation>Aktivera stöd för GPS-positionering</translation>
     </message>
     <message>
-        <source> Mapbox key for Station backgrounds</source>
+        <source> Mapbox key, Station backgrounds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maptiler key,  Station backgrounds</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2228,8 +2232,8 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
 <context>
     <name>about</name>
     <message>
-        <source>&lt;p&gt;If fahrplan is not translated in your language, help us &lt;a href=&quot;https://www.transifex.com/projects/p/fahrplan/&quot;&gt;translate it to your language&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;If you like fahrplan, I would appreciate a donation. &lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DW3LGJ6VEKFVS&quot;&gt;Donate using PayPal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;If you encounter bugs or have feature requests visit the &lt;a href=&quot;https://github.com/smurfy/fahrplan/issues&quot;&gt;Fahrplan issue tracker on GitHub&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Om Fahrplan inte är översatt till ditt språk, hjälp oss att &lt;a href=&quot;https://www.transifex.com/projects/p/fahrplan/&quot;&gt;översätta det till ditt språk&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Om du gillar Fahrplan skulle jag uppskatta ett bidrag. &lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DW3LGJ6VEKFVS&quot;&gt;Ge en gåva via PayPal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Om du upptäcker buggar eller har förslag på nya funktioner, besök &lt;a href=&quot;https://github.com/smurfy/fahrplan/issues&quot;&gt;Fahrplans ärendehantering på GitHub&lt;/a&gt;.&lt;/p&gt;</translation>
+        <source>&lt;p&gt;If fahrplan is not translated in your language, help us translate it to your language.&lt;/p&gt;&lt;p&gt;If you like fahrplan, I would appreciate a donation. &lt;a href=&quot;https://www.paypal.com/paypalme/poetasterFOSS&quot;&gt;Donate using PayPal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;If you encounter bugs or have feature requests visit the &lt;a href=&quot;https://github.com/poetaster/fahrplan/issues&quot;&gt;Fahrplan issue tracker on GitHub&lt;/a&gt;.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

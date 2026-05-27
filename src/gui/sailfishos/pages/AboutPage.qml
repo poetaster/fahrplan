@@ -103,6 +103,7 @@ Page {
                         model: About.maintainers
 
                         delegate: Label {
+                            font.pixelSize: Theme.fontSizeSmall
                             text: About.maintainers[index]
                         }
                     }
@@ -120,6 +121,7 @@ Page {
                     Repeater {
                         model: About.codeContributors
                         delegate: Label {
+                            font.pixelSize: Theme.fontSizeSmall
                             text: About.codeContributors[index]
                         }
                     }
@@ -137,6 +139,7 @@ Page {
                     Repeater {
                         model: About.translators
                         delegate: Label {
+                            font.pixelSize: Theme.fontSizeSmall
                             anchors {
                                 left: parent.left
                                 right: parent.right
@@ -160,7 +163,9 @@ Page {
                     Label {
                         wrapMode: Text.WordWrap
                         width: parent.width
-                        textFormat: Text.RichText
+                        font.pixelSize: Theme.fontSizeMedium
+                        linkColor: Theme.highlightColor
+                        //textFormat: Text.RichText
                         onLinkActivated : Qt.openUrlExternally(link)
                         text: About.support
                     }
@@ -179,6 +184,8 @@ Page {
                         wrapMode: Text.WordWrap
                         width: parent.width
                         textFormat: Text.StyledText
+                        font.pixelSize: Theme.fontSizeMedium
+                        linkColor: Theme.highlightColor
                         onLinkActivated : Qt.openUrlExternally(link)
                         text: "<a href='https://www.maptiler.com/copyright/'>© MapTiler</a> " +
                               "<a href='https://www.openstreetmap.org/copyright'>© OpenStreetMap contributors</a>"
@@ -197,7 +204,9 @@ Page {
                     Label {
                         wrapMode: Text.WordWrap
                         width: parent.width
-                        textFormat: Text.RichText
+                        font.pixelSize: Theme.fontSizeMedium
+                        linkColor: Theme.highlightColor
+                        //textFormat: Text.RichText
                         onLinkActivated : Qt.openUrlExternally(link)
                         text: About.license
                     }

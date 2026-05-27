@@ -26,7 +26,7 @@
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="113"/>
-        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="116"/>
+        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="117"/>
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="119"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="185"/>
         <source>Code Contributors</source>
@@ -34,7 +34,7 @@
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="130"/>
-        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="133"/>
+        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="135"/>
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="138"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="197"/>
         <source>Translators</source>
@@ -42,7 +42,7 @@
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="153"/>
-        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="156"/>
+        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="159"/>
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="162"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="35"/>
         <source>Support</source>
@@ -50,7 +50,7 @@
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/AboutPage.qml" line="171"/>
-        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="193"/>
+        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="200"/>
         <location filename="../src/gui/symbian/pages/AboutPage.qml" line="182"/>
         <location filename="../src/gui/ubuntu/AboutPage.qml" line="43"/>
         <source>License</source>
@@ -89,7 +89,7 @@
         <translation>Izvorna koda je na voljo </translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="174"/>
+        <location filename="../src/gui/sailfishos/pages/AboutPage.qml" line="179"/>
         <source>Station background images</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2691,7 +2691,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/SettingsPage.qml" line="134"/>
-        <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="117"/>
+        <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="136"/>
         <location filename="../src/gui/symbian/pages/SettingsPage.qml" line="138"/>
         <location filename="../src/gui/ubuntu/SettingsPage.qml" line="89"/>
         <source>About</source>
@@ -2710,7 +2710,12 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     </message>
     <message>
         <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="100"/>
-        <source> Mapbox key for Station backgrounds</source>
+        <source> Mapbox key, Station backgrounds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/sailfishos/pages/SettingsPage.qml" line="120"/>
+        <source>Maptiler key,  Station backgrounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2978,7 +2983,7 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <name>about</name>
     <message>
         <location filename="../src/gui/about.js" line="35"/>
-        <source>&lt;p&gt;If fahrplan is not translated in your language, help us &lt;a href=&quot;https://www.transifex.com/projects/p/fahrplan/&quot;&gt;translate it to your language&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;If you like fahrplan, I would appreciate a donation. &lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DW3LGJ6VEKFVS&quot;&gt;Donate using PayPal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;If you encounter bugs or have feature requests visit the &lt;a href=&quot;https://github.com/smurfy/fahrplan/issues&quot;&gt;Fahrplan issue tracker on GitHub&lt;/a&gt;.&lt;/p&gt;</source>
+        <source>&lt;p&gt;If fahrplan is not translated in your language, help us translate it to your language.&lt;/p&gt;&lt;p&gt;If you like fahrplan, I would appreciate a donation. &lt;a href=&quot;https://www.paypal.com/paypalme/poetasterFOSS&quot;&gt;Donate using PayPal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;If you encounter bugs or have feature requests visit the &lt;a href=&quot;https://github.com/poetaster/fahrplan/issues&quot;&gt;Fahrplan issue tracker on GitHub&lt;/a&gt;.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

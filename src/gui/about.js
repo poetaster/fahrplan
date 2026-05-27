@@ -30,11 +30,11 @@ var license = "<p>This program is free software; you can redistribute it and/or 
         "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the " +
         "GNU General Public License for more details.</p> " +
         "<p>You should have received a copy of the GNU General Public License " +
-        "along with this program. If not, see &lt;<a href=\"https://www.gnu.org/licenses/\">https://www.gnu.org/licenses/</a>&gt;.</p>";
+        "along with this program. If not, see <a href=\"https://www.gnu.org/licenses/\">https://www.gnu.org/licenses/</a>.</p>";
 
-var support = qsTr("<p>If fahrplan is not translated in your language, help us <a href=\"https://www.transifex.com/projects/p/fahrplan/\">translate it to your language</a>.</p>" +
-        "<p>If you like fahrplan, I would appreciate a donation. <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DW3LGJ6VEKFVS\">Donate using PayPal</a></p>" +
-        "<p>If you encounter bugs or have feature requests visit the <a href=\"https://github.com/smurfy/fahrplan/issues\">Fahrplan issue tracker on GitHub</a>.</p>");
+var support = qsTr("<p>If fahrplan is not translated in your language, help us translate it to your language.</p>" +
+        "<p>If you like fahrplan, I would appreciate a donation. <a href=\"https://www.paypal.com/paypalme/poetasterFOSS\">Donate using PayPal</a></p>" +
+        "<p>If you encounter bugs or have feature requests visit the <a href=\"https://github.com/poetaster/fahrplan/issues\">Fahrplan issue tracker on GitHub</a>.</p>");
 
 var maintainers = ["Mark Washeim (poetaster)"];
 var codeContributors = ["kfg", "attah", "smatkovi", "Thaodan", "gri", "lorenzph", "CaCO3", "hcm", "thp", "qwerty12", "qbast", "Thomas Fischer", "Oleksii Serdiuk (leppa)", "Nekhelesh Ramananthan (nik90)", "NightShift79", "pirast", "Michael Zanetti (mzanetti)", "Chris Clime (balcy)", "dayrover", "shentok", "evansebire", "unsanded", "Morpog", "benni0815", "Erik Lundin", "Mirian Margiani (ichthyosaurus)"].sort();

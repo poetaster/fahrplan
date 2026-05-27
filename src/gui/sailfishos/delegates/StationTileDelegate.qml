@@ -214,29 +214,33 @@ TileBase {
 
         Component.onCompleted: {
 
-
+            // defaults to mapbox values
+           // https://api.mapbox.com/v4/{tileset_id}/{zoom}/{x}/{y}{@2x}.{format}
+            var zoom_level = 17  // looks best
+            var tile_url = 'https://api.mapbox.com/v4/mapbox.satellite/%1/%2/%3@2x.jpg90?access_token=%4'
             var maps_key = fahrplanBackend.getSettingsValue("mapbox", "")
 
+            // Station covers are disabled if we don't have an API key for
+            // downloading map tiles.
             if (maps_key === "") {
+                // try maptiler entry
+                maps_key = fahrplanBackend.getSettingsValue("maptiler", "")
                 // Station covers are disabled if we don't have an API key for
                 // downloading map tiles.
-                return
+                if (maps_key === "") {
+                  return
+                } else {
+                    // ok we got a maptiler key
+                  zoom_level = 18  // looks best
+                  tile_url = 'https://api.maptiler.com/tiles/satellite-v2/%1/%2/%3.jpg?key=%4'
+                }
             }
-
             if (latitude < -90 || latitude > 90 ||
                 longitude < -180 || longitude > 180 ||
                 (latitude == 0.0 && longitude == 0.0)
             ) {
                 return
             }
-
-            var zoom_level = 17  // looks best
-            //var tile_url = 'https://api.maptiler.com/tiles/satellite-v2/%1/%2/%3.jpg?key=%4'
-
-           // https://api.mapbox.com/v4/{tileset_id}/{zoom}/{x}/{y}{@2x}.{format}
-            var tile_url = 'https://api.mapbox.com/v4/mapbox.satellite/%1/%2/%3@2x.jpg90?access_token=%4'
-
-
             // SPDX-SnippetBegin
             // SPDX-SnippetCopyrightText: OSM Wiki Contributors
             // SPDX-License-Identifier: CC-BY-SA-2.0
@@ -254,7 +258,7 @@ TileBase {
             var xtile = lon2tile(longitude, zoom_level)
             var ytile = lat2tile(latitude, zoom_level)
             var final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(maps_key)
-            //console.log(final_url)
+            console.log(final_url)
             destination = "%1/%2x%3x%4"
                 .arg(StandardPaths.cache)
                 .arg(zoom_level)
