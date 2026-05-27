@@ -146,7 +146,7 @@ void ParserMovasBahnDe::parseTimeTable(QNetworkReply *networkReply)
         if(!isSameLocation(entry.value("abfrageOrt").toMap().value("locationId").toString(),lastTimetableSearch.currentStation.id.toString()))
         {
             //continue;
-            qDebug() << " location.compare";
+            //qDebug() << " location.compare";
         }
 
         QString train(entry.value("mitteltext").toString());
@@ -163,11 +163,15 @@ void ParserMovasBahnDe::parseTimeTable(QNetworkReply *networkReply)
         }
 
         //TODO: probably should query id of dest and do compare by location
+        // THIS will not work or only for a chance set of limited value
         if(lastTimetableSearch.directionStation.name.length() > 0
-           && dest.compare(lastTimetableSearch.directionStation.name,Qt::CaseSensitivity::CaseSensitive) != 0)
+           && dest.compare(lastTimetableSearch.directionStation.name,Qt::CaseSensitivity::CaseInsensitive) != 0)
+           //&& dest.compare(lastTimetableSearch.directionStation.name,Qt::CaseSensitivity::CaseSensitive) != 0)
         {
             //continue;
-            qDebug() << " dest.compare";
+            //qDebug() << " dest.compare";
+            //qDebug() << dest;
+            //qDebug() << lastTimetableSearch.directionStation.name;
         }
 
         item.currentStation = station;
