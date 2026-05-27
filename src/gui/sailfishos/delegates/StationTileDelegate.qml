@@ -141,7 +141,7 @@ TileBase {
     Behavior on opacity {
         FadeAnimator {}
     }
-
+/*
     Image {
         visible: false
         id: coverDownload
@@ -189,8 +189,8 @@ TileBase {
 
             backgroundImage = source
         }
-    }
-    /*
+    }*/
+
     Download {
         id: coverDownload
 
@@ -215,7 +215,9 @@ TileBase {
         Component.onCompleted: {
 
 
-            if (MAPS_KEY === "") {
+            var maps_key = fahrplanBackend.getSettingsValue("mapbox", "")
+
+            if (maps_key === "") {
                 // Station covers are disabled if we don't have an API key for
                 // downloading map tiles.
                 return
@@ -228,7 +230,7 @@ TileBase {
                 return
             }
 
-            var zoom_level = 18  // looks best
+            var zoom_level = 17  // looks best
             //var tile_url = 'https://api.maptiler.com/tiles/satellite-v2/%1/%2/%3.jpg?key=%4'
 
            // https://api.mapbox.com/v4/{tileset_id}/{zoom}/{x}/{y}{@2x}.{format}
@@ -251,8 +253,8 @@ TileBase {
 
             var xtile = lon2tile(longitude, zoom_level)
             var ytile = lat2tile(latitude, zoom_level)
-            var final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(MAPS_KEY)
-            console.log(final_url)
+            var final_url = tile_url.arg(zoom_level).arg(xtile).arg(ytile).arg(maps_key)
+            //console.log(final_url)
             destination = "%1/%2x%3x%4"
                 .arg(StandardPaths.cache)
                 .arg(zoom_level)
@@ -262,5 +264,4 @@ TileBase {
             running = true
         }
     }
-*/
 }
