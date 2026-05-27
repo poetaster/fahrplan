@@ -840,6 +840,7 @@ void ParserSearchCH::parseSearchJourney(QNetworkReply *networkReply)
         result->appendItem(conn);
     }
 
+    //qDebug() << "result:\n" << result;
     emit journeyResult(result);
 }
 
