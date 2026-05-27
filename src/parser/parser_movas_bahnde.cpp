@@ -99,7 +99,7 @@ void ParserMovasBahnDe::parseTimeTable(QNetworkReply *networkReply)
         allData = gzipDecompress(allData);
     }
 
-    //qDebug() << "Reply:\n" << allData;
+    qDebug() << "Reply:\n" << allData;
 
     QVariantMap doc = parseJson(allData);
 
@@ -143,10 +143,11 @@ void ParserMovasBahnDe::parseTimeTable(QNetworkReply *networkReply)
 
         // Note: id field contents sadly do not match. have to strip both down to
         // location to compare
-        /*if(!isSameLocation(entry.value("abfrageOrt").toMap().value("locationId").toString(),lastTimetableSearch.currentStation.id.toString()))
+        if(!isSameLocation(entry.value("abfrageOrt").toMap().value("locationId").toString(),lastTimetableSearch.currentStation.id.toString()))
         {
-            continue;
-        }*/
+            //continue;
+            qDebug() << " location.compare";
+        }
 
         QString train(entry.value("mitteltext").toString());
         QString station(entry.value("abfrageOrt").toMap().value("name").toString());
@@ -165,7 +166,8 @@ void ParserMovasBahnDe::parseTimeTable(QNetworkReply *networkReply)
         if(lastTimetableSearch.directionStation.name.length() > 0
            && dest.compare(lastTimetableSearch.directionStation.name,Qt::CaseSensitivity::CaseSensitive) != 0)
         {
-            continue;
+            //continue;
+            qDebug() << " dest.compare";
         }
 
         item.currentStation = station;
