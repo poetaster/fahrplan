@@ -1824,6 +1824,57 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
 </context>
 <context>
+    <name>ParserTrentinoTrasporti</name>
+    <message>
+        <source>All</source>
+        <translation type="unfinished">Alla</translation>
+    </message>
+    <message>
+        <source>Bus</source>
+        <translation type="unfinished">Buss</translation>
+    </message>
+    <message>
+        <source>Train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cableway</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No departures found for this station.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delay: %1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Arrivals %1</source>
+        <translation type="unfinished">Ankomster: %1</translation>
+    </message>
+    <message>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished">ddd d MMM, HH:mm</translation>
+    </message>
+    <message>
+        <source>Departures %1</source>
+        <translation type="unfinished">Avgångar: %1</translation>
+    </message>
+    <message>
+        <source>No journey details found.</source>
+        <translation type="unfinished">Inga detaljer hittades för resan.</translation>
+    </message>
+    <message>
+        <source>Italy</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserVRREFA</name>
     <message>
         <source>All</source>
@@ -2031,8 +2082,6 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <translation>Aktivera stöd för GPS-positionering</translation>
     </message>
     <message>
-        <source> Mapbox key for Station backgrounds</source>
-        <translation> Mapbox-nyckel för stationsbakgrunder</translation>
         <source> Mapbox key, Station backgrounds</source>
         <translation type="unfinished"></translation>
     </message>

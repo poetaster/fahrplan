@@ -40,6 +40,7 @@
 #include "parser/parser_finland_matka.h"
 #include "parser/parser_vrr_efa.h"
 #include "parser/parser_search_ch.h"
+#include "parser/parser_trentino.h"
 
 class FahrplanParserThread : public QThread
 {
