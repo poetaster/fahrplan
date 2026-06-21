@@ -44,6 +44,7 @@ QStringList FahrplanBackendManager::getParserList()
     result.append(ParserFinlandMatka::getName());
     result.append(ParserVRREFA::getName());
     result.append(ParserSearchCH::getName());
+    result.append(ParserTrentinoTrasporti::getName());
 
     // Make sure the index is in bounds
     if (currentParserIndex > (result.count() - 1) || currentParserIndex < 0) {

@@ -169,6 +169,9 @@ void FahrplanParserThread::run()
         case 14:
             m_parser = new ParserSearchCH();
             break;
+        case 15:
+            m_parser = new ParserTrentinoTrasporti();
+            break;
     }
 
     m_name = m_parser->name();

@@ -2426,6 +2426,74 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
     </message>
 </context>
 <context>
+    <name>ParserTrentinoTrasporti</name>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="62"/>
+        <source>All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="63"/>
+        <source>Bus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="64"/>
+        <source>Train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="65"/>
+        <source>Cableway</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="214"/>
+        <location filename="../src/parser/parser_trentino.cpp" line="243"/>
+        <location filename="../src/parser/parser_trentino.cpp" line="505"/>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="374"/>
+        <source>No departures found for this station.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="433"/>
+        <location filename="../src/parser/parser_trentino.cpp" line="619"/>
+        <location filename="../src/parser/parser_trentino.cpp" line="645"/>
+        <source>Delay: %1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="513"/>
+        <source>Arrivals %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="514"/>
+        <location filename="../src/parser/parser_trentino.cpp" line="517"/>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="516"/>
+        <source>Departures %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.cpp" line="664"/>
+        <source>No journey details found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_trentino.h" line="14"/>
+        <source>Italy</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserVRREFA</name>
     <message>
         <location filename="../src/parser/parser_vrr_efa.cpp" line="61"/>
