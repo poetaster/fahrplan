@@ -349,11 +349,6 @@ exists($$[QT_INSTALL_PREFIX]/include/sailfishapp/sailfishapp.h): {
     }
 
     # needed for downloading station covers
-    MAPS_KEY = $$(FAHRPLAN2_MAPS_KEY)  # environment
-    equals(MAPS_KEY, "") {
-        message("No maps key found in FAHRPLAN2_MAPS_KEY. Station covers disabled.")
-    }
-    DEFINES += MAPS_KEY=\\\"$$MAPS_KEY\\\"
     include("3rdparty/QuickDownload/quickdownload.pri")
 
     RESOURCES += sailfishos_res.qrc
