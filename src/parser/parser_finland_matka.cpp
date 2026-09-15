@@ -535,7 +535,7 @@ void ParserFinlandMatka::sendRequest(QUrl url, QVariantMap request)
     QList<QPair<QByteArray,QByteArray> > additionalHeaders;
     additionalHeaders.append(QPair<QByteArray,QByteArray>("Content-Type", "application/json"));
     additionalHeaders.append(QPair<QByteArray,QByteArray>("Accept-Encoding", "gzip"));
-    additionalHeaders.append(QPair<QByteArray,QByteArray>("digitransit-subscription-key", "<insert-key>"));
+    additionalHeaders.append(QPair<QByteArray,QByteArray>("digitransit-subscription-key", "898b21076c014726830b0b671bb420a6"));
 
     qDebug() << "Sending request to " << url.toString();
     if (request.isEmpty()) {

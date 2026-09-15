@@ -31,8 +31,8 @@
 #endif
 #include <qmath.h>
 
-#define BASE_URL "https://9292.nl/en"
-
+#define BASE_URL "https://web-api.9292.nl/api/v1"
+//https://web-api.9292.nl/api/v1/locations?query=Rott&rows=10
 inline qreal deg2rad(qreal deg)
 {
     return deg * 3.141592653589793238463 / 180;
@@ -83,7 +83,8 @@ void ParserNinetwo::findStationsByName(const QString &stationName)
 {
     // TODO: do a bogus search, and use the "did you perhapss mean ..." response
     // bacause it seems that some places do not get suggested
-    QUrl url(BASE_URL "/suggest");
+    // https://web-api.9292.nl/api/v1/locations?query=Rotte&rows=10
+    QUrl url(BASE_URL "/locations");
     qDebug() << "FINDBYNAME" << stationName << url;
 
     #if defined(BUILD_FOR_QT5)
@@ -91,7 +92,8 @@ void ParserNinetwo::findStationsByName(const QString &stationName)
     #else
     QUrl query;
     #endif
-    query.addQueryItem("userInput", stationName);
+    query.addQueryItem("rows", "10");
+    query.addQueryItem("query", stationName);
     url.setQuery(query);
 
     sendHttpRequest(url);

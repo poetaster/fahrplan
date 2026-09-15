@@ -912,161 +912,161 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
 <context>
     <name>ParserFinlandMatka</name>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="63"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="66"/>
         <source>All</source>
         <translation type="unfinished">الكل</translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="64"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="956"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="67"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="964"/>
         <source>Bus</source>
         <translation type="unfinished">حافلات</translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="65"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="964"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="68"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="972"/>
         <source>Train</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="66"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="69"/>
         <source>Airplane</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="67"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="70"/>
         <source>Bus and train</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="68"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="71"/>
         <source>Bus and airplane</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="69"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="72"/>
         <source>Train and airplane</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="753"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="761"/>
         <source>Walk %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="774"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="782"/>
         <source>Arrivals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="776"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="784"/>
         <source>Departures</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="777"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="785"/>
         <source>ddd MMM d, HH:mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="827"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="970"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="835"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="978"/>
         <source>Walk</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="954"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="962"/>
         <source>Flight</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="968"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="976"/>
         <source>Tram</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="966"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="974"/>
         <source>Metro</source>
         <translation type="unfinished">قطار الأنفاق</translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="152"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="304"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="669"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="155"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="308"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="677"/>
         <source>Cannot parse reply from the server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="160"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="312"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="677"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="163"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="316"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="685"/>
         <source>Server replied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="188"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="191"/>
         <source>Airport</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="190"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="193"/>
         <source>Railway station</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="213"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="216"/>
         <source>Timetables are only available for stops and stations.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="392"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="407"/>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="856"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="396"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="411"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="864"/>
         <source>Realtime info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="872"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="880"/>
         <source>No journey details found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="958"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="966"/>
         <source>Cable car</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="960"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="968"/>
         <source>Ferry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="962"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="970"/>
         <source>Gondola</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="972"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="980"/>
         <source>Unknown transport type: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="1066"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="1074"/>
         <source>Place</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="1068"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="1076"/>
         <source>Station</source>
         <translation type="unfinished">المحطة</translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="1070"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="1078"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_finland_matka.cpp" line="1072"/>
+        <location filename="../src/parser/parser_finland_matka.cpp" line="1080"/>
         <source>Region</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1762,39 +1762,39 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
 <context>
     <name>ParserNinetwo</name>
     <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="236"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="238"/>
         <source>All</source>
         <translation type="unfinished">الكل</translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="237"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="239"/>
         <source>Only trains</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="238"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="240"/>
         <source>All, except ferry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="293"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="295"/>
         <source>%1 via %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="297"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="299"/>
         <source>On-Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="258"/>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="337"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="260"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="339"/>
         <source>Cannot parse reply from the server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_ninetwo.cpp" line="521"/>
         <location filename="../src/parser/parser_ninetwo.cpp" line="523"/>
+        <location filename="../src/parser/parser_ninetwo.cpp" line="525"/>
         <source>Pl. %1</source>
         <translation type="unfinished"></translation>
     </message>
