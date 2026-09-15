@@ -1313,6 +1313,53 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
 </context>
 <context>
+    <name>ParserNs</name>
+    <message>
+        <source>All trains</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n m</source>
+        <extracomment>Distance in meters</extracomment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Unknown error from server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>On-Time</source>
+        <translation type="unfinished">I tid</translation>
+    </message>
+    <message>
+        <source>No connections have been found that correspond to your request.</source>
+        <translation type="unfinished">Inga anslutningar hittades enligt din sökning.</translation>
+    </message>
+    <message>
+        <source>Pl. %1</source>
+        <translation type="unfinished">Läge %1</translation>
+    </message>
+    <message>
+        <source>Walk for %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Netherlands - Trains</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserPTVVicGovAu</name>
     <message>
         <source>All</source>

@@ -1777,6 +1777,67 @@ Ajouté par Fahrplan. Veuillez revérifier l&apos;information avant votre dépar
     </message>
 </context>
 <context>
+    <name>ParserNs</name>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="112"/>
+        <source>All trains</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="159"/>
+        <location filename="../src/parser/parser_ns.cpp" line="272"/>
+        <location filename="../src/parser/parser_ns.cpp" line="476"/>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished">Ne peut analyser la réponse du serveur</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="163"/>
+        <location filename="../src/parser/parser_ns.cpp" line="482"/>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/parser/parser_ns.cpp" line="206"/>
+        <source>%n m</source>
+        <extracomment>Distance in meters</extracomment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="280"/>
+        <source>Unknown error from server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="326"/>
+        <source>On-Time</source>
+        <translation type="unfinished">A l&apos;heure.</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="488"/>
+        <source>No connections have been found that correspond to your request.</source>
+        <translation type="unfinished">Aucune connection ne correspond à votre demande.</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="624"/>
+        <location filename="../src/parser/parser_ns.cpp" line="626"/>
+        <source>Pl. %1</source>
+        <translation type="unfinished">Pl. %1</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.cpp" line="640"/>
+        <source>Walk for %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_ns.h" line="68"/>
+        <source>Netherlands - Trains</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserPTVVicGovAu</name>
     <message>
         <location filename="../src/parser/parser_ptvvicgovau.cpp" line="46"/>
