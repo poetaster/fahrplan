@@ -1033,15 +1033,15 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message numerus="yes">
         <source>Departure delayed: %n min</source>
         <translation>
-            <numerusform>Avgång fördröjd: %n min.</numerusform>
-            <numerusform>Avgång fördröjd: %n min.</numerusform>
+            <numerusform>Avgång försenad: %n min.</numerusform>
+            <numerusform>Avgång försenad: %n min.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>Arrival delayed: %n min</source>
         <translation>
-            <numerusform>Ankomst fördröjd: %n min.</numerusform>
-            <numerusform>Ankomst fördröjd: %n min.</numerusform>
+            <numerusform>Ankomst försenad: %n min.</numerusform>
+            <numerusform>Ankomst försenad: %n min.</numerusform>
         </translation>
     </message>
     <message>
@@ -1310,53 +1310,6 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Netherlands</source>
         <translation>Nederländerna</translation>
-    </message>
-</context>
-<context>
-    <name>ParserNs</name>
-    <message>
-        <source>All trains</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cannot parse reply from the server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Unknown error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n m</source>
-        <extracomment>Distance in meters</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Unknown error from server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>On-Time</source>
-        <translation type="unfinished">I tid</translation>
-    </message>
-    <message>
-        <source>No connections have been found that correspond to your request.</source>
-        <translation type="unfinished">Inga anslutningar hittades enligt din sökning.</translation>
-    </message>
-    <message>
-        <source>Pl. %1</source>
-        <translation type="unfinished">Läge %1</translation>
-    </message>
-    <message>
-        <source>Walk for %1 min</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Netherlands - Trains</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1796,7 +1749,7 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
     <message>
         <source>Cableway</source>
-        <translation>Linbana</translation>
+        <translation>Kabelvagn</translation>
     </message>
     <message>
         <source>Train station</source>
@@ -1874,51 +1827,51 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <name>ParserTrentinoTrasporti</name>
     <message>
         <source>All</source>
-        <translation type="unfinished">Alla</translation>
+        <translation>Alla</translation>
     </message>
     <message>
         <source>Bus</source>
-        <translation type="unfinished">Buss</translation>
+        <translation>Buss</translation>
     </message>
     <message>
         <source>Train</source>
-        <translation type="unfinished"></translation>
+        <translation>Tåg</translation>
     </message>
     <message>
         <source>Cableway</source>
-        <translation type="unfinished"></translation>
+        <translation>Kabelvagn</translation>
     </message>
     <message>
         <source>Cannot parse reply from the server</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte tolka svaret från servern</translation>
     </message>
     <message>
         <source>No departures found for this station.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga avgångar hittades för denna station.</translation>
     </message>
     <message>
         <source>Delay: %1&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Försening: %1&apos;</translation>
     </message>
     <message>
         <source>Arrivals %1</source>
-        <translation type="unfinished">Ankomster: %1</translation>
+        <translation>Ankomster: %1</translation>
     </message>
     <message>
         <source>ddd MMM d, HH:mm</source>
-        <translation type="unfinished">ddd d MMM, HH:mm</translation>
+        <translation>ddd d MMM, HH:mm</translation>
     </message>
     <message>
         <source>Departures %1</source>
-        <translation type="unfinished">Avgångar: %1</translation>
+        <translation>Avgångar: %1</translation>
     </message>
     <message>
         <source>No journey details found.</source>
-        <translation type="unfinished">Inga detaljer hittades för resan.</translation>
+        <translation>Inga detaljer hittades för resan.</translation>
     </message>
     <message>
         <source>Italy</source>
-        <translation type="unfinished"></translation>
+        <translation>Italien</translation>
     </message>
 </context>
 <context>
@@ -2130,11 +2083,11 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
     <message>
         <source> Mapbox key, Station backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation> Mapbox-nyckel, Stationsbakgrunder</translation>
     </message>
     <message>
         <source>Maptiler key,  Station backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Maptiler-nyckel, stationsbakgrunder</translation>
     </message>
 </context>
 <context>
@@ -2331,7 +2284,7 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <name>about</name>
     <message>
         <source>&lt;p&gt;If fahrplan is not translated in your language, help us translate it to your language.&lt;/p&gt;&lt;p&gt;If you like fahrplan, I would appreciate a donation. &lt;a href=&quot;https://www.paypal.com/paypalme/poetasterFOSS&quot;&gt;Donate using PayPal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;If you encounter bugs or have feature requests visit the &lt;a href=&quot;https://github.com/poetaster/fahrplan/issues&quot;&gt;Fahrplan issue tracker on GitHub&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Om fahrplan inte finns översatt till ditt språk, hjälp oss gärna att översätta det till ditt språk.&lt;/p&gt;&lt;p&gt;Om du gillar fahrplan skulle jag uppskatta en donation. &lt;a href=&quot;https://www.paypal.com/paypalme/poetasterFOSS&quot;&gt;Donera via PayPal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Om du stöter på buggar eller har önskemål om funktioner, besök &lt;a href=&quot;https://github.com/poetaster/fahrplan/issues&quot;&gt;Fahrplans issue tracker på GitHub&lt;/a&gt;.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
