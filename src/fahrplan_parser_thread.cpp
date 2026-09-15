@@ -136,41 +136,44 @@ void FahrplanParserThread::run()
         case 3:
             m_parser = new ParserXmlNri();
             break;
-        case 4:
+        /*case 4:
             m_parser = new ParserXmlVasttrafikSe();
             break;
         case 5:
             m_parser = new ParserPTVVicGovAu();
             break;
-        case 6:
+        */
+        case 4:
             m_parser = new ParserSydneyEFA();
             break;
-        case 7:
+        case 5:
             m_parser = new ParserIrelandEFA();
             break;
-        case 8:
+        case 6:
             //m_parser = new ParserNinetwo();
             m_parser = new ParserNs();
             break;
-        case 9:
+        case 7:
             m_parser = new ParserMunichEFA();
             break;
+        /*
         case 10:
             m_parser = new ParserSalzburgEFA();
             break;
-        case 11:
+        */
+        case 8:
             m_parser = new ParserResRobot();
             break;
-        case 12:
+        case 9:
             m_parser = new ParserFinlandMatka();
             break;
-        case 13:
+        case 10:
             m_parser = new ParserVRREFA();
             break;
-        case 14:
+        case 11:
             m_parser = new ParserSearchCH();
             break;
-        case 15:
+        case 12:
             m_parser = new ParserTrentinoTrasporti();
             break;
     }
