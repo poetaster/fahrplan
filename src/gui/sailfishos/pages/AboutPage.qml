@@ -173,6 +173,25 @@ Page {
                     }
 
                     Label {
+                        text: qsTr("OpenStreetMaps")
+                        font.bold: true
+                    }
+                    Label {
+                        wrapMode: Text.WordWrap
+                        width: parent.width
+                        font.pixelSize: Theme.fontSizeMedium
+                        linkColor: Theme.highlightColor
+                        //textFormat: Text.RichText
+                        onLinkActivated : Qt.openUrlExternally(link)
+                        text: About.osm
+                    }
+
+                    Label {
+                        /* spacer */
+                        text: " "
+                    }
+
+                    Label {
                         text: qsTr("Support")
                         font.bold: true
                     }
