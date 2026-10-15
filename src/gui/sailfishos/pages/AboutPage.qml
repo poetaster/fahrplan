@@ -155,7 +155,7 @@ Page {
                     }
 
                     Label {
-                        text: qsTr("Tranistous")
+                        text: "Tranistous"
                         font.bold: true
                     }
                     Label {
@@ -173,7 +173,7 @@ Page {
                     }
 
                     Label {
-                        text: qsTr("OpenStreetMaps")
+                        text: "OpenStreetmaps"
                         font.bold: true
                     }
                     Label {
