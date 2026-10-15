@@ -1316,47 +1316,47 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <name>ParserNs</name>
     <message>
         <source>All trains</source>
-        <translation type="unfinished"></translation>
+        <translation>Alla tåg</translation>
     </message>
     <message>
         <source>Cannot parse reply from the server</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte tolka svaret från servern</translation>
     </message>
     <message>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Okänt fel</translation>
     </message>
     <message numerus="yes">
         <source>%n m</source>
         <extracomment>Distance in meters</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n m</numerusform>
+            <numerusform>%n m</numerusform>
         </translation>
     </message>
     <message>
         <source>Unknown error from server</source>
-        <translation type="unfinished"></translation>
+        <translation>Okänt fel från servern</translation>
     </message>
     <message>
         <source>On-Time</source>
-        <translation type="unfinished">I tid</translation>
+        <translation>I tid</translation>
     </message>
     <message>
         <source>No connections have been found that correspond to your request.</source>
-        <translation type="unfinished">Inga anslutningar hittades enligt din sökning.</translation>
+        <translation>Inga anslutningar hittades som passar din sökning.</translation>
     </message>
     <message>
         <source>Pl. %1</source>
-        <translation type="unfinished">Läge %1</translation>
+        <translation>Läge %1</translation>
     </message>
     <message>
         <source>Walk for %1 min</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå i %1 min.</translation>
     </message>
     <message>
         <source>Netherlands - Trains</source>
-        <translation type="unfinished"></translation>
+        <translation>Nederländerna - Tåg</translation>
     </message>
 </context>
 <context>
@@ -1874,107 +1874,107 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <name>ParserTransitous</name>
     <message>
         <source>All</source>
-        <translation type="unfinished">Alla</translation>
+        <translation>Alla</translation>
     </message>
     <message>
         <source>Bus</source>
-        <translation type="unfinished">Buss</translation>
+        <translation>Buss</translation>
     </message>
     <message>
         <source>Tram</source>
-        <translation type="unfinished">Spårvagn</translation>
+        <translation>Spårvagn</translation>
     </message>
     <message>
         <source>Metro</source>
-        <translation type="unfinished">Tunnelbana</translation>
+        <translation>Tunnelbana</translation>
     </message>
     <message>
         <source>Ferry</source>
-        <translation type="unfinished">Färja</translation>
+        <translation>Färja</translation>
     </message>
     <message>
         <source>Train</source>
-        <translation type="unfinished"></translation>
+        <translation>Tåg</translation>
     </message>
     <message>
         <source>Unknown stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Okänd hållplats</translation>
     </message>
     <message>
         <source>Nearest stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Närmaste hållplats</translation>
     </message>
     <message>
         <source>No stop found near your position.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga hållplatser nära din position.</translation>
     </message>
     <message>
         <source>This station has no coordinates, so no timetable can be requested.</source>
-        <translation type="unfinished"></translation>
+        <translation>Denna station har inga koordinater, så ingen tidtabell kan efterfrågas.</translation>
     </message>
     <message>
         <source>No departures found for this station.</source>
-        <translation type="unfinished">Inga avgångar hittades för denna station.</translation>
+        <translation>Inga avgångar hittades för denna station.</translation>
     </message>
     <message>
         <source>Delay: %1 min</source>
-        <translation type="unfinished"></translation>
+        <translation>Försening: %1 min.</translation>
     </message>
     <message>
         <source>Early: %1 min</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidigare: %1 min.</translation>
     </message>
     <message>
         <source>Delayed by less than a minute</source>
-        <translation type="unfinished"></translation>
+        <translation>Försenad med mindre än en minut</translation>
     </message>
     <message>
         <source>Early by less than a minute</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidigare med mindre än en minut</translation>
     </message>
     <message>
         <source>Cancelled</source>
-        <translation type="unfinished">Inställd</translation>
+        <translation>Inställd</translation>
     </message>
     <message>
         <source>No later journeys available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga senare resor tillgängliga.</translation>
     </message>
     <message>
         <source>No earlier journeys available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga tidigare resor tillgängliga.</translation>
     </message>
     <message>
         <source>Cannot parse reply from the server</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte tolka svaret från servern</translation>
     </message>
     <message>
         <source>Journeys from %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Resor från %1</translation>
     </message>
     <message>
         <source>ddd MMM d, HH:mm</source>
-        <translation type="unfinished">ddd d MMM, HH:mm</translation>
+        <translation>ddd d MMM, HH:mm</translation>
     </message>
     <message>
         <source>%1 transfers</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 byten</translation>
     </message>
     <message>
         <source>%1 intermediate stops</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 mellanliggande stopp</translation>
     </message>
     <message>
         <source>No journeys found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga resor hittades</translation>
     </message>
     <message>
         <source>No journey details found.</source>
-        <translation type="unfinished">Inga detaljer hittades för resan.</translation>
+        <translation>Inga detaljer hittades för resan.</translation>
     </message>
     <message>
         <source>No stations found for your search.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga stationer hittades för din sökning.</translation>
     </message>
 </context>
 <context>
