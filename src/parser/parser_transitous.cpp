@@ -29,6 +29,7 @@
 // Transitous (MOTIS 2 API) is a worldwide GTFS-RT based journey planner,
 // see https://transitous.org. Its usage policy requires a User-Agent
 // containing the application name and a way of contacting us.
+// https://api.transitous.org/api/v1/geocode?text=Berlin fetches stations
 static const QString BASE_URL = "https://api.transitous.org/api/v6/";
 static const QString GEOCODE_URL = "https://api.transitous.org/api/v1/geocode";
 static const int STOP_SEARCH_RADIUS_M = 100;
@@ -39,7 +40,7 @@ ParserTransitous::ParserTransitous(QObject *parent)
       m_timetableRestriction(0),
       m_journeyRestriction(0)
 {
-    userAgent = "Fahrplan-Sailfish (+https://github.com/poetaster/fahrplan)";
+    userAgent = "Fahrplan2.0 (+https://github.com/poetaster/fahrplan)";
 }
 
 bool ParserTransitous::supportsGps()
