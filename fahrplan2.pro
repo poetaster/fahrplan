@@ -2,7 +2,7 @@
 APP_NAME = Fahrplan
 
 # Define Version
-VERSION = 2.0.57-1
+VERSION = 2.0.58-1
 
 #CONFIG+= openrepos
 
@@ -136,7 +136,8 @@ HEADERS += \
     src/parser/parser_xmlvasttrafikse.h \
     src/parser/parser_search_ch.h \
     src/parser/parser_trentino.h \
-    src/parser/parser_ns.h
+    src/parser/parser_ns.h \
+    src/parser/parser_transitous.h
 
 SOURCES += src/main.cpp \
     src/fahrplan.cpp \
@@ -173,7 +174,8 @@ SOURCES += src/main.cpp \
     src/parser/parser_xmlvasttrafikse.cpp \
     src/parser/parser_search_ch.cpp \
     src/parser/parser_trentino.cpp \
-    src/parser/parser_ns.cpp
+    src/parser/parser_ns.cpp \
+    src/parser/parser_transitous.cpp
 
 
 LIBS += $$PWD/3rdparty/gauss-kruger-cpp/gausskruger.cpp
