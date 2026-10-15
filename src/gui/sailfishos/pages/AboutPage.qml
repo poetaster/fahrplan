@@ -149,7 +149,24 @@ Page {
                             text: About.translators[index]
                         }
                     }
+                    Label {
+                        /* spacer */
+                        text: " "
+                    }
 
+                    Label {
+                        text: qsTr("Tranistous")
+                        font.bold: true
+                    }
+                    Label {
+                        wrapMode: Text.WordWrap
+                        width: parent.width
+                        font.pixelSize: Theme.fontSizeMedium
+                        linkColor: Theme.highlightColor
+                        //textFormat: Text.RichText
+                        onLinkActivated : Qt.openUrlExternally(link)
+                        text: About.transitous
+                    }
                     Label {
                         /* spacer */
                         text: " "
