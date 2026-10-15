@@ -2496,6 +2496,141 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
     </message>
 </context>
 <context>
+    <name>ParserTransitous</name>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="68"/>
+        <source>All</source>
+        <translation type="unfinished">Усі</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="69"/>
+        <source>Bus</source>
+        <translation type="unfinished">Автобус</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="70"/>
+        <source>Tram</source>
+        <translation type="unfinished">Трамвай</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="71"/>
+        <source>Metro</source>
+        <translation type="unfinished">Метро</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="72"/>
+        <source>Ferry</source>
+        <translation type="unfinished">Паром</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="73"/>
+        <source>Train</source>
+        <translation type="unfinished">Потяг</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="139"/>
+        <source>Unknown stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="263"/>
+        <source>Nearest stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="277"/>
+        <source>No stop found near your position.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="315"/>
+        <location filename="../src/parser/parser_transitous.cpp" line="356"/>
+        <source>No stations found for your search.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="378"/>
+        <source>This station has no coordinates, so no timetable can be requested.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="399"/>
+        <location filename="../src/parser/parser_transitous.cpp" line="474"/>
+        <source>No departures found for this station.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="458"/>
+        <source>Delay: %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="458"/>
+        <source>Early: %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="460"/>
+        <source>Delayed by less than a minute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="461"/>
+        <source>Early by less than a minute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="466"/>
+        <source>Cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="517"/>
+        <source>No later journeys available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="532"/>
+        <source>No earlier journeys available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="548"/>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished">Не можу розібрати відовідь сервера</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="567"/>
+        <source>Journeys from %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="568"/>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="633"/>
+        <source>%1 transfers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="661"/>
+        <source>%1 intermediate stops</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="676"/>
+        <source>No journeys found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_transitous.cpp" line="711"/>
+        <source>No journey details found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserTrentinoTrasporti</name>
     <message>
         <location filename="../src/parser/parser_trentino.cpp" line="61"/>

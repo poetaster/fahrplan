@@ -1313,6 +1313,53 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
 </context>
 <context>
+    <name>ParserNs</name>
+    <message>
+        <source>All trains</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n m</source>
+        <extracomment>Distance in meters</extracomment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Unknown error from server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>On-Time</source>
+        <translation type="unfinished">I tid</translation>
+    </message>
+    <message>
+        <source>No connections have been found that correspond to your request.</source>
+        <translation type="unfinished">Inga anslutningar hittades enligt din sökning.</translation>
+    </message>
+    <message>
+        <source>Pl. %1</source>
+        <translation type="unfinished">Läge %1</translation>
+    </message>
+    <message>
+        <source>Walk for %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Netherlands - Trains</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserPTVVicGovAu</name>
     <message>
         <source>All</source>
@@ -1821,6 +1868,113 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     <message>
         <source>Sydney</source>
         <translation>Sydney</translation>
+    </message>
+</context>
+<context>
+    <name>ParserTransitous</name>
+    <message>
+        <source>All</source>
+        <translation type="unfinished">Alla</translation>
+    </message>
+    <message>
+        <source>Bus</source>
+        <translation type="unfinished">Buss</translation>
+    </message>
+    <message>
+        <source>Tram</source>
+        <translation type="unfinished">Spårvagn</translation>
+    </message>
+    <message>
+        <source>Metro</source>
+        <translation type="unfinished">Tunnelbana</translation>
+    </message>
+    <message>
+        <source>Ferry</source>
+        <translation type="unfinished">Färja</translation>
+    </message>
+    <message>
+        <source>Train</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknown stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Nearest stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No stop found near your position.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This station has no coordinates, so no timetable can be requested.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No departures found for this station.</source>
+        <translation type="unfinished">Inga avgångar hittades för denna station.</translation>
+    </message>
+    <message>
+        <source>Delay: %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Early: %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delayed by less than a minute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Early by less than a minute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation type="unfinished">Inställd</translation>
+    </message>
+    <message>
+        <source>No later journeys available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No earlier journeys available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Journeys from %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ddd MMM d, HH:mm</source>
+        <translation type="unfinished">ddd d MMM, HH:mm</translation>
+    </message>
+    <message>
+        <source>%1 transfers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 intermediate stops</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No journeys found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No journey details found.</source>
+        <translation type="unfinished">Inga detaljer hittades för resan.</translation>
+    </message>
+    <message>
+        <source>No stations found for your search.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
