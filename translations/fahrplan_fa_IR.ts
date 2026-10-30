@@ -838,19 +838,18 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
 <context>
     <name>ParserBarca</name>
     <message>
-        <location filename="../src/parser/parser_barca.cpp" line="125"/>
+        <location filename="../src/parser/parser_barca.cpp" line="128"/>
         <source>All</source>
         <translation type="unfinished">همه</translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_barca.cpp" line="170"/>
-        <location filename="../src/parser/parser_barca.cpp" line="257"/>
-        <location filename="../src/parser/parser_barca.cpp" line="390"/>
+        <location filename="../src/parser/parser_barca.cpp" line="325"/>
+        <location filename="../src/parser/parser_barca.cpp" line="458"/>
         <source>Cannot parse reply from the server</source>
         <translation type="unfinished">پاسخ سرور را نمی توان تجزیه کرد</translation>
     </message>
     <message numerus="yes">
-        <location filename="../src/parser/parser_barca.cpp" line="208"/>
+        <location filename="../src/parser/parser_barca.cpp" line="247"/>
         <source>%n m</source>
         <extracomment>Distance in meters</extracomment>
         <translation type="unfinished">
@@ -858,27 +857,42 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
         </translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_barca.cpp" line="239"/>
-        <source>No valid stop selected</source>
+        <location filename="../src/parser/parser_barca.cpp" line="276"/>
+        <source>No stations found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/parser/parser_barca.cpp" line="290"/>
+        <source>No valid stop selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="304"/>
+        <source>Metro</source>
+        <translation type="unfinished">مترو</translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="305"/>
+        <source>Live departures not available for metro stations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="358"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_barca.cpp" line="397"/>
+        <location filename="../src/parser/parser_barca.cpp" line="465"/>
         <source>No connections have been found that correspond to your request.</source>
         <translation type="unfinished">بدون اتصالات یافت شده است که به درخواست شما مطابقت دارد.</translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_barca.cpp" line="492"/>
+        <location filename="../src/parser/parser_barca.cpp" line="560"/>
         <source>Walk for %1 min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/parser/parser_barca.h" line="69"/>
+        <location filename="../src/parser/parser_barca.h" line="74"/>
         <source>Barcelona - TMB</source>
         <translation type="unfinished"></translation>
     </message>
