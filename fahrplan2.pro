@@ -137,6 +137,7 @@ HEADERS += \
     src/parser/parser_search_ch.h \
     src/parser/parser_trentino.h \
     src/parser/parser_ns.h \
+    src/parser/parser_barca.h \
     src/parser/parser_transitous.h
 
 SOURCES += src/main.cpp \
@@ -175,6 +176,7 @@ SOURCES += src/main.cpp \
     src/parser/parser_search_ch.cpp \
     src/parser/parser_trentino.cpp \
     src/parser/parser_ns.cpp \
+    src/parser/parser_barca.cpp \
     src/parser/parser_transitous.cpp
 
 

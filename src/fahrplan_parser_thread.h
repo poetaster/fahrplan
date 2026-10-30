@@ -35,6 +35,7 @@
 #include "parser/parser_ireland_efa.h"
 //#include "parser/parser_ninetwo.h"
 #include "parser/parser_ns.h"
+#include "parser/parser_barca.h"
 #include "parser/parser_munich_efa.h"
 //#include "parser/parser_salzburg_efa.h"
 #include "parser/parser_resrobot.h"

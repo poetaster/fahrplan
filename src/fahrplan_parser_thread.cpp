@@ -179,6 +179,9 @@ void FahrplanParserThread::run()
         case 13:
             m_parser = new ParserTransitous();
             break;
+        case 14:
+            m_parser = new ParserBarca();
+            break;
     }
 
     m_name = m_parser->name();

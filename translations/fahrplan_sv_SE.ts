@@ -574,6 +574,45 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
     </message>
 </context>
 <context>
+    <name>ParserBarca</name>
+    <message>
+        <source>All</source>
+        <translation type="unfinished">Alla</translation>
+    </message>
+    <message>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n m</source>
+        <extracomment>Distance in meters</extracomment>
+        <translation type="unfinished">
+            <numerusform>%n m</numerusform>
+            <numerusform>%n m</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>No valid stop selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No connections have been found that correspond to your request.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Walk for %1 min</source>
+        <translation type="unfinished">Gå i %1 min.</translation>
+    </message>
+    <message>
+        <source>Barcelona - TMB</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserEFA</name>
     <message>
         <source>All</source>

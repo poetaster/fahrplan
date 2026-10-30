@@ -836,6 +836,54 @@ Added by Fahrplan. Please, re-check the information before your journey.</source
     </message>
 </context>
 <context>
+    <name>ParserBarca</name>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="125"/>
+        <source>All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="170"/>
+        <location filename="../src/parser/parser_barca.cpp" line="257"/>
+        <location filename="../src/parser/parser_barca.cpp" line="390"/>
+        <source>Cannot parse reply from the server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/parser/parser_barca.cpp" line="208"/>
+        <source>%n m</source>
+        <extracomment>Distance in meters</extracomment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="239"/>
+        <source>No valid stop selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="290"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="397"/>
+        <source>No connections have been found that correspond to your request.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.cpp" line="492"/>
+        <source>Walk for %1 min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/parser/parser_barca.h" line="69"/>
+        <source>Barcelona - TMB</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ParserEFA</name>
     <message>
         <location filename="../src/parser/parser_efa.cpp" line="138"/>
