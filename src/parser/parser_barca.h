@@ -34,7 +34,7 @@
  *
  * Station ids are namespaced so the timetable lookup knows which stop it is:
  *   "B:{codi_parada}"        - bus stop  (live arrivals via itransit/bus/parades)
- *   "M:{codi_grup_estacio}"  - metro station (metadata only, no live arrivals feed)
+ *   "M:{id_estacio}"         - metro station (live arrivals via itransit/metro/estacions)
  *
  * Every request needs the two public auth query parameters:
  *   app_id  = 12a8c95b
@@ -118,6 +118,7 @@ private:
     void handleStationListReply(QNetworkReply *networkReply);
     void appendStationsFromDoc(const QVariantMap &doc);
     void finalizeStationSearch();
+    void parseMetroTimeTable(const QVariantMap &doc, TimetableEntriesList &result);
     void parseJourneyResponse(QNetworkReply *networkReply);
     void parseJourneyOption(const QVariantMap &itinerary, const QString &cacheId);
 
@@ -125,6 +126,7 @@ private:
     QList<Station> stationAccumulator;       // collected stops/stations across both collections
     bool stationMergeRequestedEstacions;     // whether the metro collection has been requested
     bool stationByCoordinates;               // current search mode (name vs. GPS)
+    bool timetableIsMetro;                   // whether the pending timetable reply is metro
 
     QMap<QString, JourneyDetailResultList *> cachedResults;
 };

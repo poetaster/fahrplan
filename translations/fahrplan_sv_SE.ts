@@ -615,14 +615,6 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <source>No stations found</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Metro</source>
-        <translation type="unfinished">Tunnelbana</translation>
-    </message>
-    <message>
-        <source>Live departures not available for metro stations</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>ParserEFA</name>

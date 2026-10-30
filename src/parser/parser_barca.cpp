@@ -36,6 +36,7 @@
 #define BARCA_PARADES    BARCA_BASE "transit/parades"
 #define BARCA_ESTACIONS  BARCA_BASE "transit/estacions"
 #define BARCA_ITTRANSIT  BARCA_BASE "itransit/bus/parades/"
+#define BARCA_METRO_TRANSIT BARCA_BASE "itransit/metro/estacions"
 #define BARCA_PLANNER    BARCA_BASE "planner/plan"
 
 #define BARCA_APP_ID     "12a8c95b"
@@ -98,6 +99,7 @@ ParserBarca::ParserBarca(QObject *parent)
     lastCoordinates.isValid = false;
     stationMergeRequestedEstacions = false;
     stationByCoordinates = false;
+    timetableIsMetro = false;
 }
 
 ParserBarca::~ParserBarca()
@@ -219,7 +221,12 @@ void ParserBarca::appendStationsFromDoc(const QVariantMap &doc)
             type = props.value("NOM_TIPUS_SIMPLE_PARADA").toString();
         } else if (props.contains(QLatin1String("CODI_GRUP_ESTACIO"))) {
             name = props.value("NOM_ESTACIO").toString();
-            id   = QString(QLatin1String("M:%1")).arg(props.value("CODI_GRUP_ESTACIO").toString());
+            // ID_ESTACIO is the small integer the metro live-arrivals endpoint
+            // expects (e.g. 418); fall back to the 7-digit group code if absent.
+            QString metroId = props.value("ID_ESTACIO").toString();
+            if (metroId.isEmpty())
+                metroId = props.value("CODI_GRUP_ESTACIO").toString();
+            id   = QString(QLatin1String("M:%1")).arg(metroId);
             type = props.value("PICTO").toString();   // metro line, e.g. "L4"
         } else {
             continue;
@@ -303,20 +310,20 @@ void ParserBarca::getTimeTableForStation(const Station &currentStation,
     const QString kind    = sep >= 0 ? id.left(sep) : QString();
     const QString code    = sep >= 0 ? id.mid(sep + 1) : id;
 
-    // Metro stations have no live-arrivals endpoint in the TMB API – show a hint.
-    if (kind == QLatin1String("M")) {
-        TimetableEntriesList result;
-        TimetableEntry hint;
-        hint.trainType        = currentStation.type.isEmpty() ? tr("Metro") : currentStation.type;
-        hint.destinationStation = tr("Live departures not available for metro stations");
-        result.append(hint);
-        emit timetableResult(result);
-        return;
+    timetableIsMetro = (kind == QLatin1String("M"));
+
+    QUrl uri;
+    if (timetableIsMetro) {
+        uri = QUrl(QLatin1String(BARCA_METRO_TRANSIT));
+        QUrlQuery query = barca_authQuery();
+        query.addQueryItem(QLatin1String("estacions"), code);
+        uri.setQuery(query);
+    } else {
+        uri = QUrl(QLatin1String(BARCA_ITTRANSIT));
+        uri.setPath(uri.path() + code);
+        uri.setQuery(barca_authQuery());
     }
 
-    QUrl uri(QLatin1String(BARCA_ITTRANSIT));
-    uri.setPath(uri.path() + code);
-    uri.setQuery(barca_authQuery());
     sendBarcaRequest(uri);
     currentRequestState = FahrplanNS::getTimeTableForStationRequest;
 }
@@ -329,6 +336,12 @@ void ParserBarca::parseTimeTable(QNetworkReply *networkReply)
     const QVariantMap doc = parseJson(allData);
     if (doc.isEmpty()) {
         emit errorOccured(tr("Cannot parse reply from the server"));
+        return;
+    }
+
+    if (timetableIsMetro) {
+        parseMetroTimeTable(doc, result);
+        emit timetableResult(result);
         return;
     }
 
@@ -368,6 +381,51 @@ void ParserBarca::parseTimeTable(QNetworkReply *networkReply)
     }
 
     emit timetableResult(result);
+}
+
+/* Timetable (live metro arrivals / departures for a station) */
+
+void ParserBarca::parseMetroTimeTable(const QVariantMap &doc, TimetableEntriesList &result)
+{
+    const QVariantList linies = doc.value("linies").toList();
+
+    foreach (const QVariant &liniaVar, linies) {
+        const QVariantMap linia = liniaVar.toMap();
+        const QVariantList estacions = linia.value("estacions").toList();
+
+        foreach (const QVariant &estacioVar, estacions) {
+            const QVariantMap estacio = estacioVar.toMap();
+            const QVariantList trajectes = estacio.value("linies_trajectes").toList();
+
+            foreach (const QVariant &trajecteVar, trajectes) {
+                const QVariantMap trajecte = trajecteVar.toMap();
+
+                const QString line   = trajecte.value("nom_linia").toString();
+                const QString desti  = trajecte.value("desti_trajecte").toString();
+                const QVariantList trens = trajecte.value("propers_trens").toList();
+
+                // Take the first (soonest) arrival for this direction
+                if (trens.isEmpty())
+                    continue;
+
+                const QVariantMap firstTren = trens.first().toMap();
+                const qint64 epochMs = firstTren.value("temps_arribada").toLongLong();
+                if (epochMs <= 0)
+                    continue;
+
+                TimetableEntry te;
+                te.time  = barca_epochMsToTime(epochMs);
+                te.trainType = line;
+                te.destinationStation = desti;
+
+                // Highlight the soonest service as "next"
+                if (result.isEmpty())
+                    te.miscInfo = tr("Next");
+
+                result.append(te);
+            }
+        }
+    }
 }
 
 /* Journey search */
