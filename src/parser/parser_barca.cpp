@@ -25,7 +25,13 @@
 #include <qmath.h>
 #include <algorithm>
 
-/* TMB (Barcelona) API constants */
+/*
+ * TMB (Barcelona) API constants
+ * The estacions endpoint covers metro stations
+ * The parades and itransit endpoints are bus specific
+ * The planner covers geo coordinate to coordinate.
+ * Sigh.
+*/
 #define BARCA_BASE       "https://api.tmb.cat/v1/"
 #define BARCA_PARADES    BARCA_BASE "transit/parades"
 #define BARCA_ESTACIONS  BARCA_BASE "transit/estacions"
