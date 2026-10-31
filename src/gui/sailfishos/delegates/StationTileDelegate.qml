@@ -71,6 +71,12 @@ TileBase {
     menu: Component {
         ContextMenu {
             MenuItem {
+                text: qsTr("View on Map")
+                onClicked: {
+                    pageStack.push("../pages/MapPage.qml", {"lat":latitude, "lon":longitude})
+                }
+            }
+            MenuItem {
                 text: model.isFavorite ?
                           qsTr("Remove from favorites") :
                           qsTr("Add to favorites")

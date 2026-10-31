@@ -133,7 +133,15 @@ Dialog {
         contentWidth: parent.width
 
         VerticalScrollDecorator {}
-
+        PullDownMenu {
+            id:pullDown
+            MenuItem {
+                text: qsTr("Map")
+                onClicked: {
+                     pageStack.push("MapPage.qml");
+                }
+            }
+        }
         Column {
             id: column
 
@@ -204,6 +212,7 @@ Dialog {
                 width: parent.width
 
                 TileBase {
+                    id: tile
                     visible: _haveStationTiles
                     width: parent.width
                     contentHeight: Theme.itemSizeSmall
@@ -222,6 +231,7 @@ Dialog {
                     }
 
                     onClicked: {
+                        console.log("TileBase clicked ". tile.longitude)
                         _showingSearchResults = false
                     }
                 }
@@ -511,6 +521,7 @@ Dialog {
 
                     onClicked: {
                         root._showFavoritesAsList = true
+                        console.log("TileBase clicked ". tile.longitude)
                     }
                 }
             }

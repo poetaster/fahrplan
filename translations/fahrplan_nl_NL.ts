@@ -256,31 +256,31 @@ Toegevoegd door Fahrplan. Noot: controleer de informatie opnieuw vlak voordat u 
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="159"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="166"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="165"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="162"/>
         <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; naar &lt;b&gt;%2&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="170"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="178"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="177"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="173"/>
         <location filename="../src/gui/ubuntu/JourneyDetailsResultsPage.qml" line="334"/>
         <source>Dur.: %1</source>
         <translation>Reistijd: %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="44"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="43"/>
         <source>Add to calendar</source>
         <translation>Toevoegen aan agenda/kalender</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="129"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="128"/>
         <source>Searching...</source>
         <translation>Bezig met zoeken...</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="166"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="165"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -321,28 +321,28 @@ Toegevoegd door Fahrplan. Noot: controleer de informatie opnieuw vlak voordat u 
     <name>JourneyResultsPage</name>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="105"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="91"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="92"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="105"/>
         <source>Dep.</source>
         <translation>Vertrek</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="115"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="97"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="98"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="111"/>
         <source>Arr.</source>
         <translation>Aankomst</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="126"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="104"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="105"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="118"/>
         <source>Dur.</source>
         <translation>Reistijd</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="137"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="111"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="112"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="125"/>
         <source>Trans.</source>
         <translation>Overstappen</translation>
@@ -375,35 +375,35 @@ Toegevoegd door Fahrplan. Noot: controleer de informatie opnieuw vlak voordat u 
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="217"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="38"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="39"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="213"/>
         <source>Earlier</source>
         <translation>Eerder</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="225"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="50"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="51"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="222"/>
         <source>Later</source>
         <translation>Later</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="160"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="161"/>
         <source>Searching...</source>
         <translation>Bezig met zoeken...</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="194"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="195"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="194"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="195"/>
         <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="218"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="219"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
@@ -3119,58 +3119,63 @@ Toegevoegd door Fahrplan. Noot: controleer de informatie opnieuw vlak voordat u 
         <translation>Wachten op GPS-vergrendeling...</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="148"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="139"/>
+        <source>Map</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="156"/>
         <source>Select station</source>
         <translation>Selecteer station</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="150"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="158"/>
         <source>Select departure station</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="152"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="160"/>
         <source>Select destination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="154"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="162"/>
         <source>Select intermediate station</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="212"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="221"/>
         <source>Show favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="230"/>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="464"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="240"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="474"/>
         <source>Search</source>
         <translation>Zoek</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="460"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="470"/>
         <source>From</source>
         <translation type="unfinished">Van</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="462"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="472"/>
         <source>To</source>
         <translation type="unfinished">Naar</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="500"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="510"/>
         <source>Show more</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="526"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="537"/>
         <source>Favorites</source>
         <translation>Favorieten</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="536"/>
+        <location filename="../src/gui/sailfishos/pages/StationSelectPage.qml" line="547"/>
         <source>Click and hold in the search results to add or remove a station as a favorite</source>
         <translation>Klik en houdt een zoekresultaat vast om een station toe te voegen aan of te verwijderen uit de favorieten</translation>
     </message>
@@ -3178,12 +3183,17 @@ Toegevoegd door Fahrplan. Noot: controleer de informatie opnieuw vlak voordat u 
 <context>
     <name>StationTileDelegate</name>
     <message>
-        <location filename="../src/gui/sailfishos/delegates/StationTileDelegate.qml" line="75"/>
+        <location filename="../src/gui/sailfishos/delegates/StationTileDelegate.qml" line="74"/>
+        <source>View on Map</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gui/sailfishos/delegates/StationTileDelegate.qml" line="81"/>
         <source>Remove from favorites</source>
         <translation type="unfinished">Verwijder uit favorieten</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/delegates/StationTileDelegate.qml" line="76"/>
+        <location filename="../src/gui/sailfishos/delegates/StationTileDelegate.qml" line="82"/>
         <source>Add to favorites</source>
         <translation type="unfinished">Voeg toe aan favorieten</translation>
     </message>

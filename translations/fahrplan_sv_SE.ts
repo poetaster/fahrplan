@@ -2394,16 +2394,24 @@ Tillagt av Fahrplan. Kolla informationen innan resan.</translation>
         <source>Show more</source>
         <translation>Visa mer</translation>
     </message>
+    <message>
+        <source>Map</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StationTileDelegate</name>
     <message>
+        <source>View on Map</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Remove from favorites</source>
-        <translation>Ta bort från favoriter</translation>
+        <translation type="unfinished">Ta bort från favoriter</translation>
     </message>
     <message>
         <source>Add to favorites</source>
-        <translation>Lägg till som favorit</translation>
+        <translation type="unfinished">Lägg till som favorit</translation>
     </message>
 </context>
 <context>

@@ -548,3 +548,6 @@ freebsd-* {
 translations.CONFIG = no_link
 QMAKE_EXTRA_COMPILERS += translations
 PRE_TARGETDEPS += compiler_translations_make_all
+
+DISTFILES += \
+    src/gui/sailfishos/pages/MapPage.qml
