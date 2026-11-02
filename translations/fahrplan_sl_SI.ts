@@ -256,31 +256,31 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="159"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="165"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="166"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="162"/>
         <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; do &lt;b&gt;%2&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyDetailsResultsPage.qml" line="170"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="177"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="178"/>
         <location filename="../src/gui/symbian/pages/JourneyDetailsResultsPage.qml" line="173"/>
         <location filename="../src/gui/ubuntu/JourneyDetailsResultsPage.qml" line="334"/>
         <source>Dur.: %1</source>
         <translation>Trajanje: %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="43"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="44"/>
         <source>Add to calendar</source>
         <translation>Dodaj na koledar</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="128"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="129"/>
         <source>Searching...</source>
         <translation>Iščem ...</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="165"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyDetailsResultsPage.qml" line="166"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -321,28 +321,28 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     <name>JourneyResultsPage</name>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="105"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="92"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="91"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="105"/>
         <source>Dep.</source>
         <translation>Odh.</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="115"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="98"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="97"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="111"/>
         <source>Arr.</source>
         <translation>Prih.</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="126"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="105"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="104"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="118"/>
         <source>Dur.</source>
         <translation>Traj.</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="137"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="112"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="111"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="125"/>
         <source>Trans.</source>
         <translation>Prest.</translation>
@@ -375,35 +375,35 @@ Dodala aplikacija Fahrplan. Pred potovanjem prosimo preverite točnost informaci
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="217"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="39"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="38"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="213"/>
         <source>Earlier</source>
         <translation>Prej</translation>
     </message>
     <message>
         <location filename="../src/gui/harmattan/pages/JourneyResultsPage.qml" line="225"/>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="51"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="50"/>
         <location filename="../src/gui/symbian/pages/JourneyResultsPage.qml" line="222"/>
         <source>Later</source>
         <translation>Kasneje</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="161"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="160"/>
         <source>Searching...</source>
         <translation>Iščem ...</translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="195"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="194"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="195"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="194"/>
         <source>&lt;b&gt;%1&lt;/b&gt; via &lt;b&gt;%3&lt;/b&gt; to &lt;br /&gt; &lt;b&gt;%2&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="219"/>
+        <location filename="../src/gui/sailfishos/pages/JourneyResultsPage.qml" line="218"/>
         <source>Error</source>
         <translation>Napaka</translation>
     </message>
