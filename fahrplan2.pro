@@ -4,6 +4,9 @@ APP_NAME = Fahrplan
 # Define Version
 VERSION = 2.0.59-1
 
+DEFINES += "APPVERSION=\\\"$${SPECVERSION}\\\""
+DEFINES += "APPNAME=\\\"$${TARGET}\\\""
+
 #CONFIG+= openrepos
 
 DEFINES += BUILD_FOR_SAILFISHOS
