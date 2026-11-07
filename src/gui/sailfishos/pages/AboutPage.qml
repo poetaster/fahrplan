@@ -155,7 +155,7 @@ Page {
                     }
 
                     Label {
-                        text: "Tranistous"
+                        text: "Transitous"
                         font.bold: true
                     }
                     Label {
