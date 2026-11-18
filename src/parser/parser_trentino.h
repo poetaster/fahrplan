@@ -51,13 +51,16 @@ private:
   void sendRequest(QUrl url);
   QVariantList parseJsonList(const QByteArray &json) const;
   void parseStationRow(StationsList &results, const QVariantMap &props);
+  void requestStops(FahrplanNS::curReqStates state);
+  bool storeStops(const QByteArray &data);
   void fetchRoutes();
   QDateTime jodaTimeToQDateTime(const QVariantMap &dt) const;
 
   QMap<int, QString> m_routeNames;
-  QMap<int, QVariantMap> m_stopsById;
+  QMap<QString, QVariantMap> m_stopsByCode;
   StationsList m_allStops;
   bool m_stopsLoaded;
+  bool m_stopsForTimetable;
   QString m_lastSearchTerm;
 
   Station m_timetableStation;
