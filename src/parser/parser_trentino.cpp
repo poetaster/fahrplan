@@ -36,7 +36,10 @@ static const QString AUTH_USER = "mittmobile";
 static const QString AUTH_PASS = "ecGsp.RHB3";
 
 ParserTrentinoTrasporti::ParserTrentinoTrasporti(QObject *parent)
-    : ParserAbstract(parent), m_stopsLoaded(false), m_routesLoaded(false)
+    : ParserAbstract(parent),
+      m_stopsLoaded(false),
+      m_stopsForTimetable(false),
+      m_routesLoaded(false)
 {
 }
 
@@ -85,7 +88,7 @@ QVariantList ParserTrentinoTrasporti::parseJsonList(const QByteArray &json) cons
 void ParserTrentinoTrasporti::parseStationRow(StationsList& results, const QVariantMap& props)
 {
     Station s;
-    s.id = props.value("stopId");
+    s.id = props.value("stopCode");
     s.name = props.value("stopName").toString();
     s.latitude = props.value("stopLat").toReal();
     s.longitude = props.value("stopLon").toReal();
@@ -115,9 +118,37 @@ void ParserTrentinoTrasporti::parseStationRow(StationsList& results, const QVari
         s.type = "bus";
     }
 
-    m_stopsById[s.id.toInt()] = props;
+    m_stopsByCode[s.id.toString()] = props;
 
     results.append(s);
+}
+
+void ParserTrentinoTrasporti::requestStops(FahrplanNS::curReqStates state)
+{
+    currentRequestState = state;
+    sendRequest(QUrl(BASE_URL + "/stops"));
+}
+
+bool ParserTrentinoTrasporti::storeStops(const QByteArray &data)
+{
+    QVariantList stations = parseJsonList(data);
+    if (stations.isEmpty()) {
+        m_stopsForTimetable = false;
+        qDebug() << "Invalid reply:" << data;
+        emit errorOccured(tr("Cannot parse reply from the server"));
+        return false;
+    }
+
+    if (!m_stopsLoaded) {
+        m_allStops.clear();
+        m_stopsByCode.clear();
+        Q_FOREACH (const QVariant& featureData, stations) {
+            parseStationRow(m_allStops, featureData.toMap());
+        }
+        m_stopsLoaded = true;
+    }
+
+    return true;
 }
 
 void ParserTrentinoTrasporti::findStationsByName(const QString &stationName)
@@ -143,11 +174,7 @@ void ParserTrentinoTrasporti::findStationsByName(const QString &stationName)
         return;
     }
 
-    currentRequestState = FahrplanNS::stationsByNameRequest;
-
-    QUrl url(BASE_URL + "/stops");
-
-    sendRequest(url);
+    requestStops(FahrplanNS::stationsByNameRequest);
 }
 
 void ParserTrentinoTrasporti::findStationsByCoordinates(qreal longitude, qreal latitude)
@@ -181,30 +208,21 @@ void ParserTrentinoTrasporti::findStationsByCoordinates(qreal longitude, qreal l
         return;
     }
 
-    currentRequestState = FahrplanNS::stationsByCoordinatesRequest;
-
-    QUrl url(BASE_URL + "/stops");
-
-    sendRequest(url);
+    requestStops(FahrplanNS::stationsByCoordinatesRequest);
 }
 
 void ParserTrentinoTrasporti::parseStationsByName(QNetworkReply *networkReply)
 {
     QByteArray allData(networkReply->readAll());
 
-    QVariantList stations = parseJsonList(allData);
-    if (stations.isEmpty()) {
-        qDebug() << "Invalid reply:" << allData;
-        emit errorOccured(tr("Cannot parse reply from the server"));
+    if (!storeStops(allData)) {
         return;
     }
 
-    if (!m_stopsLoaded) {
-        m_allStops.clear();
-        Q_FOREACH (const QVariant& featureData, stations) {
-            parseStationRow(m_allStops, featureData.toMap());
-        }
-        m_stopsLoaded = true;
+    if (m_stopsForTimetable) {
+        m_stopsForTimetable = false;
+        doGetTimeTableForStation();
+        return;
     }
 
     StationsList results;
@@ -221,19 +239,8 @@ void ParserTrentinoTrasporti::parseStationsByCoordinates(QNetworkReply *networkR
 {
     QByteArray allData(networkReply->readAll());
 
-    QVariantList stations = parseJsonList(allData);
-    if (stations.isEmpty()) {
-        qDebug() << "Invalid reply:" << allData;
-        emit errorOccured(tr("Cannot parse reply from the server"));
+    if (!storeStops(allData)) {
         return;
-    }
-
-    if (!m_stopsLoaded) {
-        m_allStops.clear();
-        Q_FOREACH (const QVariant& featureData, stations) {
-            parseStationRow(m_allStops, featureData.toMap());
-        }
-        m_stopsLoaded = true;
     }
 
     QStringList coords = m_lastSearchTerm.split(",");
@@ -323,14 +330,21 @@ void ParserTrentinoTrasporti::getTimeTableForStation(const Station &currentStati
 
 void ParserTrentinoTrasporti::doGetTimeTableForStation()
 {
+    if (!m_stopsLoaded) {
+        m_stopsForTimetable = true;
+        requestStops(FahrplanNS::stationsByNameRequest);
+        return;
+    }
+
     currentRequestState = FahrplanNS::getTimeTableForStationRequest;
 
-    QVariantMap stop = m_stopsById.value(m_timetableStation.id.toInt());
+    QVariantMap stop = m_stopsByCode.value(m_timetableStation.id.toString());
     QString stopType = stop.value("type", "U").toString();
+    QString stopId = stop.value("stopId").toString();
 
     QUrl url(BASE_URL + "/trips_new");
     QUrlQuery query;
-    query.addQueryItem("stopId", m_timetableStation.id.toString());
+    query.addQueryItem("stopId", stopId);
     query.addQueryItem("type", stopType);
     query.addQueryItem("limit", "20");
     query.addQueryItem("refDateTime", m_timetableDateTime.toUTC().toString(Qt::ISODate));
@@ -360,7 +374,7 @@ void ParserTrentinoTrasporti::parseTimeTable(QNetworkReply *networkReply)
         int routeId = trip.value("routeId").toInt();
         QString routeName = m_routeNames.value(routeId, "");
 
-        QVariantMap stop = m_stopsById.value(m_timetableStation.id.toInt());
+        QVariantMap stop = m_stopsByCode.value(m_timetableStation.id.toString());
         const QVariantList routes = stop.value("routes").toList();
         Q_FOREACH (const QVariant& r, routes) {
             if (r.toMap().value("routeId").toInt() == routeId) {
